@@ -1,0 +1,156 @@
+#ffOptions-content .section-title h4 { display: none; }
+#ffOptions-content .repeatable .section-title h4 { display: block; }
+#ffOptions-content .plugin_is_installed { background: url(./../../../../../../../wp-admin/images/yes.png) no-repeat left center; padding: 0 0 0 30px; }
+#ffOptions-content .plugin_isNOT_installed { background: url(./../../../../../../../wp-admin/images/marker.png) no-repeat left center; padding: 0 0 0 30px; }
+#ffOptions-content .install_link { }
+
+#ffOptions-content .component-option-textarea label{
+  display: inline-block;
+  float: left;
+  min-width: 150px;
+}
+
+#ffOptions-content .component-option-textarea label,
+#ffOptions-content .component-option-select label,
+#ffOptions-content .component-option-text label,
+#ffOptions-content .component-option-checkbox label {
+  line-height: 20px;
+}
+
+#ffOptions-content .component-option-checkbox input   {
+  margin: -1px 2px 0 0;
+}
+
+#ffOptions-content textarea{
+  width: 100%;
+  width: -moz-calc(100% - 160px); /* Firefox */
+  width: -webkit-calc(100% - 160px);/* WebKit */
+  width: -o-calc(100% - 160px);/* Opera */
+  width: calc(100% - 160px);/* Standard */
+  height: 80px;
+}
+
+#ffOptions-content input[type=text]{
+  margin: 0 10px 0 0;
+}
+
+#ffOptions-content .add_image_button  {
+  margin: 5px 0 0 0;
+}
+
+#ffOptions-content .section-content .component-element-header{
+  clear:right;
+  overflow: visible;
+  height: 1px;
+  
+  background: #fafafa;
+  padding-left: 20px;
+  border-top: 1px solid #f6f6f6;
+}
+
+#ffOptions-content .section-title .component-element-header h4 {
+  padding: 0 20px;
+  margin: 0;
+  width: 200px;
+  height: 38px;
+  line-height: 38px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+#ffOptions-content h4{
+  font-weight: normal;
+}
+
+#ffOptions-content #ffOptions-content-right > div{
+  display: none;
+}
+
+#ffOptions-content .component-element-description,
+#ffOptions-content .section-content .p,
+#ffOptions-content .section-content p{ padding: 0 20px 0 220px; }
+#ffOptions-content .section-content .repeatable{ padding: 0 20px 0 220px; }
+
+#ffOptions-content .section-content .repeatable .p,
+#ffOptions-content .section-content .repeatable .repeatable{ padding: 0 20px 0 20px; }
+
+
+#ffOptions-content .section-content .repeatable p   {
+  padding: 10px 0px;
+  margin: 0;
+}
+
+#ffOptions-content .component-option-select label,
+#ffOptions-content .component-option-text label{
+  display: inline-block;
+  min-width: 130px;
+  max-width: 130px;
+  padding-right: 20px;
+  line-height: 13px;
+}
+
+#ffOptions-content .component-option-gallery label{
+  display: block;
+  height: 48px;
+  line-height: 48px;
+}
+
+#ffOptions-content .component-translation input[type=text]{
+  min-width: 300px;
+  width: -moz-calc(100% - 160px); /* Firefox */
+  width: -webkit-calc(100% - 160px);/* WebKit */
+  width: -o-calc(100% - 160px);/* Opera */
+  width: calc(100% - 160px);/* Standard */
+  margin-bottom: 10px;
+}
+
+#ffOptions-content .component-translation label{
+  max-width: 900px;
+  display: block;
+  clear: both;
+}
+
+#ffOptions-content .component-translation textarea{
+  width: 100%;
+}
+
+#ffOptions-content .component-customcode textarea{
+  font-family: monospace;
+}
+
+#ffOptions-content .component-element-description p {
+    line-height: 20px;
+    background-color: #f8f8f8;
+    color: #777777;
+    padding: 6px 15px 6px 38px;
+    font-size: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#ffOptions-content .component-element-description p:before  {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 16px;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  color: #777777;
+  text-shadow: 0 1px 0px #ffffff;
+}
+
+
+#ffOptions-content .component-element-description .warning {
+    border: 1px solid #ffd24d;
+    background: #ffffbf url(./images/warning.png) no-repeat 20px 20px;
+    padding: 15px 15px 15px 65px;
+    font-family: Arial, serif;
+    font-size: 13px;
+    color: #222;
+}
+
+#ffOptions-content .component-element-description .warning:before   {
+  content: "";
+}

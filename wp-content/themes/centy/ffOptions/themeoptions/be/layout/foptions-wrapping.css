@@ -1,0 +1,65 @@
+.clear	{
+	clear: both;
+}
+
+#screen-meta	{
+	display: none;
+}
+
+/* Content */
+
+#ffOptions-content-wrapper	{
+	margin: 20px 0 0 3px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #eeeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	overflow: hidden;
+}
+
+#ffOptions-content	{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	background: url('./images/theme_options_bg.png') repeat-y -60px top;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	overflow: hidden;
+}
+#ffOptions-content-left-wrapper	{
+	width: 140px;
+	float: left;
+}
+#ffOptions-content-left	{
+  clear: both;
+}
+#ffOptions-content-right-wrapper	{
+	overflow: hidden;
+}
+#ffOptions-content-right .section-content	{
+}
+
+.theme_options_save	{
+	margin: 20px 20px 15px 20px;
+	float: right;
+	cursor: pointer;
+}
+
+#theme_options_versions	{
+	float: left;
+	color: #c0c0c0;
+	font-size: 9px;
+	line-height: 15px;
+	text-shadow: 0 2px 0 #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 14px 0 0 15px;
+}
+
+#theme_options .color-input 	{
+	cursor: pointer !important;
+}
+

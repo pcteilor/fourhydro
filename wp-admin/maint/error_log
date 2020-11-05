@@ -1,0 +1,23 @@
+[07-Jul-2019 06:23:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[07-Jul-2019 06:23:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[07-Jul-2019 06:23:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[07-Jul-2019 06:23:23] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[07-Jul-2019 06:23:24] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile

@@ -1,0 +1,215 @@
+.ff_SP .repeatable .repeatable > .section-content .section-content,
+.ff_TO .repeatable .section-content .section-content,
+.ff_WP .repeatable > .section-content > .section > .section-content,
+.ff_WG .repeatable > .section-content > .section > .section-content {
+    background-color: #f6f6f6;
+    padding: 0 12px 5px 12px;
+    margin: 0;
+    border-top: 1px solid #cccccc;
+}
+
+.ff_SP .repeatable .repeatable > .section-content,
+.ff_TO .repeatable > .section-content {
+    padding: 15px 15px 5px 15px;
+    border: 2px dashed #dddddd;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.section-control-add-before,
+.section-control-add-before-off,
+.section-control-add-after,
+.section-control-add-after-off     {
+    display: none !important;
+}
+
+.section-control-move-up-off,
+.section-control-move-down-off  {
+	opacity: 0;
+	visibility: hidden;
+}
+.section-control-remove-off     {
+    display: none !important;
+}
+
+.section:hover > .section-title .section-control-actions .controls_center    {
+    display: inline-block;
+}
+
+.section-control-actions span     {
+    color: #000000;
+    opacity: 0.05;
+}
+
+.section-control-actions a  {
+    color: #444444;
+    opacity: 0.5;
+}
+
+.section-control-actions a:hover    {
+    opacity: 1;
+}
+
+.section-control-remove,
+.section-control-remove-off     {
+    margin: 0 0 0 0;
+}
+
+/*
+
+.section-control-actions a.icon-plus     {
+    color: #2ecc71;
+}
+
+.section-control-actions a.icon-arrow-up,
+.section-control-actions a.icon-arrow-down     {
+    color: #2980b9;
+}
+
+.section-control-actions a.icon-remove  {
+    color: #c0392b;
+}
+
+.section-control-actions a.icon-caret-up,
+.section-control-actions a.icon-caret-down    {
+    color: #555555;
+}*/
+
+/*
+.section-control-remove{ background: url(images/repeatable/remove.png) no-repeat center center }
+.section-control-remove-off{ background: url(images/repeatable/disabled.png) no-repeat center center }
+
+.section-control-move-up{ background: url(images/repeatable/move-up.png) no-repeat center center }
+.section-control-move-up-off{ background: url(images/repeatable/disabled.png) no-repeat center center }
+
+.section-control-move-down{ background: url(images/repeatable/move-down.png) no-repeat center center }
+.section-control-move-down-off{ background: url(images/repeatable/disabled.png) no-repeat center center }
+
+.section-control-add-before{ background: url(images/repeatable/add-before.png) no-repeat center center; display: none !important; }
+.section-control-add-before-off{ background: url(images/repeatable/disabled.png) no-repeat center center; display: none !important; }
+
+.section-control-add-after{ background: url(images/repeatable/add-before.png) no-repeat center center }
+.section-control-add-after-off{ background: url(images/repeatable/disabled.png) no-repeat center center }
+
+.section-control-close{ background: url(images/repeatable/arrows.png) no-repeat center -34px }
+.section-control-open{ background: url(images/repeatable/arrows.png) no-repeat center 2px }
+.section-control-close:hover{ background: url(images/repeatable/arrows-dark.png) no-repeat center -34px }
+.section-control-open:hover{ background: url(images/repeatable/arrows-dark.png) no-repeat center 2px }
+*/
+
+.component-0{ display: none; }
+
+.repeatable > .section-content > .section{
+    border:1px solid #ccc;
+    border-radius:4px;
+    margin: 0 0 10px 0;
+}
+
+.ff_SP .repeatable .repeatable > .section-content > .section > .section-content,
+.ff_TO .repeatable > .section-content > .section > .section-content,
+.ff_WP .repeatable > .section-content > .section > .section-content,
+.ff_WG .repeatable > .section-content > .section > .section-content {
+    padding: 12px 12px 0 12px;
+}
+
+.repeatable > .section-content > .section > .section-title{
+    /*padding: 5px 9px;*/
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #e1e1e1;
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#e8e8e8),to(#f6f6f6));
+    background-image: -webkit-linear-gradient(bottom,#e8e8e8,#f6f6f6);
+    background-image: -moz-linear-gradient(bottom,#e8e8e8,#f6f6f6);
+    background-image: -o-linear-gradient(bottom,#e8e8e8,#f6f6f6);
+    background-image: linear-gradient(to top,#e8e8e8,#f6f6f6);
+
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.repeatable > .section-content > .section > .section-title h4  {
+    padding: 6px 9px 5px 9px;
+}
+
+.repeatable > .section-content > .section > .section-title h4{
+    margin: 0;
+    color: #222;
+    text-shadow: #fff 0px 1px 0px;
+}
+
+.repeatable .rptblIndex{
+    display: none; /* */
+    width: 30px;
+}
+
+.section-control-actions{
+    text-align: right;
+    overflow: hidden;
+    clear: both;
+    float: right;
+}
+
+.section-control-actions{
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+.section-control-actions a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.section-control-actions span {
+    display: none;
+    display: inline-block;
+    padding: 0 2px;
+}
+
+.section-control-actions .section-control-open,
+.section-control-actions .section-control-recount-indexes{
+    display: none;
+}
+
+.section-control-actions a,
+.section-control-actions span   {
+    font-size: 14px;
+    display: inline-block;
+    width: 17px;
+    height: 24px;
+    line-height: 25px;
+    padding: 2px 3px;
+    outline-width: 0;
+    outline: none;
+    text-shadow: 0 1px 0px #ffffff;
+    text-align: center;
+}
+
+.section-control-actions .controls_center    {
+    display: none;
+}
+
+.section-control-actions .controls_right    {
+    display: inline-block;
+    border-left: 1px solid #cccccc;
+    -webkit-box-shadow: inset 1px 0px 0px 0px #ffffff;
+    box-shadow: inset 1px 0px 0px 0px #ffffff;
+    margin: 0 0 0 10px;
+}
+
+
+.section-control-actions .controls_right a,
+.section-control-actions .controls_right span   {
+    width: 23px;
+}
+
+
+
+

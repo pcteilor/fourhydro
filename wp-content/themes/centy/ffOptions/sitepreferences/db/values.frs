@@ -1,0 +1,25 @@
+INSERT INTO `XXXTABLENAMEXXX` (`taxonomy`, `term_id`, `meta_key`, `value`) VALUES
+('home', 0, 'slider---show', '1'),
+('home', 0, 'slogan---show', '1'),
+('home', 0, 'portfolio-feed---show', '1'),
+('home', 0, 'testimonials---show', '1'),
+('home', 0, 'request---show', '1'),
+
+('home', 0, 'query---posts_per_page', '0'),
+('home', 0, 'template---preface---title', 'Post List'),
+('home', 0, 'template---preface---description', 'Read the latest articles'),
+('home', 0, 'template---slider-numberofposts', '10'),
+('home', 0, '_rptblIndex', '0'),
+('home', 0, 'slogan---text-big', 'This is an important port of call in the Pacific, where all the mail-steamers, and those carrying travellers between North'),
+('home', 0, 'testimonials---content', 'It is situated in the bay of Yeddo, and at but a short distance from that second capital of the Japanese Empire, and the residence of the Tycoon, the civil Emperor, before the Mikado, the spiritual Emperor, absorbed'),
+('home', 0, 'slider---id', 'default'),
+('home', 0, 'portfolio-feed---categories', '2'),
+('home', 0, 'category---id', ''),
+('home', 0, 'query---order_by', ''),
+('home', 0, 'query---order', ''),
+('home', 0, 'template---template', 'list'),
+('home', 0, 'template---slider-feed', 'default'),
+
+('tag', 0, 'use-custom', '1'),
+('category', 0, 'use-custom', '1'),
+('portfolio-category', 0, 'use-custom', '1');

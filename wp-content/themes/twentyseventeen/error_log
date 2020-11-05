@@ -1,0 +1,3 @@
+[21-Feb-2020 23:28:40] PHP Fatal error:  Call to undefined function  get_header() in /home1/fourhydr/public_html/wp-content/themes/twentyseventeen/404.php on line 13
+[03-Jun-2020 02:24:33] PHP Fatal error:  Call to undefined function  get_template_directory() in /home1/fourhydr/public_html/wp-content/themes/twentyseventeen/functions.php on line 16
+[12-Oct-2020 00:48:15] PHP Fatal error:  Call to undefined function  get_header() in /home1/fourhydr/public_html/wp-content/themes/twentyseventeen/404.php on line 13

@@ -1,0 +1,116 @@
+
+/* Carefully - this is used also for switching skins */
+.component-option-tabs .imgitem{
+  min-height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  min-width: 50px;
+  text-align: center;
+  font-size: 40px;
+  display: block;
+}
+
+.component-option-tabs .imgitem_container{
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #eeeeee;
+}
+
+.component-option-tabs .image-list-chooser_container:hover .imgitem_container,
+.component-option-tabs .imgitem_active,
+.component-option-tabs .imgitem_container:hover{
+  background: rgb(85,164,237); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(85,164,237,1) 0%, rgba(50,111,212,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(85,164,237,1)), color-stop(100%,rgba(50,111,212,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55a4ed', endColorstr='#326fd4',GradientType=0 ); /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.component-option-tabs .imgitem_wrapper  {
+  display: block;
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.component-option-tabs .imgitem_container:hover .imgitem_wrapper  {
+  border: 1px solid #767676;  
+}
+
+.component-option-tabs .image-list-chooser_container:hover .imgitem_wrapper,
+.component-option-tabs .imgitem_active .imgitem_wrapper,
+.component-option-tabs .imgitem_active:hover .imgitem_wrapper   {
+  border: 1px solid #294da2;
+}
+
+.component-option-tabs .imgitem  {
+  display: block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* CHOOSING IMAGE */
+
+.component-option-tabs .image-list-chooser_container{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.component-option-tabs .image-list-chooser_container input{
+  line-height: 23px;
+}
+
+.component-option-tabs .image-list-item-chooser_container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10% 20% 0 20%;
+  width: 60%;
+  display: none;
+  z-index: 9876543210;
+}
+
+.component-option-tabs .image-list-item-chooser_background{
+  z-index: 999991;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  display: block;
+}
+
+.component-option-tabs .image-list-item-chooser_wrapper{
+  z-index: 999992;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 9px;
+  background: #EEE;
+  display: block;
+  position: relative;
+
+}
+
+.component-option-tabs .image-list-item-chooser{
+  background: #FFF;
+  height: 440px;
+  display: block;
+  overflow-y: auto;
+  padding: 15px;
+}
+

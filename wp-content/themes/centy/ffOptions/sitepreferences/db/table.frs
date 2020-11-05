@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `XXXTABLENAMEXXX` (
+  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `taxonomy` varchar(32) NOT NULL,
+  `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) NOT NULL,
+  `value` longtext NOT NULL,
+  PRIMARY KEY (`meta_id`),
+  UNIQUE KEY `meta` (`taxonomy`,`term_id`,`meta_key`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;

@@ -1,0 +1,18 @@
+INSERT IGNORE INTO `XXXTABLENAMEXXX` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');

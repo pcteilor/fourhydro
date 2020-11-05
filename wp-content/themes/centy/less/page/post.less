@@ -1,0 +1,142 @@
+
+
+/*==================================================================================================
+    POST
+==================================================================================================*/
+
+[data-page="post"] .banner {
+    height: 327px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    CONTENT
+--------------------------------------------------------------------------------------------------*/
+
+#post .container {
+    padding: 47px 0 76px;
+}
+
+#post .content h1,
+#post .content h1 a {
+    font-size: 35px;
+}
+
+#post .content h1 {
+    margin-bottom: 13px;
+}
+
+#post .content p,
+#post .content p a {
+    font-size: 16px;
+}
+
+@media @query_mobile {
+    #post .content {
+        padding-top: 40px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    COMMENTS
+--------------------------------------------------------------------------------------------------*/
+
+#comments {
+    margin: 34px 0 44px;
+    
+
+    @media @query_mobile {
+        margin-bottom: 45px;
+    }
+}
+
+#comments .h5 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+#comments [id*="comment-"] * {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#comments [id*="comment-"],
+#respond {
+    margin-bottom: 22px;
+}
+
+#comments [id*="comment-"] {
+    display: table;
+}
+
+#comments [id*="comment-"] > * {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#comments .left {
+    padding-right: 21px;
+}
+
+#comments a.avatar {
+    .inline-block;
+    margin-top: 5px;
+}
+
+#comments a.avatar img {
+    .border-radius(3px);
+    .opacity(1);
+    .transition(~"opacity @{speed}");
+}
+
+#comments a.avatar:hover img {
+    .opacity(0.75);
+}
+
+#comments .footer {
+    margin-top: 4px;
+}
+
+#comments .footer {
+    font-weight: bold;
+}
+
+#comments .footer > * {
+    margin-right: 5px;
+}
+
+#comments .footer a,
+#cancel-comment-reply-link {
+    color: @theme_color;
+    .link_hover;
+}
+
+#cancel-comment-reply-link {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+#comments .children {
+    margin-left: 40px;
+
+    @media @query_tablet {
+        margin-left: 30px;
+    }
+
+    @media @query_phone {
+        margin-left: 20px;
+    }
+}
+
+#respond .h5 {
+    margin-bottom: 29px;
+    text-transform: uppercase;
+}
+
+#respond {
+    margin-bottom: 22px;
+}

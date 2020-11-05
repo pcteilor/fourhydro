@@ -1,0 +1,31 @@
+String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/\{(\d+)\}/g, function() { 
+        return args[arguments[1]];
+    }); 
+};
+var DI = {
+    lang : {
+        validation : {
+            errors : {
+                formErrors : "Information in the highlighted areas is incorrect. Please correct it and try again.",
+                ValidateEmail : "Sorry, this email format is incorrect.",
+                ValidateEqual : "Please check that your email addresses match.",
+                ValidateRequired : "Please complete this field.",
+                ValidateRequiredRadio : "Please complete this field."
+           }
+        }
+    },
+};
+
+var campaignScripts = {
+
+v1:function(){try{var
+                w=window,d=document,r,o=w["XMLHttpRequest"],a=[["src",(w.location.protocol=="https:"?"https://":"http://")+"marketing.lloydsbank.co.uk/lloydsimages51/dYm4.js"],["async",true],["type","text/javascript"]];if(o&&(r=new
+                o).withCredentials!==undefined){r.open("GET",a[0][1],true);r.onreadystatechange=function(e){if(r.readyState==4&&r.status==200)(new
+                Function(r.responseText))()};r.send()}else
+                setTimeout(function(){var
+                s=d.createElement("script");for(var
+                i=0,l=a.length;i<l;i++)s.setAttribute(a[i][0],a[i][1]);
+                d.getElementsByTagName("head")[0].appendChild(s)},0)}catch(e){}}
+}; if (typeof(_SV) != "undefined" &&  _SV != null && "undefined" !== campaignScripts[_SV]) { campaignScripts[_SV](); }

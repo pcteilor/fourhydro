@@ -1,0 +1,15 @@
+.ff_SP #ffOptions-content-left-wrapper{
+	width: 200px;
+	float: left;
+}
+
+.ff_SP #ffOptions-content{
+    /*background: url('./images/theme_options_bg.png') repeat-y 0 top;*/
+    background-position: 0 top;
+}
+
+.ff_SP #ffOptions-content-left .submenu-item:hover,
+.ff_SP #ffOptions-content-left .ffOptions-content-menu-item:hover{
+    background-position: 0 top;
+    background-repeat: repeat;
+}

@@ -1,0 +1,8 @@
+.ff_SP #ffOptions-content-right > .repeatable > .section-content > .section{
+    border:0 none transparent;
+    margin: 0 0 5px 0;
+}
+
+.ff_SP #ffOptions-content-right > .section > .section-content > .section-title {
+    display: none;
+}

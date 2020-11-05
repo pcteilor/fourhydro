@@ -1,0 +1,253 @@
+[29-Jun-2019 03:43:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[29-Jun-2019 03:43:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[29-Jun-2019 03:43:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[29-Jun-2019 03:43:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[29-Jun-2019 03:43:50] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[29-Jun-2019 03:44:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[29-Jun-2019 03:44:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[29-Jun-2019 03:44:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[29-Jun-2019 03:44:08] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[29-Jun-2019 03:44:08] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[29-Jun-2019 03:44:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[29-Jun-2019 03:44:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[29-Jun-2019 03:44:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[29-Jun-2019 03:44:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[29-Jun-2019 03:44:11] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[30-Jun-2019 14:17:27] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[30-Jun-2019 14:17:27] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[30-Jun-2019 14:17:27] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[30-Jun-2019 14:17:27] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[30-Jun-2019 14:17:27] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[30-Jun-2019 14:17:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[30-Jun-2019 14:17:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[30-Jun-2019 14:17:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[30-Jun-2019 14:17:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[30-Jun-2019 14:17:43] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[30-Jun-2019 18:13:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[30-Jun-2019 18:13:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[30-Jun-2019 18:13:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[30-Jun-2019 18:13:50] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[30-Jun-2019 18:13:50] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[21-Oct-2019 18:13:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[21-Oct-2019 18:13:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[21-Oct-2019 18:13:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[21-Oct-2019 18:13:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[21-Oct-2019 18:13:11] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[21-Oct-2019 18:13:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[21-Oct-2019 18:13:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[21-Oct-2019 18:13:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'fourhydr'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[21-Oct-2019 18:13:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[21-Oct-2019 18:13:38] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[03-Oct-2020 11:32:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[03-Oct-2020 11:32:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[03-Oct-2020 11:32:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[03-Oct-2020 11:32:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[03-Oct-2020 11:32:38] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[03-Oct-2020 11:32:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[03-Oct-2020 11:32:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[03-Oct-2020 11:32:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[03-Oct-2020 11:32:43] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[03-Oct-2020 11:32:43] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile
+[04-Oct-2020 10:23:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[04-Oct-2020 10:23:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/framework/deploy/themeOptions.php on line 44
+[04-Oct-2020 10:23:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[04-Oct-2020 10:23:09] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home1/fourhydr/public_html/wp-content/themes/centy/ffOptions/themeoptions/sal/ffSalOptionsDB.php on line 15
+[04-Oct-2020 10:23:09] Erro na base de dados do WordPress  na query INSERT IGNORE INTO `wp_ff_options` (`namespace`, `name`, `value`) VALUES
+('header', 'logo---show-logo', '1'),
+('header', 'logo---show-text', '1'),
+('socialmenu', 'isenabled', '1'),
+('socialmenu', 'suffix', ''),
+('footer', 'enablesection', '0'),
+('footer', 'widgetized-areas---1---width', '2'),
+('footer', 'widgetized-areas---2---width', '3'),
+('footer', 'widgetized-areas---3---width', '2'),
+('footer', 'widgetized-areas---4---width', '2'),
+('footer', 'top-arrow-top', '1'),
+('footer', 'bottom-text-show', '1'),
+('footer', 'bottom-text', '&copy; Copyright 2013 Centy'),
+('footer', 'bottom-menu-show', '1'),
+('footer', 'bottom-social-show', '1'),
+('skins', 'layout', 'false'),
+('skins', 'color', '00c492'),
+('skins', 'background', '1');
+ feita por require_once('wp-admin/network/admin.php'), require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/centy/functions.php'), ff_register_footer_sidebars, ffOpt::Get, ffOpt::_init, ffSalOptions->getData, ffSalOptions->loadData, ffSalOptionsDB::GetNamespace, ffSalOptionsDB::_init, ffSalOptionsDB::_load, ffSalOptionsDB::_install, ffDBTO->install, ffDBTO->_runSQLfromFile

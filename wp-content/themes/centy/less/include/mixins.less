@@ -1,0 +1,315 @@
+
+
+//==================================================================================================
+//  MIXINS
+//==================================================================================================
+
+
+//--------------------------------------------------------------------------------------------------
+//  FONT-FACE
+//--------------------------------------------------------------------------------------------------
+//  @file         File name without extension
+//  @family       Font family
+//  @weight       Font weight
+//  @style        Font style
+//  [@svg=false]  Use svg format
+//--------------------------------------------------------------------------------------------------
+
+.font-face(@file, @family, @weight, @style, @svg: false) {
+    .source(@svg) {
+        src: url("@{path_fonts}/@{file}.eot");
+    }
+
+    .source(@svg) when (@svg = false) {
+        src:
+            url("@{path_fonts}/@{file}.eot?#iefix") format("embedded-opentype"),
+            url("@{path_fonts}/@{file}.woff") format("woff"),
+            url("@{path_fonts}/@{file}.ttf") format("truetype");
+    }
+
+    .source(@svg) when (@svg = true) {
+        src:
+            url("@{path_fonts}/@{file}.svg") format("svg"),
+            url("@{path_fonts}/@{file}.eot?#iefix") format("embedded-opentype"),
+            url("@{path_fonts}/@{file}.woff") format("woff"),
+            url("@{path_fonts}/@{file}.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: @family;
+        font-weight: @weight;
+        font-style: @style;
+        .source(@svg);
+    }
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  GRADIENT
+//--------------------------------------------------------------------------------------------------
+
+.gradient(@gradient) {
+    background-image: ~"-webkit-@{gradient}";
+    background-image: ~"-moz-@{gradient}";
+    background-image: ~"-o-@{gradient}";
+    background-image: ~"-ms-@{gradient}";
+    background-image: @gradient;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  BORDER-RADIUS
+//--------------------------------------------------------------------------------------------------
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  TRANSITION
+//--------------------------------------------------------------------------------------------------
+
+.transition(@transition, @prefix: false) when (@prefix = false) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    -ms-transition: @transition;
+}
+
+.transition(@transition, @prefix: false) when (@prefix = true) {
+    -webkit-transition: ~"-webkit-@{transition}";
+    -moz-transition: ~"-moz-@{transition}";
+    -o-transition: ~"-o-@{transition}";
+    -ms-transition: ~"-ms-@{transition}";
+}
+
+.transition(@transition, @prefix: false) {
+    transition: @transition;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  TRANSFORM
+//--------------------------------------------------------------------------------------------------
+
+.transform(@transform) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -o-transform: @transform;
+    -ms-transform: @transform;
+    transform: @transform;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  ANIMATION
+//--------------------------------------------------------------------------------------------------
+
+.animation(@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    -ms-animation: @animation;
+    -o-animation: @animation;
+    animation: @animation;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  BOX-SHADOW
+//--------------------------------------------------------------------------------------------------
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    box-shadow: @shadow;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  BOX-SIZING
+//--------------------------------------------------------------------------------------------------
+
+.box-sizing(@sizing) {
+    -webkit-box-sizing: @sizing;
+    -moz-box-sizing: @sizing;
+    -ms-box-sizing: @sizing;
+    box-sizing: @sizing;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  CLEAR FLOATS
+//--------------------------------------------------------------------------------------------------
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  VERTICAL CENTERING
+//--------------------------------------------------------------------------------------------------
+
+.vertical-center() {
+    &:before {
+        content: '';
+        height: 100%;
+        margin-right: -0.25em;
+    }
+
+    &:before,
+    > * {
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  SIZE
+//--------------------------------------------------------------------------------------------------
+
+.size(@width, @height: null) {
+    width: @width;
+}
+
+.size(@width, @height: null) when not (@height = null) {
+    height: @height;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  MINIMUM SIZE
+//--------------------------------------------------------------------------------------------------
+
+.min-size(@width, @height: auto) {
+    min-width: @width;
+}
+
+.min-size(@width, @height: auto) when not (@height = auto) {
+    min-height: @height;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  MAXIMUM SIZE
+//--------------------------------------------------------------------------------------------------
+
+.max-size(@width, @height: auto) {
+    max-width: @width;
+}
+
+.max-size(@width, @height: auto) when not (@height = auto) {
+    max-height: @height;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  POSITION
+//--------------------------------------------------------------------------------------------------
+//  @top
+//  @left
+//  @right
+//  @bottom
+//  @position
+//--------------------------------------------------------------------------------------------------
+
+.position(@top, @left: null, @right: null, @bottom: null, @position: absolute) {
+    position: @position;
+}
+
+.position(@top, @left: null, @right: null, @bottom: null, @position: absolute) when not (@top = null) {
+    top: @top;
+}
+
+.position(@top, @left: null, @right: null, @bottom: null, @position: absolute) when not (@left = null) {
+    left: @left;
+}
+
+.position(@top, @left: null, @right: null, @bottom: null, @position: absolute) when not (@right = null) {
+    right: @right;
+}
+
+.position(@top, @left: null, @right: null, @bottom: null, @position: absolute) when not (@bottom = null) {
+    bottom: @bottom;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  OPACITY
+//--------------------------------------------------------------------------------------------------
+//  @value  Opacity
+//--------------------------------------------------------------------------------------------------
+
+.opacity(@value) {
+    opacity: @value;
+    -ms-filter: %(~"alpha(opacity=%s)", @value * 100);
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  LINK BEHAVIOR
+//--------------------------------------------------------------------------------------------------
+
+.link() {
+    &[href] {
+        text-decoration: underline;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link_hover() {
+    text-decoration: none;
+
+    &[href]:hover {
+        text-decoration: underline;
+    }
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  INLINE-BLOCK
+//--------------------------------------------------------------------------------------------------
+
+.inline-block() {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  FONT ICON
+//--------------------------------------------------------------------------------------------------
+//  @code  Char code
+//--------------------------------------------------------------------------------------------------
+
+.icon(@code) {
+    content: @code;
+    font-family: awesome;
+}
+
+
+//--------------------------------------------------------------------------------------------------
+//  SET BACKGROUND WITH IE FALLBACK
+//--------------------------------------------------------------------------------------------------
+//  @code  Char code
+//--------------------------------------------------------------------------------------------------
+
+.background(@color) {
+    background: @color;
+    background-image: none;
+    @argb: argb(@color);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})"; 
+    zoom: 1;
+}

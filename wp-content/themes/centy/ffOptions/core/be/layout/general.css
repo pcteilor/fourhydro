@@ -1,0 +1,20 @@
+.component-0 .use-custom{
+	display: none;
+}
+
+.add_image_button 	{
+	height: 28px !important;
+}
+
+.add_image_button_icon 	{
+	display: none;
+	margin: 2px 0 0 0;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding: 0 6px 0 0;
+	position: relative;
+	top: 3px;
+	background-image: url("images/media-button.png");
+	background-repeat: no-repeat;
+}

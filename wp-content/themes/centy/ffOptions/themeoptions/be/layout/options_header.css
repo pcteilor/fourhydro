@@ -1,0 +1,95 @@
+/* OPTIONS HEADER */
+
+.options_header	{
+	padding: 10px 10px;
+	margin: 20px 0 20px 3px;
+
+	background: rgb(249,249,249); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(249,249,249,1) 0%, rgba(236,236,236,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,249,249,1)), color-stop(100%,rgba(236,236,236,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(236,236,236,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(236,236,236,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(236,236,236,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(249,249,249,1) 0%,rgba(236,236,236,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+
+	border: 1px solid #DFDFDF;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.options_header #template_select 	{
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.options_header .button_secondary	{
+	float: left;
+	margin: 2px 5px 0 0;
+	
+}
+
+.options_header .button_primary	{
+	float: right;
+	margin: 1px 0 0 0 !important;
+}
+
+.options_header #template_select	{
+	font-size: 13px;
+	height: 25px;
+	margin: 0 10px 0 0;
+	padding: 4px;
+	width: 220px;
+}
+
+/* Buttons */
+
+.options_header .button	{
+	padding: 3px 10px;
+	border-radius: 99px;
+	-moz-border-radius: 99px;
+	-webkit-border-radius: 99px;
+	-o-border-radius: 99px;
+	line-height: 18px;
+	white-space: nowrap;
+}
+
+.options_header .button_primary	{
+	min-width: 80px;
+	text-align: center;
+	border-color: #298cba;
+	color: #ffffff;
+	font-weight: bold;
+	text-shadow: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	background: url("images/button-grad.png") repeat-x left top #fafafa !important;
+}
+
+.options_header .button_primary:hover	{
+	border-color: #13455b;
+    color: #eaf2fa;
+}
+
+.options_header .button_primary:active	{
+	background: url("images/button-grad-active.png") repeat-x left top #21759b;
+	color: #eaf2fa;
+	text-shadow: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.options_header .button_secondary	{
+	border: 1px solid #bbbbbb;
+	color: #464646;
+	text-shadow: 0 1px 0 #ffffff;
+	background: url('images/white-grad.png') repeat-x left top #fafafa;
+}
+
+.options_header .button_secondary:hover	{
+	border-color: #666666;
+	color: #000000;
+}
+
+.options_header .button_secondary:active	{
+	background: url("images/white-grad-active.png") repeat-x left top #eeeeee;
+}

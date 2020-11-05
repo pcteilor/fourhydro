@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `XXXTABLENAMEXXX` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `namespace` varchar(64) DEFAULT NULL,
+  `name` varchar(64) DEFAULT NULL,
+  `value` longtext,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `wholeoptionname` (`namespace`,`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

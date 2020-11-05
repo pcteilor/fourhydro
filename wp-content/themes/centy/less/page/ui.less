@@ -1,0 +1,590 @@
+
+
+/*==================================================================================================
+    BUTTON / SWITCH
+==================================================================================================*/
+
+button,
+[type="button"],
+[type="submit"],
+.ui_button,
+.ui_switch a {
+    .inline-block;
+    margin: 0 6px 6px 0;
+    border-width: 2px !important;
+    border-style: solid !important;
+    .border-radius(3px);
+    padding: 9px 14px 8px;
+    min-width: 19px;
+    font-size: 13px;
+    line-height: 24px !important;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    .transition(~"border @{speed}, color @{speed}, background @{speed}");
+}
+
+button:last-child,
+button:last-of-type,
+[type="button"]:last-child,
+[type="button"]:last-of-type,
+[type="submit"]:last-child,
+[type="submit"]:last-of-type,
+.ui_button:last-child,
+.ui_button:last-of-type {
+    margin-right: 0;
+}
+
+[type="submit"] {
+    min-width: 100px;
+}
+
+button,
+[type="button"],
+[type="submit"] {
+    height: 45px;
+}
+
+button.click,
+[type="button"].click,
+[type="submit"].click,
+.ui_button.click,
+.ui_switch a.click {
+    .transition(none);
+}
+
+.ui_button [class*="icon-"] + *,
+.ui_button * + [class*="icon-"],
+.ui_switch a [class*="icon-"] + *,
+.ui_switch a * + [class*="icon-"] {
+    margin-left: 10px;
+}
+
+.ui_button [class*="icon-"],
+.ui_switch [class*="icon-"] {
+    vertical-align: baseline;
+}
+
+button,
+[type="button"],
+[type="submit"],
+[data-ui_button_type="default"],
+.ui_button:not([data-ui_button_type]) {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+//--------------------------------------------------------------------------------------------------
+//  BUTTON
+//--------------------------------------------------------------------------------------------------
+//  @type      Button type
+//  @fallback  Fallback selector
+//--------------------------------------------------------------------------------------------------
+
+.button_render(@type: "default", @selector) {
+    .define(@state: "normal", @class: "") {
+        @a: e(@selector);
+        @b: e("@{class} ");
+        @{a}@{b} {
+            border-color: ~"@{theme_button_@{type}_@{state}_border} !important";
+            color: ~"@{theme_button_@{type}_@{state}_fg}";
+            background-color: ~"@{theme_button_@{type}_@{state}_bg}";
+        }
+    }
+    .define("normal");
+    .define("hover", ":hover");
+    .define("click", ".click");
+}
+
+.button(@type: "default", @selector: "") when (@selector = "") {
+    .button_render(@type, '.ui_button[data-ui_button_type="@{type}"]');
+}
+
+.button(@type: "default", @selector: "") when not (@selector = "") {
+    .button_render(@type, @selector);
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    DEFAULT
+--------------------------------------------------------------------------------------------------*/
+
+.button("default");
+.button("default", '.ui_button');
+.button("default", '[type="submit"]');
+.button("default", ".ui_switch li.active a");
+
+
+/*--------------------------------------------------------------------------------------------------
+    PLAIN
+--------------------------------------------------------------------------------------------------*/
+
+.button("plain");
+.button("plain", ".ui_switch a");
+
+
+/*--------------------------------------------------------------------------------------------------
+    INVERSE
+--------------------------------------------------------------------------------------------------*/
+
+.button("inverse");
+
+
+/*--------------------------------------------------------------------------------------------------
+    TRANSLUCENT
+--------------------------------------------------------------------------------------------------*/
+
+.button("translucent");
+
+
+/*==================================================================================================
+    SWITCH
+==================================================================================================*/
+
+.ui_switch li.active a {
+    cursor: default;
+}
+
+.ui_switch li.active a:hover {
+    border-color: @theme_button_default_normal_border !important;
+    color: @theme_button_default_normal_fg;
+    background-color: @theme_button_default_normal_bg;
+    .transition(none);
+}
+
+
+/*==================================================================================================
+    SELECT
+==================================================================================================*/
+
+.ui_select {
+    position: relative;
+    display: inline-block;
+    margin: 0 6px 6px 0;
+    height: 44px;
+    max-width: 280px;
+    z-index: 1000;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.ui_select + .ui_select {
+    z-index: 900;
+}
+
+.ui_select.open {
+    z-index: 1100;
+}
+
+.ui_select:last-child {
+    margin-right: 0;
+}
+
+.ui_select,
+.ui_select a {
+    text-align: left;
+}
+
+.ui_select [class*="icon-"] {
+    padding-right: 10px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    LABEL
+--------------------------------------------------------------------------------------------------*/
+
+.ui_select label {
+    display: block;
+    position: relative;
+    padding-right: 20px;
+    vertical-align: top;
+    border: 2px solid @theme_select_border;
+    .border-radius(3px);
+    padding: 8px 39px 8px 13px;
+    min-width: 19px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    color: @theme_select_fg;
+    cursor: pointer;
+    background-color: @theme_select_bg;
+    z-index: 1;
+    .transition(~"border @{speed}, color @{speed}, background @{speed}");
+}
+
+
+.ui_select label:after {
+    .icon("\f107");
+    .position(8px, null, 13px);
+    font-size: 16px;
+}
+
+.ui_select:hover label {
+    border-color: @theme_select_hover_border;
+    color: @theme_select_hover_fg;
+    background-color: @theme_select_hover_bg;
+}
+
+.ui_select.open label {
+    border-color: @theme_select_open_border;
+    color: @theme_select_open_fg;
+}
+
+.ui_select.open label,
+.ui_select ul {
+    background-color: @theme_select_open_bg;
+}
+
+.ui_select.open label:after {
+    content: "\f106";
+    top: 7px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    ITEMS
+--------------------------------------------------------------------------------------------------*/
+
+.ui_select ul {
+    overflow: hidden;
+    margin-top: -3px;
+    border: 3px solid @theme_select_open_border;
+    border-top: none;
+    .border-radius(~"0 0 3px 3px");
+    height: 0;
+    .opacity(0);
+    white-space: nowrap;
+    .box-sizing(border-box);
+    .transition(~"height @{speed}, margin @{speed}, opacity @{speed}");
+}
+
+.ui_select.ui_init ul {
+    position: absolute;
+    width: 100%;
+    white-space: normal;
+}
+
+.ui_select.open ul {
+    .opacity(1);
+    margin-top: -3px;
+}
+
+.ui_select ul.stop {
+    visibility: visible;
+    height: auto;
+}
+
+.ui_select a {
+    display: block;
+    padding: 3px 39px 3px 13px;
+    font-size: 14px;
+    line-height: 23px;
+    cursor: pointer;
+    color: @theme_select_item_fg;
+    background-color: @theme_select_item_bg;
+    .transition(~"color @{speed}, background @{speed}");
+}
+
+.ui_select li.last a {
+    padding-bottom: 17px;
+}
+
+.ui_select a:hover {
+    color: @theme_select_item_hover_fg;
+    background-color: @theme_select_item_hover_bg;
+}
+
+.ui_select .active a {
+    cursor: default !important;
+    color: @theme_select_item_active_fg;
+    background-color: @theme_select_item_active_bg;
+}
+
+
+/*==================================================================================================
+    ITEM FILTER
+==================================================================================================*/
+
+.ui_filter_items {
+    overflow: hidden;
+    margin: 0;
+}
+
+.ui_filter_items li {
+    position: static;
+}
+
+.ui_filter_more {
+    margin-top: 47px;
+    text-align: center;
+}
+
+.ui_filter_more .ui_button {
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+
+/*==================================================================================================
+    PRELOADER
+==================================================================================================*/
+
+.ui_preloader {
+    position: relative;
+}
+
+.ui_preloader:before {
+    .icon("\f013");
+    display: block;
+    .position(50%, 50%);
+    .size(64px, 64px);
+    margin: -32px 0 0 -32px;
+    font-size: 62px;
+    line-height: 64px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: default;
+    color: @theme_preloader_fg;
+    background-color: @theme_preloader_bg;
+    .animation(~"rotate_left 1.5s linear infinite");
+}
+
+[data-ui_preloader_position="absolute"] {
+    position: absolute;
+}
+
+.ui_preloader > * {
+    position: relative;
+}
+
+a.ui_preloader > img {
+    width: 100%;
+}
+
+/*==================================================================================================
+    SLIDER
+==================================================================================================*/
+
+#layout .ui_slider .bx-wrapper {
+    margin-bottom: 0;
+}
+
+#layout .ui_slider[data-ui_slider_pager="true"] .bx-wrapper {
+    margin-bottom: 40px;
+}
+
+#layout .ui_slider .bx-viewport {
+    left: 0;
+    border: none;
+    .box-shadow(none);
+    background: none;
+}
+
+#layout .ui_slider .bx-pager {
+    bottom: -43px;
+    text-align: left;
+}
+
+#layout .ui_slider .bx-pager a {
+    margin: 0 10px 10px 0;
+    .border-radius(50%);
+    .size(11px, 11px);
+    background-color: @theme_slider_bullet;
+    .transition(~"background @{speed}");
+}
+
+#layout .ui_slider .bx-pager a.active,
+#layout .ui_slider .bx-pager a:hover {
+    background-color: @theme_slider_bullet_hover;
+}
+
+#layout .ui_slider .bx-pager a.active {
+    cursor: default;
+}
+
+#layout .ui_slider .bx-prev,
+#layout .ui_slider .bx-next,
+.ui_slider_thumbnails .prev,
+.ui_slider_thumbnails .next {
+    .slider_arrows;
+    border-color: @theme_slider_arrow_border;
+    margin-top: -22px;
+    .size(44px, 44px);
+    line-height: 38px;
+    color: @theme_slider_arrow_hover_fg;
+    .transition(~"all @{speed}");
+
+    [data-ie="8"] & {
+        line-height: 37px;
+    }
+}
+
+.ui_slider_thumbnails .prev,
+.ui_slider_thumbnails .next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#layout .ui_slider .bx-prev,
+.ui_slider_thumbnails .prev {
+    .slider_arrow_left;
+    left: 0;
+}
+
+#layout .ui_slider .bx-next,
+.ui_slider_thumbnails .next {
+    .slider_arrow_right;
+    right: 0;
+}
+
+@media @query_wide {
+    .ui_slider_thumbnails .prev {
+        left: -68px;
+    }
+
+    .ui_slider_thumbnails .next {
+        right: -68px;
+    }
+}
+
+[data-boxed="true"] #layout .ui_slider .bx-prev,
+[data-boxed="true"] .ui_slider_thumbnails .prev {
+    left: 0;
+}
+
+[data-boxed="true"] #layout .ui_slider .bx-next,
+[data-boxed="true"] .ui_slider_thumbnails .next {
+    right: 0;
+}
+
+.ui_slider img {
+    background-color: #000;
+}
+
+.ui_slider p {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.ui_slider_fade(@prefix: "") {
+    @selector: e(~"@{prefix} ");
+
+    @{selector} .ui_slider .bx-prev,
+    @{selector} .ui_slider .bx-next {
+        .opacity(0) !important;
+    }
+
+    @{selector} .ui_slider .bx-wrapper:hover .bx-prev,
+    @{selector} .ui_slider .bx-wrapper:hover .bx-next {
+        .opacity(1) !important;
+    }
+}
+
+.ui_slider_thumbnails {
+    position: relative;
+}
+
+.ui_slider_thumbnails li {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 50px;
+    .transition(~"border-color @{speed}") !important;
+}
+
+.ui_slider_thumbnails li, 
+.ui_slider_thumbnails ul:hover li,
+.ui_slider_thumbnails ul:hover li.active {
+    border-top: 10px solid transparent;
+}
+
+.ui_slider_thumbnails li:hover,
+.ui_slider_thumbnails li.active,
+.ui_slider_thumbnails ul:hover li:hover,
+.ui_slider_thumbnails ul:hover li.active:hover { 
+    border-color: @theme_slider_thumbs_active;
+}
+
+.ui_slider_thumbnails a {
+    display: block;
+    background: @theme_slider_thumbs_bg;
+    cursor: pointer;
+}
+
+.ui_slider_thumbnails li.active a {
+    cursor: default;
+}
+
+.ui_slider_thumbnails img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/*==================================================================================================
+    LIGHTBOX
+==================================================================================================*/
+
+.fancybox-close,
+.fancybox-nav span {
+    .border-radius(3px);
+    .size(32px, 32px);
+    text-align: center;
+    color: @theme_lightbox_fg;
+    .background(@theme_lightbox_bg);
+    .transition(~"color @{speed}, background @{speed}");
+}
+
+.fancybox-close {
+    top: 25px;
+    right: 25px;
+}
+
+.fancybox-close:hover,
+.fancybox-nav span:hover {
+    color: @theme_lightbox_hover_fg;
+    .background(@theme_lightbox_hover_bg);
+}
+
+.fancybox-close:after {
+    .icon("\f00d");
+    line-height: 32px;
+}
+
+.fancybox-nav span:after {
+    line-height: 34px;
+}
+
+.fancybox-prev span:after {
+    .icon("\f053");
+}
+
+.fancybox-next span:after {
+    .icon("\f054");
+}
+
+
+/*==================================================================================================
+    MAP
+==================================================================================================*/
+
+.ui_map {
+    background-color: @theme_map;
+}
+
+.ui_map .marker {
+    .inline-block;
+    margin: 100% 0 0 -100%;
+}
+
+.ui_map .marker:before {
+    content: "\f041";
+    font-family: awesome;
+    font-size: 32px;
+    line-height: 32px;
+    color: @theme_map_marker;
+}

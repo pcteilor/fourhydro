@@ -1,0 +1,61 @@
+.component-option-gallery .gallery-data-wrapper{
+  overflow: hidden;
+}
+
+.gallery-image-holder{
+  display: block;
+}
+
+.gallery-image-holder .image,
+.component-option-gallery .custom_media_upload{
+  margin: 0 9px 9px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+  background: #f3f3f3;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top,#fff,#f3f3f3);
+  background-image: -moz-linear-gradient(top,#fff,#f3f3f3);
+  background-image: -ms-linear-gradient(top,#fff,#f3f3f3);
+  background-image: -o-linear-gradient(top,#fff,#f3f3f3);
+  background-image: linear-gradient(to bottom,#fff,#f3f3f3);
+	padding: 3px;
+}
+
+.gallery-image-holder .image {
+	border: 1px solid #bbbbbb;
+	float:left;
+}
+
+.gallery-image-holder .image img 	{
+	display: block;
+}
+
+.component-option-gallery .custom_media_upload{
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #bbbbbb;
+  float: left;
+
+  border-color: #999;
+  color: #222;
+  cursor: pointer;
+}
+
+.component-option-gallery .custom_media_upload span{
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  line-height: 70px;
+  height: 70px;
+  width: 70px;
+}
+

@@ -1,0 +1,39 @@
+.ff_options .submenu{
+    /*display: block;*/
+    display: none;
+    background: #FFF;
+    padding: 3px 0;
+}
+
+.ff_options .submenu-hidden{
+  display: none;
+}
+
+.ff_options .submenu-item{
+    padding: 3px 25px 3px 35px;
+  	color: #21759b;
+  	font-weight: normal;
+}
+
+.ff_options .submenu-item-active{
+  color:#333;
+  font-weight: bold;
+}
+
+.ff_options .submenu-item-default{
+  display: none;
+}
+
+.ff_options .submenu-item .submenu-item{
+    padding: 3px 25px 3px 25px;
+}
+
+.ff_options .submenu-item:hover{
+    background: #eaf2fa;
+}
+
+.ff_options .submenu-item span{
+    /* Each span = 1 lvl down */
+    display: block;
+    padding-left: 10px;
+}

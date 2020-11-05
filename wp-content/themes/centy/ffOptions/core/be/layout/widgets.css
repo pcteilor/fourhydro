@@ -1,0 +1,15 @@
+.widget-content select,
+.widget-content textarea,
+.widget-content input[type="text"]
+{
+width: 100%;
+}
+
+.widget-content .in-section-title{
+  color: #606060;
+}
+
+.widget-content .section-control-actions a:hover,
+.widget-content .section-control-actions span:hover{
+    overflow: visible;
+}

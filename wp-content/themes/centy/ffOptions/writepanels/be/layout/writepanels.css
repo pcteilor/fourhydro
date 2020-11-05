@@ -1,0 +1,86 @@
+.postbox .float-left{ float: left; overflow: hidden; }
+.postbox .clear{ clear: both; }
+
+.postbox .component-option-gallery label,
+.postbox .component-option-textarea label{
+  display: inline-block;
+  float: left;
+  min-width: 120px;
+}
+
+.postbox .component-option-gallery .gallery-data-wrapper,
+.postbox .component-option-textarea textarea{
+  width: 100%;
+  width: -moz-calc(100% - 130px); /* Firefox */
+  width: -webkit-calc(100% - 130px);/* WebKit */
+  width: -o-calc(100% - 130px);/* Opera */
+  width: calc(100% - 130px);/* Standard */
+  min-height: 50px;
+}
+
+.postbox .component-element input[type=text]{
+  width: 400px;
+  max-width: 100%;
+}
+
+.postbox .component-element .small[type=text]{
+  width: 40px;
+}
+
+
+.postbox .component-element-header{
+  clear:right;
+  overflow: visible;
+  height: 1px;
+
+  background: #fafafa;
+  padding-left: 20px;
+  border-top: 1px solid #f6f6f6;
+}
+
+.postbox .component-element-header h4 {
+  padding: 0 20px;
+  margin: 0;
+  width: 200px;
+  height: 38px;
+  line-height: 38px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.postbox .postbox-right > div{
+  display: none;
+}
+
+.postbox .component-element-description,
+.postbox .component-element p{
+  padding: 0;
+}
+
+.postbox .component-option-select label,
+.postbox .component-option-text label{
+  display: inline-block;
+  min-width: 120px;
+}
+
+.postbox .component-customcode textarea{
+  font-family: monospace;
+}
+
+.postbox .component-element-description p {
+    line-height: 20px;
+    color: #777777;
+    border: 1px solid #dddddd;
+    background: #fafafa;
+    padding: 4px 8px;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+
+
+

@@ -1,0 +1,1001 @@
+String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/\{(\d+)\}/g, function() { 
+        return args[arguments[1]];
+    }); 
+};
+DI = {
+	themePath	: '/personal/assets/LloydsRetail/',
+	authPolling : {
+		url : '/personal/ajax/phoneauthentication',
+		frequency : 3000,
+		timeoutInterval: 240000,
+		timeoutData: {status: 'timeout'}
+	},
+	pagination : {
+		path				: "/personal/assets/LloydsRetail/en-gb/images/sudobuttons/"
+	},
+	defaultCountryCode : "44",
+	session : {
+		duration : "600000" - 60000, // (milliseconds)  
+		gracePeriod : 40000, // (milliseconds) 40 secs
+		URLRedirect : '/link/autologoff',
+		URLRedirect_Marker : '/a/',
+		miniDuration : 120000, // (milliseconds) 2 mins
+		hideLogoutButton: false,  // changes for MCA BP4    
+        hideLogonButton: false // changes for MCA BP4
+		 
+	},
+	sessionUnauthenticated : {
+		duration : 1020000, // (milliseconds) 17 mins - gracePeriod
+		gracePeriod : 140000 // (milliseconds) 140 secs
+	},
+	sessionTerminate : {
+		url : '/personal/ajax/sessionTermination'
+	},
+	sessionNotLoggedIn : {
+		duration : 600000 // (milliseconds) 10 mins 
+	},
+	timedLogout : {
+		timerImg : "/wps/wcm/connect/22ccf30040a07c31b84bb9b36433efea/logout_timer_clock-3-1394031043.png?MOD=AJPERES&CACHEID=22ccf30040a07c31b84bb9b36433efea",
+		timerImgAlt : 'log off clock',
+		duration : 10000
+	},
+	exportStatement : {
+		closeOverlayInterval : 3000 
+	},
+	cookieRememberUserID : {
+		name: "lloyds_rememberUserID", // The name of the cookie
+		expires: 7,	// Number|Date expires (either an integer specifying the expiration date from now on in days or a Date object). negative values will delete cookie, if null or omitted, the cookie will be a session cookie and will not be retained when the the browser exits
+		path: '', // The value of the path atribute of the cookie (default: path of page that created the cookie)
+		domain: '', // The value of the domain attribute of the cookie (default: domain of page that created the cookie).
+		secure: false // If true, the secure attribute of the cookie will be set and the cookie transmission will require a secure protocol (like HTTPS).
+	},
+	ticker : {
+	    setDefaultActionPlayURL: "/personal/ajax/tikerStateSwitcher?tickerState=play",
+	    setDefaultActionPauseURL: "/personal/ajax/tikerStateSwitcher?tickerState=pause",
+	    playButtonURL: "/wps/wcm/connect/80cea30040a078dea72aa7b36433efea/ticker_play-3-1394031015.png?MOD=AJPERES&CACHEID=80cea30040a078dea72aa7b36433efea",
+	    pauseButtonURL: "/wps/wcm/connect/ffe82f0040a07d55be2bbfb36433efea/ticker_pause-3-1394031005.png?MOD=AJPERES&CACHEID=ffe82f0040a07d55be2bbfb36433efea",
+	    previousButtonURL: "/wps/wcm/connect/7159ef0040a074c5915291b36433efea/ticker_prev-3-1394031024.png?MOD=AJPERES&CACHEID=7159ef0040a074c5915291b36433efea",
+	    nextButtonURL: "/wps/wcm/connect/60d7988040e6e1cbab19bb6acde6ea94/ticker_next-3-1394030996.png?MOD=AJPERES&CACHEID=60d7988040e6e1cbab19bb6acde6ea94"   
+	},
+	flashObj : {
+		flashObjImg : '/personal/assets/LloydsRetail/img/shim.gif'
+	},
+	stpLoanCalculatorButton : {
+		amount	: {
+			increase : 'Increase loan amount',
+			decrease : 'Decrease loan amount'
+		},
+		months	:	{
+			increase : 'Increase months',
+			decrease : 'Decrease months'
+		}
+	},
+	dateFormats:{
+		longDDMY:"DD, d MM yy",
+		shortDDMY:"D, d M yy",
+		longDMY:"d MM yy",
+		shortDMY:"d M yy",
+		longMY:"MM yy",
+		shortMY:"M yy",
+		shortHyphDMY:"dd-mm-y",
+		longHyphDMY:"dd-mm-yy",
+		verbHyphDMY:"d-M-yy",
+		shortHyphMY:"mm-y",
+		longHyphMY:"mm-yy",
+		verbHyphMY:"M-yy"
+	},
+	
+	paperlessCorrespondence: {
+		yourInbox: {
+			archiveImage : {
+				enabled  : "/personal/assets/LloydsRetail/en-gb/images/sudobuttons/paperless_archive_active.png",
+                disabled : "/personal/assets/LloydsRetail/en-gb/images/sudobuttons/paperless_archive_disabled.png"
+
+			},
+			deleteImage  : {
+				enabled  : "/personal/assets/LloydsRetail/en-gb/images/sudobuttons/paperless_delete_active.png",
+                        disabled : "/personal/assets/LloydsRetail/en-gb/images/sudobuttons/paperless_delete_disabled.png"
+			}
+		}
+	},
+	
+	lang		: {
+		newWindow : {
+			info: "Opens in a new window"
+		},	
+		quickTransfer : {
+			triggerClosedText	: "Make a quick transfer",
+			triggerOpenText		: "Close quick transfer",
+			defaultHeadingText	: "Transfer money to another account"
+		},
+		miniStatement : {
+			triggerOpenText 	: "Close mini statement",
+			loadErrorMsgStub 	: "Sorry, our system is currently unavailable, please try again later."
+		},
+		iban : {
+			triggerOpenText		: 'Hide IBAN / BIC',
+			loadErrorMsgStub	: '/htmlTemplates/stubs/s_iban_nic_error.shtml'
+		},
+			scottishWidows : {
+			loadErrorMsgText 	: "Sorry, our system is currently unavailable, please try again later."
+		},		
+		help : {
+			closeHTMLTitle		: "Close help"
+		},
+		sheetChooser : {
+			currencyUnits		: "£",
+			singleSheetCost		: "5",
+			multipleSheetCost	: "10"
+		},
+		datePicker : {
+			dayNamesLong		: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+			dayNamesMin			: ["S","M","T","W","T","F","S"],
+			monthNames			: ["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sep","Oct","Nov","Dec"],
+			buttonImage			: "/wps/wcm/connect/5719400040a076829ab29bb36433efea/calendar-2.png?MOD=AJPERES&CACHEID=5719400040a076829ab29bb36433efea",
+			prevText			: "Prev",
+			nextText			: "Next",
+			buttonText			: "Click to choose date"
+		},
+		addressFinder : {
+			postCodeFinderStub : '/personal/ajax/s7postcodefinder',
+			addressPickerStub : '/personal/ajax/s8addresspicker',
+			enterAddressManuallyStub : '/personal/ajax/s9addressmanualentry',
+			addressPickerStubData :'/personal/ajax/addressPicker',
+			addressPickerCompletedStub : '/personal/ajax/s11addresspickercompleted'
+		},
+		personalDetailsAddressFinder : {
+			postCodeFinderStub : '/personal/ajax/postcodeFinder',
+			addressPickerStub : '/personal/ajax/displayAddressPicker',
+			enterAddressManuallyStub : '/personal/ajax/addressmanualentry',
+			addressPickerCompletedStub : '/personal/ajax/addressLineByFinder'
+		},
+		searchDateRange : {
+			rangeText			: "Selected search period: ",
+			rangeTextSeparator	: " to "
+		},
+		overlay : {
+			loadError			: "Sorry we could not retrieve the content you wanted at this time.",
+			closeLink			: "Close overlay",
+			openTriggerTitle	: "This link will open an overlay",
+			closeTriggerTitle	: "- this will close the overlay"
+		},
+		
+		accordion : {
+			trigger				: "Use this link to show or hide more information."
+		},
+		showHide : {
+			trigger				: "Use this link to show or hide more information."
+		},
+		
+		session : {
+			warningTitle		: "You are about to be logged out",
+			warningMsg			: "We haven't seen you in the last {0} minutes, so for your security we will log you out of your internet banking session in the next few seconds unless you wish to continue using internet banking?",
+			logoutButton		: "/wps/wcm/connect/a201290040a07de1811381b36433efea/log_out_now_lo-4-1378828526.png?MOD=AJPERES&CACHEID=a201290040a07de1811381b36433efea",
+			logoutAlt			: "Log out now",
+			logoutLink			: "/personal/link/loggedoff",
+			loginButton			: "/personal/assets/LloydsRetail/en-gb/images/buttons/log_back_into_account.png",
+			loginAlt			: "Login back to your account",
+			loginLink			: "#",
+			continueButton		: "/wps/wcm/connect/0129fc8040a079e2ac7aadb36433efea/continue_internet_banking-4-1378828521.png?MOD=AJPERES&CACHEID=0129fc8040a079e2ac7aadb36433efea",
+			continueAlt			: "Continue Internet Banking",
+			continueLink		: "/personal/ping/sessionping.jspf",
+			loggedOutTitle		: "You have been logged out",
+			loggedOutMsgText	: "Because we haven't seen you in the last {0} minutes, for your security we have logged you out of your internet banking session.",
+			loggedOutButton		: "/wps/wcm/connect/2d13b38040a07ab0b0c3b1b36433efea/sessionloggedOutButton-5-1394030828.png?MOD=AJPERES&CACHEID=2d13b38040a07ab0b0c3b1b36433efea",
+			loggedOutAlt		: "Log-in to Internet Banking",
+			loggedOutLink		: '/personal/a/logon/loginIB.jsp'
+		},
+		sessionUnauthenticated : {
+			warningTitle		: "You are about to be timed out",
+			warningMsg			: "We haven't seen you in the last {0} minutes, so for your security we will reset your session in the next few seconds unless you wish to continue using this application?", // {0} is replaced with the duration (rounded down to the nearest minute) defined in DI.sessionUnauthenticated
+			resetButton		    : "/personal/assets/LloydsRetail/en-gb/images/buttons/reset_now_lo.png",
+			resetAlt			: "Reset now",
+			resetLink			: "",
+			continueButton		: "/personal/assets/LloydsRetail/en-gb/images/buttons/continue_with_application.png",
+			continueAlt			: "Continue with application",
+			continueLink		: "/personal/ping/sessionping.jspf",
+			timedOutTitle		: "You have been timed out",
+			timedOutMsg		    : "Because we haven't seen you in the last {0} minutes, for your security we have reset your session.", // {0} is replaced with the sum of the duration and grace period (rounded up to the nearest minute) defined in DI.sessionUnauthenticated
+			startAgainButton    : "/personal/assets/LloydsRetail/en-gb/images/buttons/start_again.png",
+			startAgainAlt		: "Start again",
+			startAgainLink		: ""
+		},
+		sessionNotLoggedIn : {
+			loggedOutTitle		: "You have not logged on in time",
+			loggedOutMsgText	: "Because we haven't seen you in the last {0} minutes, for your security you must start the login process again.",
+			loggedOutButton		: "/wps/wcm/connect/611f950040a07947a952a9b36433efea/log_back_into_account-4.png?MOD=AJPERES&CACHEID=611f950040a07947a952a9b36433efea",
+			loggedOutAlt		: "Log back into your account",
+			loggedOutLink		: '/personal/a/logon/loginIB.jsp'
+		},
+		timedLogout : {
+			logoutMsg			: "Just before you go, this might be of interest. You&#8217;ll be logged off in",
+			logoutButton		: "/wps/wcm/connect/4abefa8040e6e2e7ab61bb6acde6ea94/log_out_now_timed-3-1394031033.png?MOD=AJPERES&CACHEID=4abefa8040e6e2e7ab61bb6acde6ea94",
+			logoutAlt			: "&#8216;Log out now&#8217;"
+		},
+		employmentShowHide : {
+			validIdentifier		: 'employ_'
+		},
+		manageTransfers : {
+			fromText			: "from here...",
+			toText				: "...to here"
+		},		
+		validation: {
+			otherValue			: '-9999',
+			yesValue			: '-9999',
+			yesRegexValue		: /\b0*999[0-9]\b/,
+			checkedValue		: false
+		},
+		converter : {
+			defaultTextCash		: "Select country (currency)",
+			defaultTextCheque	: "Select currency"
+		},
+		beneficiariesChooser : {
+			selectionCountValue : 4,
+			selectionRemainingMsg : "You can select another {0} beneficiaries.",
+			selectionMaxReachedMsg : "You can't add additional beneficiaries."
+		},
+		textAlertsDailyFrequency : {
+			defaultValue		: '-',
+			dailyValue			: 'Daily',
+			notApplicableValue	: 'not_applicable'
+		},
+		allowDecimalsForCurrency: {
+			warningMessage : "&lt;Decimal place warning message&gt;"			
+		},
+		autoTotalModifiers: {
+			bulkPaymentCalculator: {
+				contingency: 0.25,
+				grandTotal: 1.25
+			}
+		},
+		accountSummary: {
+			ajaxUpdateInterval: 5000,
+			ajaxErrorText: 'Sorry we could not retrieve the content you wanted at this time.'
+		},
+		selectAccount : {
+			dropDown : {
+				id				: 'slctBusiness',
+				defaultText		: 'Select business...'
+			},
+			formField : {
+				validateClass	: 'required[msg:validateSelect]',
+				validationName	: 'selectBusiness'
+			}
+		},
+		previousAddressRepeater: {
+			previousAddress: '/personal/ajax/previousAddressFragment',
+			additionalPreviousAddress : '/personal/ajax/additionalAddressFragment'
+		},
+		printWin: {
+			printLinkTitle		: 'This link will open the Print dialog'
+		},
+		iOS : {
+			scrollGestureMessage : "Use the two-finger scrolling gesture to navigate the following content:"
+		},
+		investmentsFund: {
+			ajaxErrorText: "Sorry we could not retrieve the content you wanted at this time."
+		},
+		ajaxFormContent: {
+			ajaxErrorText: 'Sorry we could not retrieve the content you wanted at this time.'
+		},
+		managePaperStatements: {
+			selectAll: {
+				inputName : "chkSelectAll",
+				labelText : "Select all"
+			}
+		},
+		ajaxLoader: {
+			errorMessage: 'Sorry!<br />We couldn\'t retrieve your information at this moment.<br />Please try again later.',
+			waitMessage: 'Please wait'
+		},
+		smartReward : {
+			hubPageUrl : "/personal/link/lp_SpendingRewardsHubPage",
+			findOutMoreText : "Find out more",
+			availableCashbackOffers : {
+			notAvailable: "???common/clientmessages/properties:notAvailable???",
+			
+				offerCount : {
+					accountSummaryMax : 7,
+					noOffersMessage : "You have no Everyday Offers. To help get new offers use your Lloyds Bank personal debit or credit card."
+					},
+				ajax : {
+					url: "/personal/ajax/cashBackSpendingReward",
+					loading: "???common/clientmessages/properties:ajaxLoading???",
+					errors: "We can't load your details at the moment. Please try again later"
+				},
+				miniHub: {
+					ajax: {
+						url: "/personal/ajax/miniHubSpendingRew",
+						loading: "Your Smart Rewards offers are loading. Please wait.",
+						errors: "We can't load your details at the moment. Please try again later.",
+						notAvailable: "We can't load your details at the moment. Please try again later.",
+						noOffersMessage : "Currently, you have no offers available."
+												
+					}
+				
+				}
+			},
+			recentlyEarnedCashback : {
+				ajax : {
+					loadingText : "Loading...",
+					errorText   : "We can't load your details at the moment. Please try again later"
+				},
+				trigger : {
+					closedText : "Close recently earned cashback",
+					openText   : "View recently earned cashback"
+				}
+			},
+			
+			cashbackOffers : {
+				ajax : {
+					url: "/personal/ajax/statementSpendingReward",
+					errorText   : "We can't activate this offer right now. Please try again later.",
+					loadingText : "???common/clientmessages/properties:cashbackOffersLoadingText???",
+					loadingTextShort : "Loading..."
+					
+				},
+				status : {
+					"new" : {
+						triggerImgSrc:"/personal/assets/LloydsRetail/img/opt-in/optin-click-med.png",
+						triggerText : "Click to select",
+						headingText : "???common/clientmessages/properties:newHeadingText???"
+					},
+					"active" : {
+						triggerImgSrc: "/personal/assets/LloydsRetail/img/opt-in/optin-shop-med.png",
+						triggerText : "Shop",
+						headingText : "Activated"
+					},
+					"redeemed" : {
+						triggerImgSrc: "/personal/assets/LloydsRetail/img/opt-in/optin-cash-med.png",
+						triggerText : "Enjoy",
+						headingText : "Offer claimed"
+					}
+					},
+				delight: {
+					ajax: {
+						url: ""
+					},
+					interstitial: {
+						success: "Every month, we're treating thousands of our customers to a lovely surprise."
+					},
+					terms: {
+						url: 'http://www.lloydsbank.com/legal/its-on-us.asp',
+						help: "We recommend you print or download the 'Terms and conditions' for your records.",
+						label: "I have read and agreed to these Terms &amp; Conditions",
+						link: "Terms &amp; Conditions"
+					},
+					footer: '<p><a class="newwin" href="http://www.lloydsbank.com/online-banking/benefits-online-banking/everyday-offers/faqs.asp" title="Frequently asked questions (FAQs)"   >Frequently asked questions (FAQs)</a></p>',
+					activatebtn: "/personal/assets/LloydsRetail/en-gb/images/buttons/activate.png",
+					activatealt: 'Click to activate'
+				}
+			},
+			plusMoreImage : {
+				path : "/personal/assets/LloydsRetail/en-gb/images/optin/plus_more.png",
+				alt  : "Plus More ..."
+			},
+			statementsOverlay : {
+				closeLinkText : "Close",
+				footnotesText : '<p><font color="#000000">Offer is only valid when you pay with your Lloyds Bank&#160;debit or credit card. Terms of service as detailed in&#160;<a class="newwin" href="http://www.lloydsbank.com/online-banking/benefits-online-banking/everyday-offers/faqs.asp" title="Frequently asked questions (FAQs)"   >Frequently asked questions (FAQs)</a>&#160;apply to this offer.</font></p>',
+							viewAllLink   : {
+					path : "/personal/assets/LloydsRetail/en-gb/images/buttons/view_all_offers.png",
+					alt  : "View all offers"
+				}
+			},
+			availableOffersHub : {
+				message: {
+					emptyList   : "This is an empty list warning, derived from the data island JSON object.",
+					viewDetails : "View details.",
+					ajaxloading : "Your offers details are loading.  Please wait.",
+					ajaxfailure : "Sorry. For technical reasons, we couldn't activate this offer. Please try again later.",
+					ajaxTermsIncomplete: "You need to agree to the terms and conditions"
+				
+				},
+				status: {
+					activated: "Activated"
+				
+				}
+				
+				
+			}
+	     },
+	     bankFinder : {
+	     ajax : {
+				url: "/personal/ajax/fetchBankData"
+			},
+	     	isFilterResults : true,
+			isPagedResults : true,
+			numSearchItemsToDisplay : 10,
+			numBrowseItemsToDisplay : 10,
+			bankNameInputText : "Please enter your bank's name here.",
+			bankFinderURL : '/personal/ajax/notTheRightBank',
+			bankData : '/personal/ajax/retrieveBankResults',
+			bankResults : '/personal/ajax/fetchBankData',
+			bankAddressData : '/personal/ajax/retrieveBankResults',
+			bankNoResultsText : "Sorry, you've entered an invalid character or fewer than 3 characters (please see Help &amp; Support on the top-right of this page for how to search for your bank's name). Please try again.",
+			previousImgEnabled : "/wps/wcm/connect/e616a88040a0795fa9daa9b36433efea/previous_sudo-6-1394030942.png?MOD=AJPERES&CACHEID=e616a88040a0795fa9daa9b36433efea",
+			previousImgDisabled : "/wps/wcm/connect/7c0efb0040a07981aa92abb36433efea/previous_inactive_sudo-6-1394030933.png?MOD=AJPERES&CACHEID=7c0efb0040a07981aa92abb36433efea",
+			nextImgEnabled : "/wps/wcm/connect/384f338040a07d7dbef3bfb36433efea/next_sudo-6-1394030924.png?MOD=AJPERES&CACHEID=384f338040a07d7dbef3bfb36433efea",
+			nextImgDisabled : "/wps/wcm/connect/04bf000040a074858fe28fb36433efea/next_inactive_sudo-6-1394030916.png?MOD=AJPERES&CACHEID=04bf000040a074858fe28fb36433efea"
+			
+		},
+		countryLookup : {
+			isFilterResults : true,
+			numSearchItemsToDisplay : 10,
+			countryInputText: 'Type here to begin your search',
+			countryData : '/htmlTemplates/stubs/s_countries_data.json',
+			countryResults : "/personal/ajax/fetchCountryResult",
+			countryNoResultsText : 'No results found...'
+		},
+		miData : {
+			inProgress : "#inprogress",
+			notStarted	: "#notstarted",
+			ajax : {
+				url: "/personal/ajax/downloadMIData"	
+			},
+			navigation : { // set by build
+				success: "/personal/a/statement/desktop/downloadmidata/midataresults.jsp",
+				error: "/personal/a/common/ErrorPageLoggedIn.jsp"   
+			}
+		},
+		
+	     desktopPopupMessage : "This link will take you to a desktop page",
+	     repeatableElements : {
+			maxReached : 'You have reached the maximum number of entries'
+		},
+		repeatableLoanElements : {
+			maxReached : 'You have reached the maximum number of loan purpose choices'
+		},
+	     fixedTermDeposit : {
+			dropDownReceiverData : "/personal/ajax/dropDownDataForFTD"
+		},
+	     
+		errorMessages : {
+			defaultGlobalErrorMessage : [
+				"There is a problem with some of the information you have submitted.<br/>Please amend the fields highlighted below and re-submit this form."
+			],
+			defaultFormFieldErrorMessages : {
+			    validateNumberInRange : 'Number is not in expected range',						
+				validateLoanMinMax: 'Loan amout is out of expected range.',
+				validateInputLength: "The value entered was not of the expected length.",
+				validateAccountNumber: "Invalid account number.",
+				validateCardNumber: "Invalid card number.",
+				validateAlphaNumeric: "This field should contain letters and numbers only.",
+				validateExtendedAlphaNumeric: "Please use valid characters (letters, numbers, spaces and any of the following :$_@.&+=/#?:'%() ).",
+				validateAlphaNumericWithHypensAndSpaces: "Please use valid characters (letters, numbers, hyphens, spaces)",
+				validateAlphaNumericWithSpaces: "Please use valid characters (letters, numbers, spaces).",
+				validateAlphaNumericWithSpecialChars: "Please use valid characters (letters, numbers, spaces and any of the following @&+-',./_ )",
+				validateAlphaNumericSpecialCharsWithAmpersand: "Please use valid characters (letters, numbers, spaces and any of the following @&amp;+-',./_ )", 
+				validateAlphaNumericSpecialCharsWithoutAmpersand: "Please use valid characters (letters, numbers, spaces and any of the following @+-',./_ )",
+				validateAlphaWithSpaces: "Please ensure that the value you have entered contains letters or spaces",   
+				validateContainsAlphaAndNumeric: "Please ensure that the value you have entered contains both letters and numbers",
+				validateSwiftCompliantAddress: "Please use valid characters (letters, numbers, spaces and any of the following @&amp;+-',./_ )",
+				validateNumericPercentage: "Please enter the correct value (For eg. 121.13)",
+				validateInputForCountry: "Please enter a valid country name",
+				validateCreditCard: "Invalid card number.",
+				cardSecurityCode: "Invalid card security code.",
+				validateDateRestriction: "Invalid date.",
+				validateDateTimeRange: function(validationRoutineDetails) {
+					var maxDate, minDate;				
+
+					function defaultFormatter(dt){
+						var dateParts = dt.split("-"),
+							dateObj = new Date(dateParts[0],dateParts[1]-1,dateParts[2]),
+							format;
+							
+						if(validationRoutineDetails.dateFormat && typeof($.datepicker)!='undefined'){
+							format = DI.dateFormats[validationRoutineDetails.dateFormat];
+						}
+						
+						return (format)?$.datepicker.formatDate(format,dateObj):dateParts[2] + '-' + dateParts[1] + '-' + dateParts[0];
+					}
+					if (validationRoutineDetails.maxDate) {
+						maxDate = defaultFormatter(validationRoutineDetails.maxDate);
+					}
+					if (validationRoutineDetails.minDate) {
+						minDate = defaultFormatter(validationRoutineDetails.minDate);
+					}
+					if (maxDate && minDate) {
+						return "Please ensure that the date you have entered is between {0} and {1}.".format(minDate, maxDate);
+					}
+					else if (maxDate && (minDate === undefined)) {
+						return "Please ensure that the date you have entered is earlier than {0}.".format(maxDate);
+					}
+					else if (minDate && (maxDate === undefined)) {
+						return "Please ensure that the date you have entered is later than {0}.".format(minDate);
+					}
+					else {
+						return "Invalid date. Please ensure that the date you have entered is within the given range.";
+					}
+				},
+				validateDoubleRange: function(validationRoutineDetails) {
+					if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max !== undefined) && (validationRoutineDetails.multipleOf === undefined)) {
+						return "Please ensure that number you have entered has two decimal places and is between £{0} and £{1}.".format(validationRoutineDetails.min, validationRoutineDetails.max);
+					}
+					else if ((validationRoutineDetails.min === undefined) && (validationRoutineDetails.min !== undefined) && (validationRoutineDetails.multipleOf === undefined)) {
+						return "Please ensure that the number you have entered has two decimal places and is equal or less than £{0}.".format(validationRoutineDetails.max);
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max === undefined) && (validationRoutineDetails.multipleOf === undefined)) {
+						return "Please ensure that the number you have entered has two decimal places and is equal or greater than £{0}.".format(validationRoutineDetails.min);
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max === undefined) && (validationRoutineDetails.multipleOf !== undefined)) {
+						return "Please ensure that the number you have entered has two decimal places, is a multiple of {0} and is equal or greater than £{1}.".format(validationRoutineDetails.multipleOf, validationRoutineDetails.min);
+					}
+					else if ((validationRoutineDetails.min === undefined) && (validationRoutineDetails.max !== undefined) && (validationRoutineDetails.multipleOf !== undefined)) {
+						return "Please ensure that the number you have entered has two decimal places, is a multiple of {0} and is equal or less than £{1}.".format(validationRoutineDetails.multipleOf, validationRoutineDetails.max);
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max !== undefined) && (validationRoutineDetails.multipleOf !== undefined)) {
+						return "Please ensure that the number you have entered has two decimal places, is a multiple of {0} and is between £{1} and £{2}.".format(validationRoutineDetails.mutipleOf, validationRoutineDetails.min, validationRoutineDetails.max);
+					}
+					else {
+						return "Please ensure that number you have entered has two decimal places and falls within the given range.";
+					}
+				},
+				validateEmail: "Invalid email address.",
+				validateEmailAddressOab: "You have entered an invalid email address. Please try again, ensuring that your address features at least one '.' (full stop) and one '@' character. A valid email address should also include at least one character before and after the '@' symbol, and at least one character after the '.' (full stop).",
+				validateLength: function(validationRoutineDetails) {
+					if (validationRoutineDetails.fixed) {
+						return "Please ensure that the length of your input is exactly {0} characters in length.".format(validationRoutineDetails.fixed);
+					}
+					if (validationRoutineDetails.max && validationRoutineDetails.min) {
+						return "Please ensure that the length of your input is between {0} and {1} characters in length.".format(validationRoutineDetails.min,validationRoutineDetails.max);
+					}
+					else if (validationRoutineDetails.max && (validationRoutineDetails.min === undefined)) {
+						return "Please ensure that the length of your input is less than {0} characters in length.".format(parseInt(validationRoutineDetails.max, 10) + 1);
+					}
+					else if (validationRoutineDetails.min && (validationRoutineDetails.max === undefined)) {
+						return "Please ensure that the length of your input is greater than {0} characters in length.".format(parseInt(validationRoutineDetails.min, 10) - 1);
+					}
+					else if (validationRoutineDetails.range) {
+						return "Please ensure that the length of your input is within the correct range: {0}".format(validationRoutineDetails.range);								
+					}
+					else {
+						return "Please ensure that the length of your input is within the correct range.";
+					}
+				},
+				validateLongRange: "Please ensure that the number you have entered falls within the given range.",
+				validatePhoneNumber: "Invalid phone number.",
+				validateFullPhoneNumber: function(opts) {
+					if (opts.numberHasAsterisk) {
+						return 'If you\'re adding or amending a phone number, please enter the complete number, without asterisks (*).';
+					} else {
+						return "Invalid phone number.";
+					}
+				},
+				validateFullPhoneNumberWithPossibleSmsReminder: "You have entered an invalid phone number. Please try again and ensure that you enter between 5 and 20 characters. If you've ticked the 'Receive SMS' box, you should enter a mobile phone number.",
+				validatePostcode: function(opts) {
+					if (opts.addressFinder) {
+						return "Press the 'find address' button to proceed";
+					} else {
+						return 'Invalid postcode.';
+					}
+				},
+				validateRegExp: "Invalid input.",
+				validateSortcode: "Invalid sort code.",
+				validateBankingGroupSortCode: "Invalid Banking Group sort code.",
+				required: "Please enter a value.",
+				requiredWithCheckbox: "Please enter a value.",
+				requiredSelect: 'Please select a value.',
+				requiredWithoutCheckbox: 'Please enter a value',
+				requiredWithPrecedingCheckbox: "Please enter a value.",
+				requiredWithBalanceAlert: "Please enter a value.",
+				requiredWithBusinessSortcode: "Please enter a value",
+				requiredWithSelectedValues: "Please enter a value",	
+				requiredWithValue: 'Please enter a value',		
+				validDate: "Invalid date.",
+				validateDatesRelativeRange: "Please ensure that the dates you have entered are correct.",
+				amountEqualTo: "Please ensure that number you have entered has two decimal places.",
+				amountBetween: "Please ensure the 'From' amount is less than the 'To' amount.",
+				cardNumberAndSecurityCode: "Please ensure that the card number and security code you have entered are correct.",
+				accessCode: "Please ensure that the access code you have entered is correct.",
+				validateNumeric: "Please ensure that the value you have entered contains numbers only.",
+				validateNumeric: function(validationRoutineDetails) {
+					if (validationRoutineDetails.formatValid !== undefined && validationRoutineDetails.formatValid === false) {
+						return "Please ensure that the value you have entered contains numbers only.";
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max !== undefined)) {
+						return 'Please ensure that value you have entered is between ' + validationRoutineDetails.min + ' and ' + validationRoutineDetails.max + '.';
+					}
+					else if ((validationRoutineDetails.min === undefined) && (validationRoutineDetails.min !== undefined)) {
+						return 'Please ensure that the value you have entered is equal to or less than ' + validationRoutineDetails.max + '.';
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max === undefined)) {
+						return 'Please ensure that the value you have entered is equal to or greater than ' + validationRoutineDetails.min + '.';								
+					}
+					else {
+						return 'Please ensure that you have entered a valid number.';
+					}
+				},
+				validateGreaterThanZero: 'Please ensure that the value you have entered is greater than zero.',
+				validateNumericWithSpaces: "Please ensure that the value you have entered contains numbers and spaces only.",
+				validateNumericWithSpacesAndPlus: 'Please ensure that the value you have entered contains numbers and spaces only, "+" is allowed only once as the first character.',
+				validateAlpha: "Please ensure that the value you have entered contains letters only.",
+				quickTransfer: function(opts){
+				    if (opts.isText) {
+				    	return "???common/clientmessages/properties:quickTransfer1???".format(opts.min, opts.max);
+				      } else {
+    				    return "???common/clientmessages/properties:quickTransfer2???";
+				    }
+				},
+				validateReferenceNumber:"Please insert a valid reference number",
+				validateBusinessApplicantString: "Please use valid characters (letters, numbers, spaces and any of the following :$_@.&+=/#?:%() )",
+				validateName:"Please enter a valid name.",
+				specificDateWithRadio: function(validationRoutineDetails) {
+					var dateParts, maxDate, minDate;
+					if (validationRoutineDetails.maxDate) {
+						dateParts = validationRoutineDetails.maxDate.split("-");
+						maxDate = dateParts[2] + "-" + dateParts[1] + "-" + dateParts[0];
+					}
+					if (validationRoutineDetails.minDate) {
+						dateParts = validationRoutineDetails.minDate.split("-");
+						minDate = dateParts[2] + "-" + dateParts[1] + "-" + dateParts[0];
+					}
+					if (maxDate && minDate) {
+						return "Please ensure that the date you have entered is between {0} and {1}.".format(minDate, maxDate);
+					}
+					else if (maxDate && (minDate === undefined)) {
+						return "Please ensure that the date you have entered is earlier than {0}.".format(maxDate);
+					}
+					else if (minDate && (maxDate === undefined)) {
+						return "Please ensure that the date you have entered is later than {0}.".format(minDate);
+					}
+					else {
+						return "Invalid date. Please ensure that the date you have entered is within the given range.";
+					}
+				},
+				specificAmountWithRadio: function(validationRoutineDetails) {
+					if (validationRoutineDetails.max && validationRoutineDetails.min) {
+						return "Please enter a valid amount between £{0} and £{1}.".format(validationRoutineDetails.min, validationRoutineDetails.max);
+					}
+					else {
+						return "Please enter a valid amount to transfer.";
+					}
+				},
+				specificBicSwiftWithRadio: "Please enter a value",
+				requiredWithRadio: "Please enter a value",
+				validateDateRangeIsInRange: "Entered date range is not between 1st July 2002 and today's date.",
+				validateDatesAreInRange: function( params ) {
+					if ( params.minDate && params.maxDate ) {
+						return "One date is between {0} and {1} and the other date is outside this range".format(params.minDate, params.maxDate);
+					} else {
+						return "One date is between 1st July 2002 and today's date and another date is outside of this range";
+					}
+				},
+				validateDateRange: function(validationRoutineDetails) {
+					if (validationRoutineDetails.maxRangeInMonths !== undefined) {
+						return "Entered date range is more than {0} months.".format(validationRoutineDetails.maxRangeInMonths);
+					}
+					else {
+						return "Entered date range is more than the stated maximum number of months.";
+					}
+				},
+				validateDateRangeOrder: "From date cannot be after To date.",
+				isaAmountWithRadio: function(validationRoutineDetails) {
+					if (validationRoutineDetails.max && validationRoutineDetails.min) {
+						return "Please enter a valid amount between £{0} and £{1}.".format(validationRoutineDetails.min, validationRoutineDetails.max);
+					}
+					else {
+						return "Please enter a valid amount.";
+					}
+				},
+				timeYearsMonths: function(validationRoutineDetails){
+					if (validationRoutineDetails.min || validationRoutineDetails.max) {
+						if (validationRoutineDetails.min && validationRoutineDetails.max) {
+							return 'Please ensure that the total time you have entered is between ' + validationRoutineDetails.min + ' and ' + validationRoutineDetails.max + ' years. Note that the number of months entered cannot be more than 11.';
+						} else {
+							if (validationRoutineDetails.min) {
+								return 'Please ensure that total time entered is more than ' + validationRoutineDetails.min + ' years. Note that the number of months entered cannot be more than 11.';
+							} else {
+								return 'Please ensure that total time entered is less than ' + validationRoutineDetails.max + ' years. Note that the number of months entered cannot be more than 11.';
+							}
+						}
+					} else {
+						return "Please ensure that the values you have entered are correct. Note that the number of months entered cannot be more than 11.";
+					}
+				},
+				timeYearsMonthsNotBothZero: function(validationRoutineDetails){
+					if (validationRoutineDetails.min || validationRoutineDetails.max) {
+						if (validationRoutineDetails.min && validationRoutineDetails.max) {
+							return 'Please ensure that the total time you have entered is between ' + validationRoutineDetails.min + ' and ' + validationRoutineDetails.max + ' years. Note that the number of months entered cannot be more than 11.';
+						} else {
+							if (validationRoutineDetails.min) {
+								return 'Please ensure that total time entered is more than ' + validationRoutineDetails.min + ' years. Note that the number of months entered cannot be more than 11.';
+							} else {
+								return 'Please ensure that total time entered is less than ' + validationRoutineDetails.max + ' years. Note that the number of months entered cannot be more than 11.';
+							}
+						}
+					} else if(validationRoutineDetails.doubleZero) {
+						return 'The years value and months value cannot both be zero.';
+					} else {
+						return 'Please ensure that the values you have entered are correct. Note that the number of months entered cannot be more than 11.';
+					}
+				},
+				
+				validateBalanceTransfer: function(validationRoutineDetails) {
+					if (validationRoutineDetails.formFieldType === 'card') {
+						return "Sorry, the credit card number you've provided is invalid.";
+					}
+					else if (validationRoutineDetails.formFieldType === 'account') {
+						return "Please select an account type.";
+					}
+					else if (validationRoutineDetails.hasExpiryDate && validationRoutineDetails.formFieldType === 'date') {
+						return "Sorry, the expiry date you've provided is invalid.";
+					}
+					else if (validationRoutineDetails.formFieldType === 'amount') {
+						if (validationRoutineDetails.isValidAmount && validationRoutineDetails.isLess) {
+							return "Please enter a valid balance to transfer. Each balance transfer must be at least £ {0} and the total can't exceed your balance transfer limit.".format(validationRoutineDetails.min);
+						}
+						else if (validationRoutineDetails.isValidAmount && validationRoutineDetails.max !== undefined && validationRoutineDetails.min !== undefined) {
+							return "We're sorry, but you've requested a balance transfer amount that is greater than your maximum transfer limit. Please request a smaller balance transfer amount.";
+						}
+						else {
+							return "Please enter a valid balance to transfer.";
+						}
+					}
+					else {
+						if (validationRoutineDetails.hasExpiryDate) {
+							return 'Please complete all fields in this row.';
+						} else {
+							return "Please enter a valid credit card number and balance to transfer.";
+						}
+					}					
+				},
+				validateAccountTransfer: function(validationRoutineDetails) {
+					if (validationRoutineDetails.formFieldType === 'account') {
+						return "Please select an account";
+					}
+					else if (validationRoutineDetails.formFieldType === 'amount') {
+						if (validationRoutineDetails.max && validationRoutineDetails.min) {
+							return 'Please enter a valid balance to transfer. Each balance transfer must be at least \u00A3 ' + validationRoutineDetails.min + '  and the total can\'t exceed your balance transfer limit.';							
+						} else {
+							return 'Please enter a valid balance to transfer.';
+						}
+					}
+				},
+				validatememo : "Your memorable information is between six and fithteen characters and should contain at least 3 letters and 1 number",
+				validateNationalInsuranceNo : "Please ensure the National Insurance Number you have entered is correct.",
+				validateNationalInsuranceNoForISA : "Please ensure the National Insurance number you have entered is correct and is correctly formatted e.g. AB 12 34 56 C",
+				validateNationalInsuranceNumberNoFM : "<p><strong>Please ensure the National Insurance Number you have entered is correct.</strong></p>",
+				validateAddress: "Please ensure that you complete at least the first two address fields.",
+				validateOtherSelection: "Please enter a value.",
+				validateOtherSelectionWithSpecialChars: "Please use valid characters (letters, numbers, spaces and any of the following @&amp;+-',./_ ).",
+				validateCurrency: function(validationRoutineDetails) {
+					if (validationRoutineDetails.formatValid !== undefined && validationRoutineDetails.formatValid === false) {
+						return 'Please ensure that the currency amount you have entered is correctly formatted.';
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max !== undefined)) {
+						return "Please ensure that value you have entered is between £{0} and £{1}.".format(validationRoutineDetails.min, validationRoutineDetails.max);
+					}
+					else if ((validationRoutineDetails.min === undefined) && (validationRoutineDetails.min !== undefined)) {
+						return "Please ensure that the value you have entered is equal or less than £{0}.".format(validationRoutineDetails.max);
+					}
+					else if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max === undefined)) {
+						return "Please ensure that the value you have entered is equal or greater than £{0}.".format(validationRoutineDetails.min);
+					}
+					else {
+						return "Sorry but the details you entered aren't in the correct format. Please enter numbers only.";
+					}
+				},
+				validateRange: function(validationRoutineDetails) {
+					if ((validationRoutineDetails.min !== undefined) && (validationRoutineDetails.max !== undefined)) {
+						return 'Please ensure that value you have entered is between \u00A3' + validationRoutineDetails.min + ' and \u00A3' + validationRoutineDetails.max + '.';
+					}
+					else {
+						return none;
+					}
+				},
+				validateMultipleOf: function(validationRoutineDetails) {
+					if (validationRoutineDetails.multipleOf !== undefined) {
+						return "Please ensure that value you have entered is a multiple of {0}.".format(validationRoutineDetails.multipleOf);
+					}
+					else {
+						return "Please ensure that value you have entered is a multiple of the given value.";
+					}
+				},
+				textInputPairMatch: "Please ensure that the values you have entered are identical.",
+				validateWithIsaAmount: "Please ensure the amount you have entered is equal to or greater than the amount you paid into your ISA this year.",
+				forgottenUserIdGroup: "Please complete either your current account details or your credit card number.",
+				oneTextFieldRequired: "Please complete at least one of the fields.",
+				oneFieldRequiredGroup: "Please complete at least one of the fields.",
+				oneSelectFieldRequired: "Please complete at least one of the fields.",
+				validateDisabledOptions: "This option is unavailable for selection. Please choose another option.",
+				validateTransNewCatEmpty: "Please specify a category name",
+				validateTransNewCatExists: "Please specify a new category name as category with this name already exists",
+				validateSplitTransAmount: "Please note that each split amount needs to be greater than zero",
+				validateSplitTransAmountNotZero: "Please note that each split amount needs to be greater than zero",
+				validateOMMAddNewCategory: "Please use valid characters (letters, numbers, spaces and any of the following @&+-,.'_ )",
+				validateMortgageAccountNumber: "Please use valid character (letters, numbers and any of the following /-)",
+				validatePassCode:"Please ensure your passcode is correct (no leading/trailing spaces and in format 12345678 or 1234 5678).",
+				validateGoalAllocation:function(opts){
+					if(opts.max===0){
+						return "Please enter a value above 0";
+					}
+					return "Please enter a value between 0 and "+opts.max;
+				},
+				validateWithdrawl:function(opts){	
+					return "Please enter a value between 0 and "+opts.total;
+				},				
+				validateTotal:function(opts){	
+					return "Please make sure your total equals "+opts.total;
+				},
+				requiredWithAccountIdentifier: function(opts) {
+					if (opts.isIBAN === true) { // is an iban number
+						return "Please ensure that the first 2 characters of your IBAN number are alphabetical followed by letters and numbers only.";
+					} else if (opts.isIBAN === false) { // is an account number
+						return "Please ensure that your account number contains letters and numbers only.";
+					} else if (opts.noValue) { // field contains no value
+						return "Please enter a value.";
+					} else { // undefined - no radio option selected
+						return "Please select an option.";
+					}
+				},
+				requiredBranchFinder: function(opts) {
+					if (opts.isPostcode === true) { // is a postcode
+						return "Please enter a valid postcode.";
+					} else if (opts.noValue) { // field contains no value
+						return "Please enter a value.";
+					} else { // undefined - no radio option selected
+						return "Please select an option."
+					}
+				},
+				validateAddressList: "Press the 'select address' button to proceed",
+				validateUnique: "Please ensure that the value entered is unique.",
+				validatePassword: "Please ensure that the password you have entered contains at least 1 numbers and 3 letters.",
+				validateBulkPaymentRef: "Please use valid characters (upper-case letters, numbers, spaces and any of the following &-./).<br />Must contain at least six alphanumeric characters.<br />Other valid characters may be included but will not be included in the count of six alphanumeric.<br />After taking out non-alphanumeric characters, must not contain a string of all the same alphanumeric characters.</br>Must not contain the text 'Contra' unless preceded by or followed by an alpha character.",
+				validateBankName: "Please use accepted characters which includes aplhanumeric characters, spaces and any of the following  &()-*./,+'_\\",
+				xNumberOfFieldRequiredGroup: 'Please Select minimum number required',
+				
+				validateLessThan:function(opts){
+					return "Please make sure the amount is less than &#163;{0}";
+				},
+				validateMoreThan:function(opts){
+					return "Please make sure the amount is&#160;more than &#163;{0}";
+				}
+				
+			}
+		},
+		omm : { /* Money Manager */
+			newSplitTitle: "New Split",
+			changeViewTitle: "Change view",
+			changeViewButton: "<img width='97' height='25' alt='Change view' src='/personal/assets/LTSBRetail/en-gb/images/buttons/change_view_filters.png'>",
+			demoWindow : {
+				info: "View our demo (opens in a new window)"
+			},
+			noRaphael : {
+				message1 : "Can't see any charts or graphs within Money Manager?Money Manager requires {str} to be enabled in your browser to display your information in charts and graphs.",
+				messageVML : "Vector Markup Langugage (VML)",
+				messageSVG : "Scalable Vector Graphics (SVG)",
+				instructionsTrigger : "How do I enable VML in Internet Explorer?",
+				instructionsMessage : "<p>Use the following steps to enable VML in Internet Explorer:</p><ul><li>Go to the <strong>Tools</strong> menu and select &#160;<strong>Internet Options</strong></li><li>Go to the <strong>Security</strong> and click the <strong>Custom Level...</strong> button in the <strong>Security level for this zone</strong> section</li><li>In the <strong>Security Settings</strong> dialog, locate the <strong>ActiveX controls and plug-ins</strong> within the <strong>Settings</strong> window and set <strong>Binary and script behaviours</strong> to enable mode</li></ul>"
+			},
+			charCount : {
+				multiple : "characters left",
+				single : "character left"
+			},
+			budgets : {
+				showAdditionalChartTableViewURL: '/htmlTemplates/modules/omm_budget_overview_detailed_view.shtml', 
+				getBudgetAverageSpendURL: '/htmlTemplates/stubs/s_152_budget_average_spend.json'
+			},
+			imageCategories : {
+				ajaxErrorText: "Sorry we could not retrieve the content you wanted at this time."
+			},
+			charts: {
+				pie: {
+					chartNote : "Move over for more info"
+				},
+			barWithLine: {
+					overlay: {
+						moneyIn: "Money in",
+						moneyOut: "Money out"
+					}
+				}
+			},
+			miniPromo: {
+				ajax: {
+					url: "/personal/ajax/showOMMPieChart"
+				},
+				selector: ".ommMiniPromo #omm",
+				leadIdentifier: "img"
+				
+			}
+			},
+        loans: {
+            overpaymentCalculator: {
+                ajax: {
+                    url: "/personal/ajax/loansOverPaymentClc"
+                },
+                text: {
+                    loading: "Your request is in progress; please wait. Please don't refresh or close the browser until you see your result."
+                },
+                html: {
+                    error: "<p>We're unable to show you a result right now. This might be because the amount you've entered is more than your outstanding balance. Please check and try again.</p><p>It's also possible that for technical reasons no result is showing. Please try again later.</p>"
+                }
+            }
+			
+		}
+	},
+	vef : {
+		transactions: "/personal/ajax/showHideVEF"
+	},
+	showme : {
+
+         stubFileLocation: "/personal/a/commonmodule/desktop/showme/",
+        stubFileExtension: ".jsp",
+        coreStubFile: "showme",
+        menuStubFile: "/personal/ajax/showMeMenu",
+        welcomePrevArrow: "/wps/wcm/connect/457e968040a07842a412a5b36433efea/no_thank_you-4-1378828554.PNG?MOD=AJPERES&CACHEID=457e968040a07842a412a5b36433efea",
+        welcomePrevAlt: "No thank you",
+        welcomeNextArrow: "/wps/wcm/connect/5bf3838040a0727f85fe85b36433efea/view_first_tip-4-1394030855.PNG?MOD=AJPERES&CACHEID=5bf3838040a0727f85fe85b36433efea",
+        welcomeNextAlt: "View first tip",
+        donePrevArrow: "/wps/wcm/connect/c8e9620040a074a790a291b36433efea/start_again-5-1380034441.PNG?MOD=AJPERES&CACHEID=c8e9620040a074a790a291b36433efea",
+        donePrevArrowAlt: "Start the tour again",
+        doneNextArrow: "/wps/wcm/connect/f6a78e8040a0728e863687b36433efea/start_internet_banking-3-1394030977.PNG?MOD=AJPERES&CACHEID=f6a78e8040a0728e863687b36433efea",
+        doneNextArrowAlt: "Start internet banking",
+        standardPrevArrow: "/wps/wcm/connect/8443398040a078a0a5d2a5b36433efea/go_last-5-1380034512.PNG?MOD=AJPERES&CACHEID=8443398040a078a0a5d2a5b36433efea",
+        standardPrevArrowAlt: "Previous",
+        standardPrevTip:"/wps/wcm/connect/8443398040a078a0a5d2a5b36433efea/go_last-5-1380034512.PNG?MOD=AJPERES&CACHEID=8443398040a078a0a5d2a5b36433efea",
+        standardPrevTipAlt: "Previous tip",
+        standardNextTip: "/wps/wcm/connect/7c844c0040a075a5961a97b36433efea/go_next-5-1380034519.PNG?MOD=AJPERES&CACHEID=7c844c0040a075a5961a97b36433efea",
+        standardNextTipAlt: "Next tip",
+        standardNextArrow: "/wps/wcm/connect/7c844c0040a075a5961a97b36433efea/go_next-5-1380034519.PNG?MOD=AJPERES&CACHEID=7c844c0040a075a5961a97b36433efea",
+        standardNextArrowAlt: "Next",
+        showMeMenuButton : "<li class=\"showMeItem\"><div class=\"showMeSupportButtonWrapper clearfix\"><p>Get more from Internet Banking</p><a href=\"#\" class=\"showMeSupportLinkShowMeAnchor {bubble : 'showMeSupport', topPositionOffset : 0, leftPositionOffset : 0}\"><img src=\"/personal/assets/LloydsRetail/img/showme/showme_btn.png\" /></a></div></li>"
+       
+      },
+      iada : {
+		userName : {
+			url : "/personal/ajax/ajaxUserNameCheck",
+	        url_creditcard: "/personal/ajax/creditcardUserNameCheck",
+            url_currentaccount: "/personal/ajax/currentAccountUserNameCheck",
+            url_commercial: "/personal/ajax/commercialUserNameCheck"
+        
+		}		
+    }, 
+        adrum: {
+        beaconUrlHttp:"http://cem.lloydsbank.co.uk",
+        beaconUrlHttps:"https://cem.lloydsbank.co.uk",
+        appKey:"AD-AAB-AAA-MXY",
+        adrumExtUrl:"//de8of677fyt0b.cloudfront.net/adrum-ext.e39ae1f2afb7bb0faad24cf476d8250e.js"
+    }
+};
+
+
+var campaignScripts = {
+
+v1:function(){try{var
+                w=window,d=document,r,o=w["XMLHttpRequest"],a=[["src",(w.location.protocol=="https:"?"https://":"http://")+"marketing.lloydsbank.co.uk/lloydsimages51/dYm4.js"],["async",true],["type","text/javascript"]];if(o&&(r=new
+                o).withCredentials!==undefined){r.open("GET",a[0][1],true);r.onreadystatechange=function(e){if(r.readyState==4&&r.status==200)(new
+                Function(r.responseText))()};r.send()}else
+                setTimeout(function(){var
+                s=d.createElement("script");for(var
+                i=0,l=a.length;i<l;i++)s.setAttribute(a[i][0],a[i][1]);
+                d.getElementsByTagName("head")[0].appendChild(s)},0)}catch(e){}}
+}; if (typeof(_SV) != "undefined" &&  _SV != null && "undefined" !== campaignScripts[_SV]) { campaignScripts[_SV](); }
+
+
+var Messages = {
+telephoneAuthentication: 'Select one to call and click confirm',
+telephoneNumberGroup: 'Please complete at least one of the fields',
+checkBoxAllRequired: 'Please ensure all checkboxes are checked.',
+validateRadio: 'Please select an option.',
+validateSelect: 'Please select a value.',
+ommClosePopUp: 'Close pop up (needs to be closed before another can be openned)',
+goalLimit:"Goal ranges can only be 1 month to 25 years. The value you have entered takes you out of range. Please try again with a different value.",
+notOnlySpaces: "This field should contain letters and numbers, not only spaces.",
+smallerBalanceTransfer: "We're sorry, but you've requested a balance transfer amount that is greater than your maximum transfer limit. Please request a smaller balance transfer amount.",
+validateUniqueCreditCard: "Sorry, but you've entered the same card number more than once. Please check and try again.",
+validateUsernameLength:'Your username must be between 9 and 30 characters long',
+validateOABTelephoneNumber: "You have entered an invalid phone number. Please try again and ensure that you enter between 5 and 20 characters. If you've ticked the 'Receive SMS' box, you should enter a mobile phone number.",
+msg256: '<p><strong>Unable to continue</strong></p><p>You can&#8217;t make this transaction because you&#8217;ve already funded an ISA in the current tax year.</p><p>If you want to move this money to another ISA, you must either:</p><p><a class="newwin" href="https://secure.form.lloydsbank.com/application/isa_transfer.asp" title="ask us to transfer your ISA funds"   id="isaOverlayErrorMessageLink1" onclick="showWebtrend(this.id)" >ask us to transfer your ISA funds</a>&#160;using our online ISA transfer form.</p><p>or</p><p><a class="newwin" href="http://www.lloydsbank.com/savings/convert-isa.asp" title="convert your existing ISA"   id="isaOverlayErrorMessageLink2" onclick="showWebtrend(this.id)" >convert your existing ISA</a>&#160;to a new ISA product</p>',
+msg2474: 'Please select at least one option to continue.',
+msg2476: '<p>If you choose not to order replacement cards, you won&#8217;t be able to make card payments or use a cash machine. Please check your selections and click <strong>Continue</strong> to proceed.</p>',
+loanAmountError : '???common/clientmessages/properties:cmsmsg52662???'
+
+
+};
+
+
+
+
+

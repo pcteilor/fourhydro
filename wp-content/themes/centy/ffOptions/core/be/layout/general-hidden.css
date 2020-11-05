@@ -1,0 +1,7 @@
+.component-hidden{
+    opacity: 0.5;
+}
+
+.component-hidden .component-hidden{
+    opacity: 1;
+}

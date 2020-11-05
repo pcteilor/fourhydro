@@ -1,0 +1,150 @@
+
+
+/*==================================================================================================
+    POST LIST
+==================================================================================================*/
+
+[data-page="list"] #preface .container {
+    padding: 36px 0 54px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    POSTS
+--------------------------------------------------------------------------------------------------*/
+
+#list .container {
+    padding: 57px 0 79px;
+}
+
+#list .container {
+    border-top: 1px solid @theme_line;
+}
+
+#list [data-href] {
+    cursor: pointer;
+}
+
+#list .posts a,
+#list .posts span {
+    display: block;
+}
+
+#list .posts a {
+    .clearfix;
+}
+
+#list .posts h5 {
+    margin-bottom: 0;
+}
+
+#list .posts h2 {
+    margin-bottom: 17px;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 44px;
+}
+
+#list .posts p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#list .posts .image {
+    position: relative;
+    padding-top: 7px;
+    min-height: 128px;
+
+    @media @query_mobile {
+        margin: 20px 0 0;
+    }
+}
+
+#list .posts img {
+    vertical-align: top;
+    width: 100%;
+}
+
+#list .posts li {
+    .box-shadow(0 0 0 20px transparent);
+    .transition(~"box-shadow @{speed}, color @{speed}, background @{speed}");
+}
+
+#list .posts li > .row {
+    margin-top: -8px;
+}
+
+#list .posts li + li {
+    margin-top: 45px;
+}
+
+#list .posts li:hover,
+#list .posts li:hover a {
+    color: @theme_list_hover_fg;
+}
+
+#list .posts li:hover {
+    background-color: @theme_list_hover_bg;
+    .box-shadow(0 0 0 20px @theme_list_hover_bg);
+}
+
+[data-ie="8"] #list .posts li:hover {
+    outline: 20px solid @theme_list_hover_bg;
+}
+
+#list .posts .hover {
+    .position(7px, 0, 20px, 0);
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    .opacity(0);
+    color: @theme_list_hover_image_fg;
+    background-color: @theme_list_hover_image_bg;
+    .transition(~"opacity @{speed}");
+    .vertical-center;
+
+    @media @query_mobile {
+        right: 0;
+    }
+}
+
+#list .posts li:hover .hover {
+    .opacity(0.8);
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    NAVIGATION
+--------------------------------------------------------------------------------------------------*/
+
+#list .navigation {
+    margin-top: 57px;
+    border-top: 1px solid @theme_line;
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+    SIDEBAR
+--------------------------------------------------------------------------------------------------*/
+
+#list .sidebar {
+    margin-top: -8px;
+}
+
+#list .sidebar h5 {
+    margin-bottom: 21px;
+    text-transform: uppercase;
+}
+
+#list .sidebar ul {
+    margin-bottom: 59px;
+}
+
+#list .sidebar li + li {
+    margin-top: 10px;
+}
+
+#list .sidebar li a {
+    .link_hover;
+}

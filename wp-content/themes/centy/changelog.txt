@@ -1,0 +1,142 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TYPES OF CHANGE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A Added
+C Copied
+D Deleted
+M Modified
+R Renamed
+T have their type (mode) changed
+U Unmerged
+X Unknown
+B have had their pairing Broken
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.4 - Jan 27, 2014
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Warning !
+~~~~~~~~~
+
+If you have problems with Revolution Slider rendering CSS styles, press "Re-run Basic Installation" in Theme Options / Install
+
+Release Notes
+~~~~~~~~~~~~~
+   Fixed - Revolution Slider CSS Styles added
+   Fixed - PHP Strict mode warnings in Site Preferencies
+   Fixed - Featured video in posts is now allowed
+     New - Revolution Slider updated to version 4.1.4
+
+Changed Files
+~~~~~~~~~~~~~
+M       changelog.txt
+A       css/revslider_responsive.css
+M       ffOptions/core/be/ffPrinterBEComponents.php
+M       ffOptions/writepanels/be/ffWPHooks.php
+M       ffOptions/writepanels/structures/wpFeatured.php
+M       framework/engine/functions/javascriptcss.php
+A       framework/libs/ffVideo.php
+D       install/basic/revslider/captions.css
+D       install/basic/revslider/captions.scss
+M       install/basic/revslider/install.php
+M       install/basic/revslider/revslider.zip
+A       install/basic/revslider/textstyles.css
+A       install/basic/revslider/textstyles.scss
+M       install/ffInstall.php
+M       printers/pt_post.php
+M       style.css
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.3 - Oct 10, 2013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Release Notes
+~~~~~~~~~~~~~
+   Fixed - Menu not working on mobiles/tablets
+   Fixed - Site Preferences, home portfolio category reverted to ALL even when you specified a category
+Improved - The gallery thumbnail slider is hidden when you have only 1 image in your gallery
+Improved - Portfolio category - you can now select the number of columns
+
+Changed Files
+~~~~~~~~~~~~~
+M       changelog.txt
+M       ffOptions/sitepreferences/structures/txportfolio.php
+M       js/main.js
+M       style.css
+M       templates/portfolio/preface.php
+M       templates_helpers/home/portfolio.php
+M       templates_helpers/portfolio/portfolio.php
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.2 - Sep 10, 2013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Release Notes
+~~~~~~~~~~~~~
+Improved - Option for header left/right logo alignment has been added to Theme Options panel
+Improved - Portfolio Single slider, thumbnail navigation instead of arrows.
+   Fixed - Bad image path for boxed background
+   Fixed - Some css styling
+
+Changed Files
+~~~~~~~~~~~~~
+M       css/main.css
+M       css/main_00a963.css
+M       css/main_00c492.css
+M       css/main_08b6ff.css
+M       css/main_50bfd6.css
+M       css/main_777b80.css
+A       css/main_d71e24.css
+M       css/main_fa565a.css
+M       css/main_fe4445.css
+M       css/main_ff9d1d.css
+M       css/main_ffcd32.css
+M       ffOptions/themeoptions/structures/toHeader.php
+M       framework/engine/functions/javascriptcss.php
+M       framework/engine/functions/templater.php
+M       functions.php
+M       install/basic/plugins/class-tgm-plugin-activation.php
+A       js/include/caroufredsel.js
+M       js/main.js
+M       less/page/global.less
+M       less/page/post.less
+M       less/page/ui.less
+M       less/themes/default.less
+M       style.css
+M       templates/portfolio/single.php
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.1 - Aug 21, 2013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Release Notes
+~~~~~~~~~~~~~
+   Fixed - Nothing
+     New - Everything
+Improved - Everything
+ Removed - Nothing
+
+Changed Files
+~~~~~~~~~~~~~
+none
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.0 - Aug 20, 2013
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Release Notes
+~~~~~~~~~~~~~
+   Fixed - Nothing
+     New - Everything
+Improved - Everything
+ Removed - Nothing
+
+Changed Files
+~~~~~~~~~~~~~
+none
+

@@ -1,0 +1,89 @@
+.help {
+	display: none;
+}
+.cxtHelp .help {
+	display: block;
+}
+.hasJS .hideJS {
+	position: absolute !important;
+	left: -9999px;
+}
+.hasJS .hiddenNationality {
+	display: none;
+}
+.content .dynconSelectionCopyExchange {
+	display: block;
+}
+.hasJS .updateHelpCopy { display:none !important; }
+
+.hasJS .selectBusinessAccount {
+	display: none;
+}
+
+.secondary .accordion .pane {
+	display: none;
+}
+.secondary .accordion .selected .pane {
+	display: block;
+}
+
+
+.hasJS .content .accountSummary table.moneyInOut { 
+	margin:-15px 0;
+}
+
+.content .branchResults div.closed .pane {
+  display: none;
+}
+
+.hasJS .content .LPImessage {
+	display: none;
+}
+
+.hasJS .viewOtherAccounts {
+	display: none;
+}
+
+.hasJS .noJSHidden {
+	display: inline;
+}
+
+.hasJS div.noJSHidden,
+.hasJS .block.noJSHidden {
+	display: block;
+}
+.hasJS .statusToggleHide {
+	display: none;
+}
+
+.hasJS .opsNoJSHidden{
+	display: none;
+}
+.hasJS .content .inner .opsJSShow{
+	display: block !important;
+}
+.disabledDiv * {
+	color: #ccc !important;
+}
+.disabledDiv {
+	position: relative;
+}
+
+.disabledDiv .disabled{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+.disabledDiv .slider-input input {
+  text-indent: -999px;
+  background: #fff;
+}
+.tblOPSQuote{
+	visibility:hidden;
+}
+.tblOPSQuoteEnabled{
+	visibility:Visible;
+}

@@ -1,0 +1,96 @@
+.component-option-image-list .radio-item{
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.component-option-image-list .radio-item .image{
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.component-option-image-list .radio-item input{
+  display: none;
+}
+
+.component-option-image-list .radio-item .title{
+  display: block;
+  text-align: center;
+  line-height: 32px;
+}
+
+.radio-item .image_container{
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+  background-color: #eeeeee;
+}
+
+.radio-item-active .image_container{
+  background: rgb(85,164,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(85,164,237,1) 0%, rgba(50,111,212,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(85,164,237,1)), color-stop(100%,rgba(50,111,212,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(85,164,237,1) 0%,rgba(50,111,212,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55a4ed', endColorstr='#326fd4',GradientType=0 ); /* IE6-9 */
+
+-webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.radio-item .image_wrapper  {
+  display: block;
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.radio-item:hover .image_wrapper  {
+  border: 1px solid #767676;  
+}
+
+.radio-item-active .image_wrapper,
+.radio-item-active:hover .image_wrapper   {
+  border: 1px solid #294da2;
+}
+
+.radio-item .image  {
+  display: block;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* PATTERN ONLY */
+
+.component-option-image-list.pattern .image  {
+  border: 5px solid #ffffff;
+}
+.component-option-image-list.pattern .radio-item .image_wrapper{
+ background: -moz-linear-gradient(center top , #BBBBBB 0%, #555555 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

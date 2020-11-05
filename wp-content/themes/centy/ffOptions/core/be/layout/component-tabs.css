@@ -1,0 +1,12 @@
+.component-option-tabs .tab-item_container{
+    display: inline-block;
+}
+
+.component-option-tabs .tab-item_container *{
+    display: block;
+    text-align: center;
+}
+
+.component-option-tabs input{
+    display: none;
+}

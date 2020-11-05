@@ -1,0 +1,3554 @@
+@font-face {
+	font-family: 'Light L33bo';
+	src: url(../fonts/one.eot);
+	src: url(../fonts/one.eot?#iefix) format("eot"),url(../fonts/one.woff) format("woff"),url(../fonts/one.ttf) format("truetype"),url(../fonts/one.svg#webfontJlnRxpun) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Med L33bo';
+	src: url(../fonts/two.eot);
+	src: url(../fonts/two.eot?#iefix) format("eot"),url(../fonts/two.woff) format("woff"),url(../fonts/two.ttf) format("truetype"),url(../fonts/two.svg#webfontJlnRxpun) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Reg L33bo';
+	src: url(../fonts/three.eot);
+	src: url(../fonts/three.eot?#iefix) format("eot"),url(../fonts/three.woff) format("woff"),url(../fonts/three.ttf) format("truetype"),url(../fonts/three.svg#webfontJlnRxpun) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'Light L33bo';
+		src: url(../fonts/one.svg) format("svg");
+	}
+
+	@font-face {
+		font-family: 'Med L33bo';
+		src: url(../fonts/two.svg) format("svg");
+	}
+
+	@font-face {
+		font-family: 'Reg L33bo';
+		src: url(../fonts/three.svg) format("svg");
+	}
+}
+
+.icon-background-style,.content ul.linkList.icons li .export,.content ul.linkList.icons li .print,.content ul.linkList.icons li .printFriendly,.content ul.linkList.icons li .search,.content ul.linkList.icons li .pdf,.content ul.linkList.icons li .directDebit,.content ul.linkList.icons li .success,.content ul.linkList.icons li .circleGreenTick,.content .pdfLink {
+	background-color: transparent !important;
+	background-repeat: no-repeat !important;
+	background-size: 30px 30px !important;
+	background-position: 0 0;
+}
+
+.before-fallback {
+	*zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='before');
+}
+
+.after-fallback {
+	*zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+}
+
+.hasJS .m-action-button.hideJS {
+	display: none;
+}
+
+.content input[type="submit"],.content input[type="button"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.content input.m-action-button,.content a.m-action-button,.content .balanceTransfer div.actions input.m-action-button {
+	max-width: 350px;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	border: 0;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+	zoom: 1;
+	text-align: center;
+}
+
+.content input.m-action-button.primary-btn,.content a.m-action-button.primary-btn,.content .balanceTransfer div.actions input.m-action-button.primary-btn {
+	padding: .95em;
+	color: #fff;
+	background: #1a795f;
+	background: -moz-linear-gradient(top,#1a795f 0,#005f45 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#1a795f 0),color-stop(100%,#005f45));
+	background: -webkit-linear-gradient(top,#1a795f 0,#005f45 100%);
+	background: -o-linear-gradient(top,#1a795f 0,#005f45 100%);
+	background: -ms-linear-gradient(top,#1a795f 0,#005f45 100%);
+	background: linear-gradient(to bottom,#1a795f 0,#005f45 100%);
+	font-family: two,arial,sans-serif;
+}
+
+.content input.m-action-button.primary-btn:hover,.content a.m-action-button.primary-btn:hover,.content .balanceTransfer div.actions input.m-action-button.primary-btn:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #15644f;
+	background: -moz-linear-gradient(top,#15644f 0,#1a795f 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#15644f 0),color-stop(100%,#1a795f));
+	background: -webkit-linear-gradient(top,#15644f 0,#1a795f 100%);
+	background: -o-linear-gradient(top,#15644f 0,#1a795f 100%);
+	background: -ms-linear-gradient(top,#15644f 0,#1a795f 100%);
+	background: linear-gradient(to bottom,#15644f 0,#1a795f 100%);
+}
+
+.content input.m-action-button.primary-btn:disabled,.content a.m-action-button.primary-btn:disabled,.content .balanceTransfer div.actions input.m-action-button.primary-btn:disabled {
+	background: #d4dfc0;
+}
+
+.content input.m-action-button.secondary-btn,.content a.m-action-button.secondary-btn,.content .balanceTransfer div.actions input.m-action-button.secondary-btn {
+	text-decoration: none;
+	background-color: #f0f0f0;
+	padding: 1em;
+	color: #006a4d;
+	display: inline-block;
+	font-family: two,arial,sans-serif;
+}
+
+.content input.m-action-button.secondary-btn.left,.content a.m-action-button.secondary-btn.left,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.left {
+	background-image: url(../img/chevron-left-primary1.svg);
+	background-size: 8px 12px;
+	background-position: 15% center;
+	padding: 1em 1em 1em 2em;
+}
+
+.content input.m-action-button.secondary-btn.left:hover,.content a.m-action-button.secondary-btn.left:hover,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.left:hover {
+	background-image: url(../img/chevron-left-secondaryonlight.svg);
+}
+
+.content input.m-action-button.secondary-btn.left.disabled,.content a.m-action-button.secondary-btn.left.disabled,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.left.disabled,.content input.m-action-button.secondary-btn.left:disabled,.content a.m-action-button.secondary-btn.left:disabled,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.left:disabled {
+	background-image: url(../img/chevron-left-grey.svg);
+}
+
+.content input.m-action-button.secondary-btn.right,.content a.m-action-button.secondary-btn.right,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.right {
+	background-image: url(../img/chevron-right-primary1.svg);
+	background-size: 8px 12px;
+	background-position: 85% center;
+	padding: 1em 2em 1em 1em;
+}
+
+.content input.m-action-button.secondary-btn.right:hover,.content a.m-action-button.secondary-btn.right:hover,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.right:hover {
+	background-image: url(../img/chevron-right-secondaryonlight.svg);
+}
+
+.content input.m-action-button.secondary-btn.right.disabled,.content a.m-action-button.secondary-btn.right.disabled,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.right.disabled,.content input.m-action-button.secondary-btn.right:disabled,.content a.m-action-button.secondary-btn.right:disabled,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.right:disabled {
+	background-image: url(../img/chevron-right-grey.svg);
+}
+
+.content input.m-action-button.secondary-btn:hover,.content a.m-action-button.secondary-btn:hover,.content .balanceTransfer div.actions input.m-action-button.secondary-btn:hover {
+	text-decoration: none;
+	color: #649c00;
+}
+
+.content input.m-action-button.secondary-btn.disabled,.content a.m-action-button.secondary-btn.disabled,.content .balanceTransfer div.actions input.m-action-button.secondary-btn.disabled,.content input.m-action-button.secondary-btn:disabled,.content a.m-action-button.secondary-btn:disabled,.content .balanceTransfer div.actions input.m-action-button.secondary-btn:disabled {
+	color: #ccc;
+}
+
+.content input.m-action-button.tertiary-btn,.content a.m-action-button.tertiary-btn,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn {
+	padding: .95em;
+	background-color: #f0f0f0;
+	color: #006a4d;
+	display: inline-block;
+	font-family: two,arial,sans-serif;
+}
+
+.content input.m-action-button.tertiary-btn.left,.content a.m-action-button.tertiary-btn.left,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.left {
+	background-image: url(../img/chevron-left-primary1.svg);
+	background-size: 8px 12px;
+	background-position: 15% center;
+	padding: 1em 1em 1em 2em;
+}
+
+.content input.m-action-button.tertiary-btn.left:hover,.content a.m-action-button.tertiary-btn.left:hover,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.left:hover {
+	background-image: url(../img/chevron-left-secondaryonlight.svg);
+}
+
+.content input.m-action-button.tertiary-btn.left.disabled,.content a.m-action-button.tertiary-btn.left.disabled,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.left.disabled,.content input.m-action-button.tertiary-btn.left:disabled,.content a.m-action-button.tertiary-btn.left:disabled,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.left:disabled {
+	background-image: url(../img/chevron-left-grey.svg);
+	background-color: #f0f0f0 !important;
+	background-repeat: no-repeat !important;
+	background-size: 8px 12px !important;
+	background-position: 15% center !important;
+}
+
+.content input.m-action-button.tertiary-btn.right,.content a.m-action-button.tertiary-btn.right,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.right {
+	background-image: url(../img/chevron-right-primary1.svg);
+	background-size: 8px 12px;
+	background-position: 85% center;
+	padding: 1em 2em 1em 1em;
+}
+
+.content input.m-action-button.tertiary-btn.right:hover,.content a.m-action-button.tertiary-btn.right:hover,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.right:hover {
+	background-image: url(../img/chevron-right-secondaryonlight.svg);
+}
+
+.content input.m-action-button.tertiary-btn.right.disabled,.content a.m-action-button.tertiary-btn.right.disabled,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.right.disabled,.content input.m-action-button.tertiary-btn.right:disabled,.content a.m-action-button.tertiary-btn.right:disabled,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.right:disabled {
+	background-image: url(../img/chevron-right-grey.svg);
+}
+
+.content input.m-action-button.tertiary-btn:hover,.content a.m-action-button.tertiary-btn:hover,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn:hover {
+	text-decoration: none;
+	color: #649c00;
+}
+
+.content input.m-action-button.tertiary-btn.disabled,.content a.m-action-button.tertiary-btn.disabled,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn.disabled,.content input.m-action-button.tertiary-btn:disabled,.content a.m-action-button.tertiary-btn:disabled,.content .balanceTransfer div.actions input.m-action-button.tertiary-btn:disabled {
+	color: #ccc;
+}
+
+.content a.m-action-button {
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	border: 0;
+	cursor: pointer;
+	display: block;
+	margin: 0;
+	position: relative;
+	zoom: 1;
+}
+
+.content ul.actions li.previous {
+	margin: 0 18px 0 0;
+}
+
+.content ul.actions li input.pseudoLink {
+	padding: .95em;
+}
+
+.content ul.actions li input.m-action-button,.content ul.actions li a.m-action-button {
+	font-size: 1em;
+}
+
+.content input.login-continue {
+	margin-right: 14px;
+}
+
+.content .orderSummary .actions .sudoButtons li {
+	height: auto;
+}
+
+.content .secondary .panel .accordion input.oab_button {
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.accordion-plus {
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.accordion-plus:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.accordion-minus {
+	background-image: url(../img/touch/minus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.accordion-minus:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.arrow-right-mixin {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.arrow-right-mixin:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.arrow-left-mixin {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/arrow_left.svg);
+}
+
+.arrow-left-mixin:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.arrow-left-mixin:hover {
+	background-image: url(../img/touch/arrow_left_hover.svg);
+	text-decoration: none;
+}
+
+.content p a {
+	text-decoration: underline;
+}
+
+.content .primary p a:hover {
+	color: #649c00;
+	text-decoration: underline;
+}
+
+.content .primary .linkList li a:hover {
+	color: #649c00;
+	text-decoration: none;
+}
+
+.content ul.linkList li {
+	margin-bottom: .8329em;
+}
+
+.content ul.linkList li a,.content p.linkList a,.content a.linkHeading,.content .linkHeading a,.content a.linkBullet {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	margin-left: 0;
+}
+
+.content ul.linkList li a:hover,.content p.linkList a:hover,.content a.linkHeading:hover,.content .linkHeading a:hover,.content a.linkBullet:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.content ul.linkList li strong {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content ul.linkList li.back {
+	background: 0;
+}
+
+.content ul.linkList li.back a {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/arrow_left.svg);
+}
+
+.content ul.linkList li.back a:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.content ul.linkList li.back a:hover {
+	background-image: url(../img/touch/arrow_left_hover.svg);
+	text-decoration: none;
+}
+
+.content ul.linkList li a.back {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/arrow_left.svg);
+}
+
+.content ul.linkList li a.back:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.content ul.linkList li a.back:hover {
+	background-image: url(../img/touch/arrow_left_hover.svg);
+	text-decoration: none;
+}
+
+.content a.linkBullet {
+	margin-left: 10px;
+}
+
+.content ul.linkList li p {
+	margin-bottom: 0;
+}
+
+.content a.pdfLink:hover {
+	text-decoration: none !important;
+}
+
+.content fieldset.legalsCheck ul.linkList li a,.content fieldset.legalsCheck ul.linkList li a:hover {
+	background-position: 0 3px;
+}
+
+.content .primary .showHide {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+	margin-bottom: 1em;
+	overflow: auto;
+}
+
+.content .primary .showHide .pane {
+	padding-top: 1em;
+}
+
+.content .primary .showHide.branchDetails {
+	margin-bottom: 0;
+	border-top: 0;
+}
+
+.content .accountUpgradeSummary .features {
+	margin-bottom: 0;
+	border-top: 0;
+}
+
+.branchResults .clearer {
+	height: 0;
+}
+
+.content .lra-panel p span.toggle {
+	top: 0;
+}
+
+.showHide .toggle,.hasJS .showHide .toggle {
+	height: 30px;
+	width: 30px;
+	top: auto;
+	left: 0;
+	background-image: url(../img/touch/minus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.showHide .toggle:hover,.hasJS .showHide .toggle:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.showHide .toggle:hover,.hasJS .showHide .toggle:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	text-decoration: none;
+}
+
+.showHide .pane.indent,.hasJS .showHide .pane.indent {
+	padding-left: 40px;
+}
+
+.showHide a:hover .toggle,.hasJS .showHide a:hover .toggle {
+	background: url(../img/touch/minus_hover.svg) left top no-repeat;
+	background-size: 30px 30px;
+}
+
+.showHide .toggle.closed,.hasJS .showHide .toggle.closed,.showHide.closed .toggle,.hasJS .showHide.closed .toggle {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.showHide .toggle.closed:hover,.hasJS .showHide .toggle.closed:hover,.showHide.closed .toggle:hover,.hasJS .showHide.closed .toggle:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.showHide .toggle.closed:hover,.hasJS .showHide .toggle.closed:hover,.showHide.closed .toggle:hover,.hasJS .showHide.closed .toggle:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.showHide a:hover .toggle.closed,.hasJS .showHide a:hover .toggle.closed,.showHide.closed a:hover .toggle,.hasJS .showHide.closed a:hover .toggle {
+	background: url(../img/touch/plus_hover.svg) left top no-repeat;
+	background-size: 30px 30px;
+}
+
+.showHide .trigger,.hasJS .showHide .trigger {
+	padding: 0;
+	margin: 0;
+	min-height: 30px;
+	line-height: 30px;
+}
+
+.showHide .trigger a,.hasJS .showHide .trigger a {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	padding-left: 40px;
+}
+
+.showHide .trigger a:hover,.hasJS .showHide .trigger a:hover {
+	text-decoration: none;
+}
+
+.showHide span.trigger a,.hasJS .showHide span.trigger a {
+	font-size: 1.6em;
+}
+
+.showHide.iconContentRight .success,.showHide.iconContentRight .failure {
+	font-size: 1.4em;
+	line-height: 1.43;
+}
+
+.content .upgradeFeatures ul {
+	margin-bottom: 0;
+}
+
+.expandingTables .pane {
+	padding-left: 0 !important;
+}
+
+.content .cxtHelp a.cxtTrigger {
+	color: #006a4d !important;
+	background: none !important;
+}
+
+.content .cxtHelp a.cxtTrigger:hover,.content .cxtHelp a.cxtTrigger.active {
+	color: #649c00 !important;
+	text-decoration: none;
+}
+
+.content .cxtHelp .contextual {
+	background-color: none;
+	color: #fff;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	outline: 0;
+	left: -20px;
+}
+
+.content .cxtHelp .contextual .help {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	outline: 0;
+	border: 0;
+}
+
+.content .cxtHelp .contextual .contentInner ul.linkList {
+	margin-bottom: 0;
+}
+
+.content .cxtHelp .contextual .contentInner ul.linkList li:last-child {
+	margin-bottom: 0;
+}
+
+li.osrTableLastCol div.contextual {
+	left: -85px !important;
+}
+
+li.osrTableLastCol div.contextual div.pointer {
+	left: 87px !important;
+}
+
+.content .primary .help p a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .help p a:hover {
+	text-decoration: underline;
+}
+
+.content .help {
+	background: #006a4d;
+}
+
+.content .cxtHelp p.close a {
+	width: auto;
+	height: auto;
+}
+
+.content .cxtHelp .contextual h2 {
+	color: #fff;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em !important;
+}
+
+.content .cxtHelp .help p {
+	color: #fff;
+}
+
+.content .cxtHelp .contextual .pointer {
+	background-image: url(../img/touch/cxthelp_arrow.svg);
+	background-size: 20px 14px;
+}
+
+.content .primary .cxtHelp ul.linkList li a,.content .primary .cxtHelp ul.linkList li a:hover {
+	background: url(../img/touch/arrow_help.svg) left 3px no-repeat !important;
+	background-size: 8px 12px !important;
+	color: #fff;
+	line-height: 1.25;
+	padding-left: 15px !important;
+}
+
+.content .cxtHelp p.close,#overlay .cxtHelp p.close {
+	background-image: url(../img/cross-white.svg) !important;
+	background-size: 15px 15px;
+	height: 15px;
+	margin: 0 !important;
+	right: 10px;
+	top: 10px;
+	width: 15px !important;
+}
+
+.footerNavLink ul.linkList.viewEarnings li a {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.footerNavLink ul.linkList.viewEarnings li a:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.hasJS .content table.expandingTable tbody tr.trigger th.first {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+	color: #006a4d;
+	padding: 14px 14px 15px 50px;
+}
+
+.hasJS .content table.expandingTable tbody tr.trigger th.first:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content table.expandingTable tbody tr.trigger th.first:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content table.expandingTable tbody tr.trigger.expanded th.first {
+	background-image: url(../img/touch/minus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.hasJS .content table.expandingTable tbody tr.trigger.expanded th.first:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content table.expandingTable tbody tr.trigger.expanded th.first:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	text-decoration: none;
+}
+
+.hasJS .content table.expandingTable tbody td.first {
+	padding-left: 10px;
+}
+
+.content .expandingTables .closed .toggle {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.content .expandingTables .closed .toggle:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.content .expandingTables .closed .toggle:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.content .expandingTables .closed a:hover {
+	color: #649c00;
+}
+
+.content .expandingTables .closed a:hover .toggle {
+	background-image: url(../img/touch/plus_hover.svg);
+}
+
+.content .expandingTables h3 a {
+	line-height: 30px;
+}
+
+.content .expandingTables h3 a:hover {
+	color: #649c00;
+}
+
+.content .expandingTables h3 .toggle {
+	top: 0;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .collapsed td a,.hasJS .content .accountStatementTableExpandPolicy .expanded td a {
+	background-size: 30px 30px;
+	padding-left: 40px !important;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .collapsed td a:hover,.hasJS .content .accountStatementTableExpandPolicy .expanded td a:hover {
+	color: #649c00;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .collapsed td a {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .collapsed td a:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .collapsed td a:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .expanded td a {
+	background-image: url(../img/touch/minus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .expanded td a:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy .expanded td a:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	text-decoration: none;
+}
+
+.hasJS .content .accountStatementTableExpandPolicy dl.policy {
+	padding-left: 15px !important;
+}
+
+.content .secondary ul.linkList li a {
+	color: #006a4d;
+}
+
+.content .secondary ul.linkList li a:hover {
+	color: #649c00;
+}
+
+.content .searchTransactions .showHide p.trigger {
+	margin-left: 15px;
+	padding-left: 0;
+}
+
+.content .searchTransactions .showHide p.trigger .triggerChild {
+	padding-left: 40px;
+}
+
+.expandingTables .showHide .trigger {
+	margin-left: 13px;
+}
+
+.vefTable a.showMoreRows,.content .transferSlideOuter p.transferTrigger a {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+	padding-left: 40px;
+	line-height: 30px;
+	display: block;
+}
+
+.vefTable a.showMoreRows:hover,.content .transferSlideOuter p.transferTrigger a:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.vefTable a.showMoreRows:hover,.content .transferSlideOuter p.transferTrigger a:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.vefTable a.hideMoreRows,.content .transferSlideOuter p.transferTrigger a.close {
+	background-image: url(../img/touch/minus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+	padding-left: 40px;
+	line-height: 30px;
+	display: block;
+}
+
+.vefTable a.hideMoreRows:hover,.content .transferSlideOuter p.transferTrigger a.close:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.vefTable a.hideMoreRows:hover,.content .transferSlideOuter p.transferTrigger a.close:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	text-decoration: none;
+}
+
+.content .comparisonSelectList.compareSavings h2 a {
+	background: 0;
+	padding-left: 0;
+}
+
+.content #omm ul.linkList li a {
+	padding-left: 30px;
+}
+
+.content #omm .help p,.content #omm .help li,.content #omm .help h2,.content #omm .help h3,.content #omm .help h4 {
+	color: #fff;
+}
+
+.content #omm .help h3 {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content #omm .buttonLink a {
+	background-image: url(../img/touch/arrow_right.svg) !important;
+}
+
+.content #omm .ommGoals .subPanel .header .editBudget,.content #omm .ommBudget .header .editOptions a {
+	background-image: url(../img/touch/arrow_right.svg) !important;
+}
+
+.content #omm .ommFilterTransactions h2.expandTrigger {
+	line-height: .78125em;
+	min-height: 30px;
+	line-height: 30px;
+}
+
+.content #omm .ommFilterTransactions h2.expandTrigger a {
+	background: url(../img/touch/plus.svg) left top no-repeat !important;
+	background-size: 30px 30px !important;
+	font-size: inherit !important;
+	font-weight: 400 !important;
+	padding: 0 0 0 40px !important;
+	margin: 0 !important;
+	min-height: 30px;
+	text-decoration: none;
+}
+
+.content #omm .ommFilterTransactions.closed h2.expandTrigger a {
+	background-image: url(../img/touch/plus.svg) !important;
+}
+
+.content #omm .ommFilterTransactions.open h2.expandTrigger a {
+	background-image: url(../img/touch/minus.svg) !important;
+}
+
+.content #omm .ommFilterTransactions.closed h2.expandTrigger a:hover {
+	background-image: url(../img/touch/plus_hover.svg) !important;
+	color: #649c00;
+}
+
+.content #omm .ommFilterTransactions.open h2.expandTrigger a:hover {
+	background-image: url(../img/touch/minus_hover.svg) !important;
+}
+
+.content .myAccounts .promo .accountActionsWrapper ul.accountActions li.more a {
+	background: url(../img/touch/arrow_right.svg) left 3px no-repeat;
+	background-size: 8px 12px;
+	color: #006a4d;
+	padding: 0 0 0 15px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .myAccounts .promo .accountActionsWrapper ul.accountActions li.more a:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+	color: #649c00;
+	text-decoration: none !important;
+}
+
+.hasJS .content .showHideAccordion li.part {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+	margin-bottom: 0;
+	margin-top: -1px;
+}
+
+.hasJS .content .showHideAccordion li.part h3.trigger {
+	font-size: 1em;
+	line-height: .78125em;
+	color: #006a4d;
+	background: url(../img/touch/plus.svg) left top no-repeat;
+	background-size: 30px 30px;
+	padding: 0 0 0 40px;
+	margin: 0;
+	min-height: 30px;
+	line-height: 30px;
+	outline: 0;
+}
+
+.hasJS .content .showHideAccordion li.part h3.trigger.ui-state-active {
+	background: url(../img/touch/minus.svg) left top no-repeat !important;
+	background-size: 30px 30px !important;
+}
+
+.hasJS .content .showHideAccordion li.part h3.trigger:hover {
+	color: #649c00;
+	background: url(../img/touch/plus_hover.svg) left top no-repeat;
+	background-size: 30px 30px;
+}
+
+.hasJS .content .showHideAccordion li.part h3.trigger:hover.ui-state-active {
+	background: url(../img/touch/minus_hover.svg) left top no-repeat !important;
+	background-size: 30px 30px !important;
+}
+
+.hasJS .content .showHideAccordion li.part .pane {
+	padding-top: 1em;
+	padding-left: 40px !important;
+}
+
+.footerNavLink ul.linkList.viewEarnings li a {
+	background: 0;
+	padding-left: 0;
+}
+
+.footerNavLink ul.linkList.viewEarnings li a:hover {
+	background: 0;
+	padding-left: 0;
+}
+
+.content ul.linkList.icons li a {
+	padding-left: 15px;
+	background-position: 0 9px;
+}
+
+.content ul.linkList.icons li a:hover {
+	text-decoration: none;
+}
+
+.content ul.linkList.icons li .export {
+	background-image: url(../img/touch/icons/export.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .export:hover {
+	background-image: url(../img/touch/icons/export_hover.svg);
+}
+
+.content ul.linkList.icons li .export:disabled {
+	background-image: url(../img/touch/icons/export_disabled.svg);
+}
+
+.content ul.linkList.icons li .print,.content ul.linkList.icons li .printFriendly {
+	background-image: url(../img/touch/icons/print.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .print:hover,.content ul.linkList.icons li .printFriendly:hover {
+	background-image: url(../img/touch/icons/print_hover.svg);
+}
+
+.content ul.linkList.icons li .print:disabled,.content ul.linkList.icons li .printFriendly:disabled {
+	background-image: url(../img/touch/icons/print_disabled.svg);
+}
+
+.content ul.linkList.icons li .search {
+	background-image: url(../img/touch/icons/search.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .search:hover {
+	background-image: url(../img/touch/icons/search_hover.svg);
+}
+
+.content ul.linkList.icons li .search:disabled {
+	background-image: url(../img/touch/icons/search_disabled.svg);
+}
+
+.content ul.linkList.icons li .pdf {
+	background-image: url(../img/touch/icons/pdf.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .pdf:hover {
+	background-image: url(../img/touch/icons/pdf_hover.svg);
+}
+
+.content ul.linkList.icons li .pdf:disabled {
+	background-image: url(../img/touch/icons/pdf_disabled.svg);
+}
+
+.content ul.linkList.icons li .directDebit {
+	background-image: url(../img/touch/icons/direct_debit.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .directDebit:hover {
+	background-image: url(../img/touch/icons/direct_debit_hover.svg);
+}
+
+.content ul.linkList.icons li .directDebit:disabled {
+	background-image: url(../img/touch/icons/direct_debit_disabled.svg);
+}
+
+.content ul.linkList.icons li .success {
+	background-image: url(../img/touch/icons/tick.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .success:hover {
+	background-image: url(../img/touch/icons/tick_hover.svg);
+}
+
+.content ul.linkList.icons li .success:disabled {
+	background-image: url(../img/touch/icons/tick_disabled.svg);
+}
+
+.content ul.linkList.icons li .circleGreenTick {
+	background-image: url(../img/touch/icons/circle_tick.svg);
+	padding-left: 35px !important;
+}
+
+.content ul.linkList.icons li .circleGreenTick:hover {
+	background-image: url(../img/touch/icons/circle_tick_hover.svg);
+}
+
+.content ul.linkList.icons li .circleGreenTick:disabled {
+	background-image: url(../img/touch/icons/circle_tick_disabled.svg);
+}
+
+.content ul.linkList.icons li .exclamationMark,.content ul.linkList.icons li .circleHalfGreen {
+	padding-left: 35px !important;
+}
+
+.content .pdfLink {
+	background-image: url(../img/touch/icons/pdf.svg) !important;
+	padding-left: 35px !important;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	margin-left: 0 !important;
+}
+
+.content .pdfLink:hover {
+	background-image: url(../img/touch/icons/pdf_hover.svg) !important;
+}
+
+.content .pdfLink:disabled {
+	background-image: url(../img/touch/icons/pdf_disabled.svg) !important;
+}
+
+.content div.formSubmitError {
+	background: url(../img/touch/icons/error.svg) no-repeat 0 center;
+	background-size: 30px 30px;
+	color: #dc2a4d;
+	padding-left: 35px;
+}
+
+.content .warning {
+	background: url(../img/touch/icons/alert.svg) 0 0 no-repeat;
+	background-size: 30px 30px;
+	color: #dc2a4d !important;
+}
+
+.content .rewardOfferBlock .rewardsInline .linkList li a {
+	background-position: 0 6px;
+}
+
+input[type="text"],input[type="password"],input[type="number"],.content textarea,input[type=text][disabled],input[type=text][disabled].isDisabled,.content .internationalPhoneNumber input.extension {
+	border: 1px solid #CCC;
+	height: 28px;
+	color: #333;
+	padding: 10px;
+}
+
+.formField select,.content .inputGroup select,fieldset .formField .formFieldInner select,.navBar .formField select.slctViewAccount,.content .subPanel.loanCalculator select,.content .navBar select optgroup,.content .navBar select optgroup[label],#omm .splitTransSlim .frmCatSelect select,#omm .ommFilterTransactions select,.content .catTrans .frmCatSelect .categorySelect select {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+	font-family: "Helvetica",arial,sans-serif;
+	color: #006a4d;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.content .navBar select optgroup:before {
+	content: attr(label);
+	display: block;
+}
+
+.checkbox input[type="checkbox"] {
+	top: 10px;
+	left: 10px;
+}
+
+.content .inner .formField input[type="checkbox"] {
+	left: 0;
+}
+
+.content .agreeGroup .formFieldInner input[type="checkbox"] {
+	left: 10px;
+}
+
+#frmLogin .formField input[type="checkbox"] {
+	left: 10px;
+}
+
+.linkedCheckBoxAndTextFields .inner strong {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content .formField .radioGroup input,.content .formField.stackedField .radioGroup input {
+	margin-top: .25em;
+}
+
+.content .formField.sortCode span.separator {
+	font-size: 2em;
+	padding-top: 8px;
+}
+
+.formField span.currency,.content span.currency {
+	padding-top: 1em;
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.formField td span.currency {
+	font-size: 1em;
+}
+
+.hasJS .content .slider-input span.currency {
+	padding-top: 0;
+	font-size: 1.6em;
+}
+
+.fieldHelp .date.inputGroup {
+	clear: both;
+}
+
+.dateGroup .fieldHelp .date.inputGroup {
+	clear: none;
+}
+
+.formField.checkbox label:hover {
+	cursor: pointer;
+}
+
+.dateRange .inputGroup,.content fieldset .formField .date.inputGroup {
+	width: 285px !important;
+}
+
+.content .radioGroup .inputGroup ul.dateGroup li .formField .date.inputGroup {
+	max-width: 310px;
+}
+
+.content .loanCalculator .formField span.currency+input.field {
+	width: 11em;
+}
+
+td .formField {
+	zoom: 1;
+	font-size: 10px;
+}
+
+td .formField:before {
+	content: '';
+	display: block;
+}
+
+td .formField:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+td .formField input[type="checkbox"] {
+	position: absolute;
+	top: 4px;
+}
+
+td .formField label {
+	padding-left: 22px;
+}
+
+td .formField span {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content .payee .radioGroup .inputGroup input[type="radio"],.content .radioGroup .dateGroup input[type="radio"] {
+	margin-top: .3em;
+}
+
+.content .payee .amountGroup .inputGroup label {
+	margin-top: .2em;
+}
+
+.content .balanceTransfer .formField .label {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content .balanceTransfer .inputGroup select {
+	margin-top: 0 !important;
+}
+
+.formField>.formField,.formField>.formFieldInner>.formField {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#ui-datepicker-div {
+	border: 0;
+	background: #006a4d;
+	padding: 10px;
+	width: 210px !important;
+	font-size: 1em;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-top-left: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-title {
+	color: #fff;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 1;
+	*zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+	zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+}
+
+#ui-datepicker-div .ui-datepicker-title:after,#ui-datepicker-div .ui-datepicker-title .after {
+	width: 50px;
+	height: 2px;
+	background: #77ba00;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+	content: '';
+}
+
+#ui-datepicker-div .ui-datepicker-buttonpane {
+	z-index: 2;
+}
+
+#ui-datepicker-div .ui-datepicker-close {
+	background-image: url(../img/touch/cross.png);
+	width: 15px;
+	height: 15px;
+	top: 10px;
+	right: 10px;
+	outline: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-prev,#ui-datepicker-div .ui-datepicker-next {
+	z-index: 2;
+}
+
+#ui-datepicker-div .ui-datepicker-prev span,#ui-datepicker-div .ui-datepicker-next span {
+	top: 6px;
+	background-image: url(../img/touch/arrow_right_white.png);
+	background-size: 8px 12px;
+}
+
+#ui-datepicker-div .ui-datepicker-prev span {
+	background-image: url(../img/touch/arrow_left_white.png);
+}
+
+#ui-datepicker-div .ui-datepicker-calendar {
+	border: 0;
+	background: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar thead tr {
+	border: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar thead tr th {
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	font-size: 1.6em;
+	line-height: 1.25;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td {
+	background: #fff;
+	color: #006a4d;
+	width: 30px;
+	height: 30px;
+	border-right: 1px solid #006a4d;
+	border-bottom: 1px solid #006a4d;
+	padding: 0;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td:hover a {
+	color: #649c00;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td a {
+	color: #006a4d;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td a:hover {
+	text-decoration: none;
+	color: #649c00;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-unselectable {
+	background: #005f45;
+	color: #85a59a;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-unselectable a {
+	color: #85a59a;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-other-month {
+	background: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-current-day,#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-days-cell-over {
+	background: #649c00 !important;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-today {
+	background: #e6e6e6 !important;
+	color: #006a4d;
+}
+
+.formFieldRow.error,.formField.error,.formField.addressField.groupedError,.formField.addressField.swiftError,.optionPanel.optionPanelError {
+	border: 0;
+	background: none !important;
+}
+
+.formFieldRow.error input,.formField.error input,.formField.addressField.groupedError input,.formField.addressField.swiftError input,.optionPanel.optionPanelError input,.formFieldRow.error select,.formField.error select,.formField.addressField.groupedError select,.formField.addressField.swiftError select,.optionPanel.optionPanelError select {
+	border: 1px solid #dc2a4d !important;
+	outline: 0;
+}
+
+.formFieldRow.error span.error,.formField.error span.error,.formField.addressField.groupedError span.error,.formField.addressField.swiftError span.error,.optionPanel.optionPanelError span.error {
+	background: 0;
+	padding: 0;
+	padding-left: 10px;
+	color: #dc2a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+td .formField.error span.error {
+	font-size: 1.6em;
+	line-height: 1.25;
+	padding-left: 0;
+}
+
+.content table tbody tr.error th,.content table tbody tr.error td {
+	background: none !important;
+}
+
+.content .optionPanel .formField.error span.error {
+	padding-left: 15px;
+}
+
+.content .quickTransfer fieldset .formField.error span.error {
+	padding-left: 12px;
+}
+
+.loanCalculator .formField.error span.error {
+	padding-left: 0;
+}
+
+.formField.checkbox span.error {
+	padding-left: 20px;
+}
+
+.subPanel .formField.error span.error {
+	padding-left: 0;
+}
+
+.content .balanceTransfer.expiryDate .formField.expiryDateField .date.inputGroup select {
+	width: auto;
+}
+
+.radioGroup .inputGroup .dateGroup .formField {
+	padding-top: .7em !important;
+	padding-bottom: .7em !important;
+}
+
+.manageAlerts table.textAlerts tbody td .formField,.manageAlerts table.textAlerts tbody td .formField input,.manageAlerts table.textAlerts tbody td .formField span,.manageAlerts table.textAlerts tbody td .formField.error span.error {
+	font-size: 1em;
+}
+
+.content #omm .ommAnalysis h3 {
+	font-size: 1.6em;
+}
+
+.content fieldset.bulkPaymentsList h3 {
+	font-size: 1.6em;
+}
+
+.content fieldset.bulkPaymentsList h3 span.inlineHelp {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .manageAlerts table.textAlerts tbody td input[type="checkbox"],.content .manageAlerts table.balanceAlerts tbody td input[type="checkbox"] {
+	margin: 0;
+}
+
+.content .manageAlerts table.textAlerts tbody th,.content .manageAlerts table.textAlerts tbody td {
+	vertical-align: top;
+}
+
+.f-balance {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 5em;
+	line-height: 1;
+}
+
+.f-largeMessage {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 2.4em;
+	line-height: 1.25;
+}
+
+.f-heading1,.content h1,.hasRaphael .ommLoader {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 3em;
+	line-height: 1.167;
+}
+
+.f-heading2,.content h2,.content span h2,.content h2.partHead,.content h2.bigHead,.content #omm h2,.content .banner h2,.content .addressPersonalDetails h2.timeHead,.content h2.expandingTablesHeader,.content fieldset.addressFinder .addressHeader h2,.content .quickTransfer h2,.content .secondary h2.iconHead,.content .secondary .iconHead h2,.content .secondary .accordion h2,.content .tillReceipt .topper h2,.content .creditCardAdvanceOffer .accountDetails h2,.content .creditCardAdvanceOffer .accountDetails h2,.content .myAccounts li.accountStyle h2,.content .accountData h2,.content .accountDetails h2,.content .secondary .subPanel h2,.content .secondary .accordion .part h2.trigger,.content .secondary .tillReceipt .item h2,.content .statementDetails h2 {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 2em;
+	line-height: 1.25;
+}
+
+.f-heading3,.content #omm .ommFilterTransactions h2.expandTrigger,.f-buttonsAndLinks,.f-linkNormal,.f-linkHover,.f-normalOnBackground,.f-hoverOnBackground,.content h3,.content span h3,.content h3.subHead,.content h3.small,.content table th,.content #omm h3,.content #omm h3.subHead,.content #omm .headingNumber,.content #omm .ommGoalGauge .view,.content #omm fieldset.ommGoalDescription div.formField label,.content #omm fieldset.ommGoalDescription p.summary,.content #omm .ommBudgets .categories span.category,.content .banner h3,.content .addressPersonalDetails h3,.content .expandingTables .part a.trigger,.content .expandingTables .part h3.trigger,.content fieldset.addressFinder .addressHeader h3,.content .supportingInfo h3,.content table.comparison thead th,.content table.comparison thead th.first,.content table.comparison thead tr.heading th,.content .pcaConfig table.comparison thead th.first,.content .pcaConfig table.comparison thead th.highlight,.content .pcaConfig table.comparison thead th.first,.content .pcaConfig table.comparison thead th strong,.content .quickContact h3,.content .tillReceipt .part h3,.content .tillReceipt .topper h3,.content .followingTabContent h3,.content #omm .dashboard h3,.content #overlayWrapper .ommChartWrap h3,.content #omm .ommChartWrap h3,.content #omm .ommGoal .ommGoalGauge h3,.content .myAccounts li.accountStyle .accountDetails.loanOffer h3.success,.content ul.personalisedOffers li h3,.content .myAccounts .accountDetails.loanOffer h3,.content .myAccounts ul.personalisedOffers li h3,.f-actionButton {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.f-heading4,.content h4,.content span h4,.content #omm .ommCreateGoal h4,.content .tillReceipt .part h4 {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+	text-transform: uppercase;
+}
+
+.f-heading5 {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.4em;
+	line-height: 1.43;
+	text-transform: uppercase;
+}
+
+.f-bodyCopy,input[type="text"],input[type="password"],input[type="number"],.content textarea,input[type=text][disabled],input[type=text][disabled].isDisabled,.content .internationalPhoneNumber input.extension,.content .navBar select optgroup:before,.formFieldRow.error span.error,.formField.error span.error,.formField.groupedError span.error,.formField.groupedError span.groupedError,.formField.swiftError span.error,.optionPanel.optionPanelError span.error,#ui-datepicker-div .ui-datepicker-calendar tbody td,div.formSubmitError,.content p.intro,.content p.pseudoHead,.content p,.content li,.content dt,.content dd,.content label,.content .smartRewardearningSummary,.content ol li.activeStage,.content table td,.content blockquote,.content .formField span.value,.content .smartRewards-optin .colLayout.cols3 p,.content #omm div.dataCurrencyMod p,.content #omm .ommGoals .subPanel .startBalance .amount,.content #omm .ommSavingPlanCalculatePanel .resultPull .or,.content #omm fieldset.ommGoalDescription div.formField p.placeHolderText,.content #omm .ommBudgets .budgetOverviewGauge .axis,.content #omm .ommFilterTransactions span.label,.content .banner .content p,.content .formField .inlineHelp,.content .formField .inlineFieldHelp,.content .formField label,.content .formField span.label,.content .radioGroup span.label,.content .internationalPhoneNumber .prefix,.content .fieldHelp .cxtHelp,.content .radioFieldPanel .cxtHelp,.content .panel .inner .inlinerow .cxtHelp,.content .panel .inner .inlinerow .cxtHelp,.content .personalDetails .adr span,.content .currentAddressDetails .adr span,.content .customerDetails p.lastLogin,.content .quickTransfer form.multiline fieldset label,.content #omm .ommSummaryBar em.balance,.content #omm table th,.content #omm table td,.content #omm .ommGoals .subPanel .header .goalInfo .goalDate,.content #omm .subPanel .ommGoalGauge .textSummary,.content .secondary .subPanel.smartRewards ul.linkList li,.content .loanSelectionFooter p,.content .miniStatement table th,.content .miniStatement table td,.content .bigPrompt .content p,.content .bigPrompt .products .inner h3,.content .bigPrompt .products .inner h4,.content .bigPrompt .subPanel li,.content .bigPrompt .colLayout .pullOut h3,.content .primary .IBTopPanel h3,.content .primary .IBTopPanel p,.content .primary .IBTopPanel ul li,.content .primary .IBMediumPanel h3,.content .primary .IBMediumPanel h3.bigHead,.content .primary .IBMediumPanel h3.biggerHead,.content .primary .IBMediumPanel ul li,.content .primary .IBMediumPanel .pullOut h3,.content .primary .IBMediumPanel .pullOut ul li,.content .primary .IBMediumPanel .content ul li,.content .bigBanner .content p,.content .bigBanner .products h3,.content .bigBanner .products ul li {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.f-reset,.content .navBar select optgroup,.content .navBar select optgroup[label],.content .internationalPhoneNumber .optional,.formField .optional,.content h2 .preHead,.content .accountUpgrade h2 span.accountName,.content .accountUpgrade h2 span.accountNickname,.content .large,.content .footnote,.content #omm h2 span,.content #omm h3.subHead span,.content #omm .help h3,.content #omm .ommBudgetCalendar div em,.content #omm .ommBudgets .categories,.content #omm .ommBudgets div.budgetSummary,.content #omm .ommFilterTransactions .colPart .label p,.content #omm .ommFilterTransactions .colPart .categorySelect .label p,.content .formField label .inlineHelp,.content .wideMessage strong,.content table.comparison thead th p,.content table.fiveCol thead th strong.autoHeighStrong,.content table.fiveCol thead th a,.content .pcaConfig table.comparison thead tr th,.content .pcaConfig table.comparison tr.cardRow th span,.content .secondary ul.quickLinks li h3,.content .tillReceipt .item h2 span,.content .tillReceipt .item .preHead,.content .tillReceipt p .important,.content .myAccounts li.accountStyle,.content .secondary ul.quickLinks li h3 a,.content .secondary .subPanel.smartRewards,.content .secondary .subPanel.smartRewards ul.linkList li .cxtHelp .contextual .contentInner {
+	font-size: 1em;
+}
+
+.f-termsAndConditions,.content .primary .tillReceipt .part p.note {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.4em;
+	line-height: 1.43;
+}
+
+.f-inlineLink {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.6em;
+	line-height: 1.25;
+	text-decoration: underline;
+}
+
+.f-footnotes,.content .footnote p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 1.4em;
+	line-height: 1.43;
+}
+
+.content {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	color: #333;
+}
+
+.content a {
+	font-weight: 400;
+}
+
+.content h1 {
+	margin: 0 0 .5em;
+}
+
+.content h2>h2 {
+	font-size: 1em !important;
+}
+
+.content h2 .preHead {
+	font-weight: 400;
+}
+
+.content h2 span {
+	font-size: 1em;
+}
+
+.content .primary p a,.content table th a,.content .accountData ul.linkList li a {
+	color: #006a4d;
+}
+
+.content .selectAccounts li>label {
+	font-size: 1em !important;
+}
+
+.content .subPanel {
+	zoom: 1;
+}
+
+.content .subPanel:before {
+	content: '';
+	display: block;
+}
+
+.content .subPanel:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.content strong {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .linkList {
+	font-weight: 400 !important;
+	color: #006a4d;
+	line-height: 2em;
+}
+
+.content table.offers .total {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content table tfoot tr.total td.amount {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .smartRewards-optin .colLayout.cols3 p strong {
+	font-size: inherit;
+}
+
+.content #omm h3.subHead span.cxtHelp {
+	font-weight: 400;
+}
+
+.content #omm .ommGoalDescriptionPanel .pullOut,.content #omm .ommCreateGoal .pullOut {
+	float: right;
+}
+
+.content #omm .ommSavingPlanCalculatePanel .resultPull .or {
+	left: 49%;
+}
+
+.content #omm .ommBudgets .budgetOverviewGauge .axis {
+	font-weight: 700 !important;
+}
+
+.content .formField .inputGroup.date p.note {
+	font-size: 1.4em !important;
+	line-height: 1.43;
+}
+
+.content .formField p.note {
+	font-size: 1.4em;
+	line-height: 1.43;
+}
+
+.content .internationalPhoneNumber .prefix {
+	padding-top: .9em;
+}
+
+.content .internationalPhoneNumber label {
+	margin-top: .9em;
+}
+
+.content .addressPersonalDetails h2.timeHead {
+	padding-left: 65px;
+}
+
+.content .addressPersonalDetails p.timeEstimate {
+	padding-left: 65px;
+}
+
+.content .cxtHelp .contextual h2 {
+	font-size: 1em !important;
+}
+
+.content .panel .inner .inlinerow .cxtHelp {
+	font-size: 1.6em !important;
+}
+
+.content .cxtHelp .refPoint .contextual .help h3 {
+	color: #fff;
+	font-size: initial;
+}
+
+.content .cxtHelp .contextual .contentInner {
+	margin-top: 0 !important;
+	margin-right: 20px !important;
+}
+
+.content p .cxtHelp,.content span .cxtHelp {
+	font-size: 1em !important;
+}
+
+.content .addressPersonalDetails {
+	margin-top: 0;
+}
+
+.content .infoMessage.alert .infoMessageInner p:first-child,.content .infoMessage.success .infoMessageInner p:first-child {
+	padding-top: .8em;
+}
+
+.content table.comparison thead th p,.content table.fiveCol thead th strong.autoHeighStrong,.content table.fiveCol thead th a {
+	line-height: 1.25;
+}
+
+.content table.fiveCol thead th strong.autoHeighStrong,.content table.fiveCol thead th a {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .tillReceipt .item .preHead {
+	font-weight: 400;
+}
+
+.content .panelWrap fieldset.expiryDate .inputGroup {
+	width: auto !important;
+}
+
+.content #omm .withdrawn .allocateFunds .balanceText .totalAmount {
+	font-size: 1em;
+}
+
+.content .myAccounts li.accountStyle .accountDetails.loanOffer p.expires {
+	font-size: 1.6em !important;
+}
+
+.content ul.personalisedOffers li p.offerDescription,.content ul.personalisedOffers li p.offerApply {
+	font-size: 1.6em !important;
+}
+
+.content .formFieldInner span.label span.cxtHelp,.content .formFieldInner label span.cxtHelp {
+	font-size: 1em !important;
+	margin-left: 3px;
+}
+
+.content .formFieldInner span.symbol {
+	font-size: 1.4em;
+	padding-top: .9em;
+}
+
+.content .formFieldInner #cbxLowerAlerts1 {
+	top: -12px;
+}
+
+.content .formFieldInner input.submitAction {
+	margin-top: 12px;
+}
+
+.content .help {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border: 0;
+	padding: 10px 15px;
+}
+
+.content .help p {
+	color: #fff;
+	margin: 0;
+}
+
+.content .policy dt {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content strong {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content label strong,.content label,.content label.ngb-strong,.content span.label {
+	font-family: 'Reg L33bo',arial,sans-serif !important;
+	font-weight: normal!important !important;
+}
+
+.content span.label h3.bigHead {
+	font-size: 1em;
+	margin: 0;
+}
+
+.content .comparisonSelectList .comparisonSelectItem .action {
+	bottom: 16px;
+	right: 16px;
+	top: auto;
+}
+
+.content .saveChangeData table th,.content .saveChangeData table td {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content .myAccounts ul.personalisedOffers li h3 {
+	position: relative;
+}
+
+.content .secondary .tillReceipt {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-color: #fff;
+}
+
+.content .secondary .subPanel.smartRewards {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-color: #fff;
+	box-shadow: .1em .1em 0 rgba(0,0,0,0.1);
+}
+
+.content .secondary .subPanel.smartRewards h2 {
+	font-size: 1.6em;
+	margin-top: 8px;
+	padding-bottom: 15px;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li a.cxtTrigger {
+	font-weight: 400 !important;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li span {
+	color: #333;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li .cxtHelp {
+	background-image: none;
+}
+
+.content .navBar ul.multitype li a {
+	line-height: 1.25;
+}
+
+.content div.logoutTimer {
+	position: relative;
+	text-align: left;
+}
+
+.content div.logoutTimer p.timer {
+	font-size: 1.6em;
+	width: auto;
+}
+
+.content div.logoutTimer ul.movingOn {
+	width: auto;
+	position: absolute;
+	right: 14px;
+	top: 14px;
+}
+
+.content .criteria form label,.content .criteria form span.label {
+	padding-top: .9em;
+}
+
+.content span.label.noBreak {
+	padding-top: .9em;
+}
+
+.content .showHide .toggle {
+	left: 0;
+}
+
+.content dl.summary dd em,.content dl.summary dt em {
+	color: #333;
+	font-size: 1.875em;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content dl.summary dd select,.content dl.summary dt select {
+	font-size: 1em;
+}
+
+.content dl.summary .formField .label,.content dl.summary .formField .error {
+	font-size: 1em;
+}
+
+.content .branchDetails .pane {
+	padding-left: 40px;
+}
+
+.content .branchDetails p {
+	padding-left: 40px;
+}
+
+.content .branchDetails .branchName a:hover {
+	color: #649c00;
+}
+
+.content table thead th {
+	color: #333;
+}
+
+.content table.sortable thead th {
+	color: #006a4d;
+}
+
+.content table.sortable thead th:hover,.content table.sortable thead th.headerSortUp,.content table.sortable thead th.headerSortDown {
+	color: #649c00;
+}
+
+.content .loanSelectionCalculator form.loanCriteria p.over,.content .loanSelectionCalculator form.loanCriteria p.recalculate {
+	margin-top: .9em;
+}
+
+.content .loanSelectionCalculator form.loanCriteria div.formField {
+	padding-top: 0 !important;
+}
+
+.content .loanSelectionCalculator form.loanCriteria div.formField.monthWrapper label {
+	margin-top: .9em;
+}
+
+.content .loanSelectionCalculator form.loanCriteria div.formField.moneyWrapper span.currency {
+	right: auto;
+	left: 8px;
+	top: 0;
+}
+
+.content .loanSelectionFooterSub .clear {
+	clear: both;
+}
+
+.content .searchTransactions .amountGroup .amountField .inlineHelp {
+	padding-top: 1em;
+	font-size: 1.4em;
+	line-height: 1.43;
+}
+
+.content .searchTransactions .radioGroup .currency,.content .searchTransactions .radioGroup span.secondRange {
+	padding-top: 1em;
+	font-size: 1.4em;
+	line-height: 1.43;
+	margin-top: 0;
+}
+
+.content ul.linkList p {
+	margin-left: 0;
+}
+
+.content .dateRangeShortcuts {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content .inner.emailPreference .formSubmitError {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+.content label.currencyCodeLabel {
+	padding-top: 1em;
+}
+
+.content .inner.emailPreference {
+	margin: 0;
+}
+
+.content .loanSelectionFooterSub .inner {
+	margin: 0;
+}
+
+.content .comparisonSelectList.compareSavings .comparisonSelectItem h2 {
+	font-size: 1.233em;
+}
+
+.content .comparisonSelectList li.comparisonSelectItem h3 {
+	font-size: 1em;
+}
+
+.content ol.cardAuthentication span.label,.content ol.cardAuthentication input.cardNumberInput,.content ol.cardAuthentication input.passCodeInput,.content ol.cardAuthentication span.error {
+	font-size: 1em !important;
+}
+
+.hasJS .showHide .trigger a,.hasJS .showHide .trigger span,.content .transferSlideOuter p.transferTrigger a {
+	color: #006a4d;
+}
+
+.hasJS .content .accountUpgradeSummary .showHideAccordion .part .trigger {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+	padding-left: 40px;
+}
+
+.hasJS .content .accountUpgradeSummary .showHideAccordion .part .trigger:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.hasJS .content .accountUpgradeSummary .showHideAccordion .part .trigger:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+@media screen and (max-width:1240px) {
+	.content table.sortable tbody th,.content table.sortable tbody td {
+		font-size: 1.6em !important;
+	}
+}
+
+.content .primary .IBMediumPanel .withButton p.buttonLink {
+	bottom: 0;
+	position: static;
+}
+
+.smartRewards-optin .colLayout.cols3 p {
+	font-size: 14px;
+	padding: 0 38px 0 45px;
+}
+
+.content div.logoutTimer ul.movingOn {
+	width: 45%;
+}
+
+#wrapper {
+	min-width: 980px;
+}
+
+.content ul.tabs,.content ul.subTabs {
+	background: #f0f0f0;
+	padding: 10px 10px 0 0;
+	margin: 0 0 1em;
+	border: 0;
+}
+
+.content ul.tabs li,.content ul.subTabs li {
+	margin: 0 0 0 10px;
+	padding: 0 !important;
+	border: none !important;
+}
+
+.content ul.tabs li .tabOuter,.content ul.subTabs li .tabOuter {
+	margin-bottom: 0;
+	background: 0;
+	padding: 0;
+}
+
+.content ul.tabs li .tabInner,.content ul.subTabs li .tabInner {
+	background: 0;
+	height: auto;
+	border-top: 4px solid #006a4d;
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+	display: block;
+}
+
+.content ul.tabs li .tabInner:before,.content ul.subTabs li .tabInner:before {
+	content: '';
+	display: block;
+}
+
+.content ul.tabs li .tabInner:after,.content ul.subTabs li .tabInner:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.content ul.tabs li .tabInner a,.content ul.subTabs li .tabInner a,.content ul.tabs li .tabInner em,.content ul.subTabs li .tabInner em {
+	background: #006a4d;
+	color: #fff;
+	padding: 0 20px;
+	height: 46px;
+	line-height: 44px;
+	margin: 0;
+	display: block;
+	float: left;
+	font-size: 1em;
+	background-repeat: no-repeat !important;
+	max-width: 300px !important;
+	width: auto !important;
+}
+
+.content ul.tabs li .tabInner .imgInner,.content ul.subTabs li .tabInner .imgInner {
+	line-height: 44px;
+	height: 44px;
+}
+
+.content ul.tabs li .tabInner:hover,.content ul.subTabs li .tabInner:hover {
+	border-top-color: #649c00;
+}
+
+.content ul.tabs li .tabInner:hover a,.content ul.subTabs li .tabInner:hover a {
+	background: #649c00;
+	text-decoration: none;
+}
+
+.content ul.tabs li.current,.content ul.subTabs li.current {
+	margin: 0 0 0 10px;
+	bottom: auto;
+	padding: 0;
+	border: 0;
+}
+
+.content ul.tabs li.current .tabOuter,.content ul.subTabs li.current .tabOuter {
+	background: 0;
+}
+
+.content ul.tabs li.current .tabInner,.content ul.subTabs li.current .tabInner {
+	background: 0;
+	border-top-color: #006a4d;
+	padding: 0;
+}
+
+.content ul.tabs li.current .tabInner a,.content ul.subTabs li.current .tabInner a,.content ul.tabs li.current .tabInner em,.content ul.subTabs li.current .tabInner em {
+	background: #fff;
+	color: #333;
+	padding: 0 20px;
+	height: 46px;
+	line-height: 44px;
+	margin: 0;
+	font-size: 1em;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .summary ul.tabs li,.content .summary ul.subTabs li {
+	margin: 0 0 0 10px;
+	border-bottom: 0;
+}
+
+.content #omm ul.tabs li a,.content #omm ul.subTabs li a {
+	padding: 0 20px;
+	color: #fff;
+}
+
+.content #omm ul.tabs li.current .tabInner,.content #omm ul.subTabs li.current .tabInner {
+	border-top-color: #006a4d;
+}
+
+.content #omm ul.tabs li.current a,.content #omm ul.subTabs li.current a,.content #omm ul.tabs li.current em,.content #omm ul.subTabs li.current em {
+	padding: 0 20px;
+	margin-top: 0;
+	color: #333;
+}
+
+.sp-pat-m-hf-01-bank-bar .m-hf-01-container {
+	width: auto;
+}
+
+.sp-pat-m-hf-01-bank-bar .m-container,.m-hf-02-customer-bar .m-container,.sp-pat-m-hf-03-footer .m-container,.m-hf-02-name-setting .m-container,.m-hf-02-nameonly .m-container {
+	min-width: 950px;
+	max-width: 1206px;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+#page {
+	margin-top: 2em;
+}
+
+#wrapper {
+	background-color: #f0f0f0;
+}
+
+#wrapper header {
+	position: relative;
+	z-index: 0;
+}
+
+.content .primary .panel {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.content .primary .panel .panel {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+.content .primary .subPanel {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.content .primary .wideMessage p {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.content .primary .offers .ngb-amount {
+	padding-left: 10px;
+}
+
+.content .primary .tillReceipt .part.trecBenefits .iconContentRight li {
+	padding-right: 14px;
+}
+
+.content .primary form .transfer.payee .pullOut,.content .primary form .payee.withPullout .pullOut {
+	clear: none;
+	float: right;
+	margin: 10px 15px 2em 2em;
+	width: 180px;
+}
+
+.content .secondary .panel {
+	background: 0;
+	border-top: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	padding: 0;
+}
+
+.content .secondary .panel .accordion .part,.content .secondary .panel .subPanel,.content .secondary .panel .inboxPanel {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: .1em .1em 0 rgba(0,0,0,0.1);
+}
+
+.content .secondary .panel .accordion .partShadow {
+	background: 0;
+}
+
+.content .secondary .panel .subPanelShadow {
+	background: 0;
+}
+
+.content .secondary .pendingPayments ul.sudoButtons li {
+	height: auto;
+}
+
+.content .inboxMessagePagination {
+	height: 70px;
+}
+
+#overlay {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: none;
+	-webkit-border-radius: 0;
+}
+
+#overlay #overlayCont {
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+#overlay p.close {
+	background: url(../img/overlay_close.svg) 0 0 no-repeat;
+	background-size: 15px 15px;
+	height: 15px;
+	width: 15px;
+}
+
+#overlay p.close a:hover {
+	background-image: url(../img/overlay_close_hover.svg);
+	background-size: 15px 15px;
+	height: 15px;
+	width: 15px;
+}
+
+#overlay .overlayTriggerButton {
+	background: url(../../img/continue_arrow.png) no-repeat;
+	width: 90px;
+	height: 25px;
+	border: 0;
+}
+
+#omm .ommCreateGoal .pullOut {
+	width: 180px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+}
+
+.content .secondary .tillReceipt {
+	padding: 10px 11px 11px;
+}
+
+.content .secondary .tillReceipt .item h2 {
+	margin-bottom: 14px;
+	margin-right: 0;
+	position: relative;
+	color: #333;
+	font-size: 1.6em;
+	text-align: center;
+	margin-bottom: 34px;
+	text-transform: UPPERCASE;
+	*zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+	zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+}
+
+.content .secondary .tillReceipt .item h2:after,.content .secondary .tillReceipt .item h2 .after {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 2px;
+	left: 50%;
+	margin-left: -20px;
+	bottom: -20px;
+	background: #649c00;
+}
+
+.content .secondary .tillReceipt .item h2 .preHead {
+	color: #333;
+}
+
+.content .secondary .tillReceipt .part {
+	background: 0;
+}
+
+.content .secondary .tillReceipt .part p,.content .secondary .tillReceipt .part dd,.content .secondary .tillReceipt .part dt {
+	color: #333;
+}
+
+.content .secondary .tillReceipt .part a {
+	color: #006a4d;
+}
+
+.content .secondary .tillReceipt .part dd {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .secondary .tillReceipt .part table th {
+	color: #333;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	padding: 5px 0;
+}
+
+.content .secondary .tillReceipt .part table td {
+	padding: 5px 0;
+	color: #333 !important;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .secondary .tillReceipt .part table .dividerUpper td,.content .secondary .tillReceipt .part table .dividerUpper th {
+	padding-bottom: 20px;
+}
+
+.content .secondary .tillReceipt .part table .dividerLower td,.content .secondary .tillReceipt .part table .dividerLower th {
+	padding-top: 20px;
+	background: 0;
+	border-top: 1px solid #e5e5e5;
+}
+
+.content .secondary .tillReceipt .part.trecLoanDetails {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.content .secondary .tillReceipt .part.trecLoanEmployment p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .secondary .tillReceipt .part.trecLoanEmployment p strong {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .secondary .tillReceipt .part.trecEdit {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 19px;
+}
+
+.content .secondary .tillReceipt .part.trecEdit form {
+	margin-top: 0;
+}
+
+.content .secondary .tillReceipt .part.travelMoneySummary {
+	margin-bottom: 0;
+}
+
+.content .secondary .tillReceipt .part.travelMoneySummary table {
+	margin-bottom: 0;
+}
+
+.content .secondary .tillReceipt .part.travelMoneySummary table .dividerUpper th,.content .secondary .tillReceipt .part.travelMoneySummary table .dividerUpper td {
+	padding-bottom: 20px;
+}
+
+.content .secondary .tillReceipt .part.travelMoneySummary table .dividerLower th,.content .secondary .tillReceipt .part.travelMoneySummary table .dividerLower td {
+	padding-bottom: 20px;
+}
+
+.content .secondary .tillReceipt .part.travelMoneySummary table td.edit {
+	font-size: 1em;
+	text-align: left;
+	padding-bottom: 0;
+}
+
+.content .secondary .tillReceipt .part .linkBullet {
+	color: #006a4d;
+	font-size: 1.6em;
+	margin-left: 0;
+	padding-left: 0;
+	background: 0;
+}
+
+.travel-flag-wrapper td .formField {
+	font-size: 1em;
+}
+
+.travel-flag-wrapper td .formField input[type="text"],.travel-flag-wrapper td .formField label {
+	font-size: 1em;
+}
+
+.travel-flag-wrapper dt .formField label,.travel-flag-wrapper dt .formField input[type="text"] {
+	font-size: 1em;
+}
+
+.printPreview div.sp-pat-m-hf-01-bank-bar .m-01-menu-bar.pull-right {
+	display: none;
+}
+
+.printPreview .content ul.actions {
+	top: -86px;
+}
+
+.content .rewardOfferBlock .rewardsInline .linkList li {
+	color: #333;
+}
+
+.content div.bulkPaymentCalculator span.currency {
+	padding-top: 0;
+}
+
+.hasJS .content .secondary table.pendingPayments .showHide .toggle {
+	top: 0;
+}
+
+.content ul.sudoButtons li {
+	height: auto;
+}
+
+.accordion-plus {
+	background-image: url(../img/touch/plus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.accordion-plus:hover {
+	background-image: url(../img/touch/plus_hover.svg);
+	color: #649c00;
+	text-decoration: none;
+}
+
+.accordion-minus {
+	background-image: url(../img/touch/minus.svg);
+	background-size: 30px 30px;
+	background-repeat: none;
+	background-position: 0 0;
+}
+
+.accordion-minus:hover {
+	background-image: url(../img/touch/minus_hover.svg);
+	text-decoration: none;
+}
+
+.content .secondary .accordion {
+	text-align: center;
+}
+
+.content .secondary .part {
+	background-color: #006a4d;
+	color: #fff;
+	padding: 0;
+	background-image: none;
+	margin-bottom: 20px;
+	border: 0 none;
+}
+
+.content .secondary .part a {
+	color: #fff;
+}
+
+.content .secondary .part .partTop,.content .secondary .part .partBottom {
+	display: none;
+}
+
+.content .secondary .part.selected {
+	background-color: #006a4d;
+	color: #fff;
+}
+
+.content .secondary .accordion h2.trigger {
+	font-size: 1.6em;
+}
+
+.content .secondary .accordion h2.trigger,.content .secondary ul.quickFAQs li h3.qfaqTrigger {
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	color: #fff;
+	margin: 0;
+	cursor: pointer;
+	line-height: 1.2;
+	padding: 16px 40px 14px 19px;
+	text-align: center;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	border-top: 1px solid #00553e;
+}
+
+.content .secondary .accordion h2.trigger.ui-accordion-header,.content .secondary ul.quickFAQs li h3.qfaqTrigger.ui-accordion-header {
+	background-image: url(../img/plussecondary.png) !important;
+}
+
+.content .secondary .accordion h2.trigger a,.content .secondary ul.quickFAQs li h3.qfaqTrigger a {
+	text-decoration: none;
+	display: block;
+}
+
+.content .secondary .accordion h2.trigger a:hover,.content .secondary ul.quickFAQs li h3.qfaqTrigger a:hover {
+	text-decoration: none;
+}
+
+.content .secondary .accordion h2.trigger span,.content .secondary ul.quickFAQs li h3.qfaqTrigger span {
+	display: none;
+}
+
+.content .secondary .accordion h2.trigger:hover,.content .secondary ul.quickFAQs li h3.qfaqTrigger:hover {
+	background-color: #00553e;
+}
+
+.content .secondary .accordion h2.trigger {
+	border-top: 0;
+	text-transform: uppercase;
+	*zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+	zoom: expression(this.runtimeStyle.zoom='1',this.appendChild(document.createElement(span)).className='after');
+}
+
+.content .secondary .accordion h2.trigger:after,.content .secondary .accordion h2.trigger.after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+	border-top: 3px solid #649c00;
+	margin-top: 20px;
+}
+
+.content .secondary .accordion h2.trigger.ui-state-active,.content .secondary ul.quickFAQs li h3.qfaqTrigger.ui-state-active {
+	background-image: url(../img/minussecondary.png) !important;
+	background-repeat: no-repeat;
+	background-position: 95% center !important;
+}
+
+.content .secondary ul.quickFAQs li .qfaqTrigger {
+	color: #fff;
+	padding: 10px;
+}
+
+.secondary .panel a.linkMore {
+	color: #fff;
+	background-position: 22px center;
+	border-top: 1px solid #00236a;
+	display: block;
+	padding-left: 44px;
+}
+
+.secondary .ui-accordion .qfaqCont,.secondary .ui-accordion .quickContact {
+	padding: 0 15px;
+}
+
+.secondary .accordion .part.selected h2.trigger,body.hasJS .secondary .accordion .part.selected h2.trigger a {
+	color: #fff;
+}
+
+.secondary .accordion .part .pane {
+	padding: 0;
+}
+
+.content ul.quickFAQs.ui-accordion .qfaqCont {
+	padding: 15px;
+	color: #fff;
+}
+
+.content ul.quickFAQs.ui-accordion .qfaqCont p {
+	color: #fff;
+}
+
+.content .secondary .accordion p {
+	color: #fff;
+}
+
+.content ul.quickFAQs li {
+	margin-bottom: 0 !important;
+}
+
+.secondary .accordion .paneInner {
+	padding: 0;
+	color: #fff !important;
+	border: none !important;
+}
+
+.secondary .accordion .paneInner .paneInner h3,.secondary .accordion .paneInner h3 {
+	color: #fff;
+}
+
+.secondary .ui-accordion .ui-accordion .ui-accordion-content-active {
+	background: #00513a;
+}
+
+.secondary .paneInner .linkBullet {
+	background-image: url(../img/chevron-right.png) !important;
+	background-position: left center;
+	display: inline-block;
+	padding: 19px;
+}
+
+.content .secondary .accordion .quickContact h3 {
+	color: #fff;
+}
+
+.hasJS .content .secondary ul.quickFAQs li .qfaqTrigger {
+	color: #fff;
+}
+
+.content .secondary .panel .ui-accordion-content .paneInner .paneInner {
+	padding: 15px;
+}
+
+.content .m-touch-primary-btn {
+	background: #006a4d;
+	background: -moz-linear-gradient(top,#008460 0,#006a4d 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#008460 0),color-stop(100%,#006a4d));
+	background: -webkit-linear-gradient(top,#008460 0,#006a4d 100%);
+	background: -o-linear-gradient(top,#008460 0,#006a4d 100%);
+	background: -ms-linear-gradient(top,#008460 0,#006a4d 100%);
+	background: linear-gradient(to bottom,#008460 0,#006a4d 100%);
+	color: #fff;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	font-size: 16px;
+	border: 0;
+	padding: 15px 20px;
+	cursor: pointer;
+	line-height: 1.25;
+}
+
+.content .m-touch-secondary-btn {
+	background: #f0f0f0;
+	color: #006a4d;
+	padding: 15px 20px;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.content .bigPrompt h2,.content .bigPrompt h3 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .content p {
+	color: #333;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .products .inner h3,.content .bigPrompt .products .inner h4 {
+	color: #006a4d;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	text-transform: none;
+}
+
+.content .bigPrompt .subPanel li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .colLayout .pullOut h3 {
+	color: #006a4d;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .colLayout .pullOut li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .footnotePanel .footnote p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .colLayout .subPanel.withButton {
+	padding-bottom: 0;
+}
+
+.content .bigPrompt .colLayout .subPanel.withButton p.buttonLink {
+	position: static;
+}
+
+.content .primary .IBTopPanel h1 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBTopPanel h2 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBTopPanel h3 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	color: #006a4d;
+}
+
+.content .primary .IBTopPanel p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBTopPanel ul li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel h2,.content .primary .IBMediumPanel h2.biggerHead {
+	color: #006a4d;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel h3,.content .primary .IBMediumPanel h3.bigHead,.content .primary .IBMediumPanel h3.biggerHead {
+	color: #006a4d;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel ul li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel .pullOut {
+	float: right;
+	margin-left: 15px;
+}
+
+.content .primary .IBMediumPanel .pullOut h3 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	color: #006a4d;
+}
+
+.content .primary .IBMediumPanel .pullOut ul li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel .content ul li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel .content p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .footnote p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner h2 {
+	color: #006a4d;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner h2 span {
+	font-size: 1em;
+}
+
+.content .bigBanner h3 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner h3 span {
+	font-size: 1em;
+}
+
+.content .bigBanner .content p {
+	color: #333;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner .products h3 {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	color: #006a4d;
+}
+
+.content .bigBanner .products ul li {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner .footnotePanel .footnote p {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner p.buttonLink a.m-touch-primary-btn {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content .optInBrandList ul {
+	overflow: auto;
+}
+
+.sp-pat-009-banner .m-dm-panel .main-panel .main-section h2 span {
+	color: #fff;
+	color: #006a4d;
+}
+
+.sp-pat-009-banner .m-dm-panel .main-panel .main-section h3 {
+	font-weight: 400;
+}
+
+.sp-pat-009-banner .m-dm-panel .m-dm-terms p {
+	margin: 0;
+}
+
+.sp-pat-placements-tile .m-dm-panel .m-dm-terms p {
+	margin: 0;
+}
+
+.content .secondCard .slider-input span.currency,.content .ops-calculator-total .slider-input .formField span.currency {
+	padding-top: 0;
+}
+
+.content .ops-calculator-wrap .limit-container,.content .ops-calculator-wrap .term {
+	font-size: 1.6em;
+}
+
+.content .primary .panel {
+	border-top: 0;
+	box-shadow: .1em .1em 0 rgba(0,0,0,0.1);
+}
+
+.content .primary .panel .upgradeFeatures {
+	padding: 1.8em 0 0;
+}
+
+.content .primary .panel .panelWrap .inner .successInfoMessage {
+	padding: 0;
+}
+
+.content .primary .panel .panelWrap .inner .successInfoMessage .warningInfoMessage {
+	padding: 0;
+}
+
+.content .primary .panel .panelWrap.inboxData table.inboxMessageTable th.date input[type="submit"] {
+	display: none;
+}
+
+.content .primary .navBar {
+	background-color: #fff;
+	margin-bottom: 0;
+}
+
+.content .primary .offers .ngb-amount {
+	padding-left: 14px;
+}
+
+.content .primary .formField>.Countryofresidence.formField {
+	margin: 0 5px 1px !important;
+	padding: .7em 10px !important;
+}
+
+.content .myAccounts .accountDetails.loanOffer .loanDetails .dotted span {
+	font-size: 1.6em;
+}
+
+.content .myAccounts .promo .accountActionsWrapper ul.accountActions li.more a {
+	font-size: 1.6em;
+}
+
+.content .footnote p {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content div.formSubmitError {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .warning {
+	padding-left: 35px;
+	font-family: 'Med L33bo',arial,sans-serif !important;
+	font-weight: normal!important !important;
+}
+
+.content #omm .buttonLink a,.content #omm .ommBudgets ul.linkList a {
+	background-position: left 3px !important;
+	background-repeat: no-repeat !important;
+	background-size: 8px 12px !important;
+	padding-left: 15px !important;
+}
+
+.content #omm .help h2,.content #omm .help h3 {
+	font-size: 1em !important;
+}
+
+.content #omm fieldset.ommGoalDescription div.formField input {
+	font-size: 1.6em !important;
+}
+
+.content #omm .ommCreateGoal .formFieldInner span.label .cxtHelp,.content #omm .ommCreateGoal .formFieldInner label .cxtHelp {
+	font-size: 1em !important;
+}
+
+.content #omm .ommSavingPlanCalculatePanel .startBalance .currency {
+	padding-top: 0;
+}
+
+.content #omm .ommGoalDescriptionPanel .pullOut,.content #omm .ommCreateGoal .pullOut {
+	margin-left: 20px;
+}
+
+.content #omm .ommOverviewTrans .subPanel .header .editOptions {
+	top: 10px;
+}
+
+.content #omm .ommOverviewTrans .subPanel .header .editOptions a {
+	padding-left: 20px;
+}
+
+.content #omm .ommOverviewTrans .ommBudget .header .editOptions {
+	top: 0;
+}
+
+.content #omm .ommOverviewTrans .subPanel .header .editOptions h2.expandTrigger a,.content #omm .ommFilterTransactions h2.expandTrigger a {
+	padding-top: .4em !important;
+}
+
+.content #omm .ommOverviewTrans .subPanel .header .editOptions h2.expandTrigger a:hover,.content #omm .ommFilterTransactions h2.expandTrigger a:hover {
+	background-image: url(../img/touch/plus_hover.svg) !important;
+	color: #649c00;
+}
+
+.content #omm .ommOverviewTrans .subPanel .header .editOptions ul.accounts li label,.content #omm .ommFilterTransactions ul.accounts li label {
+	margin-top: -3px;
+}
+
+.content #omm .ommBudgets .showHide .trigger span {
+	font-size: 1.233em;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+	padding-left: 40px;
+}
+
+.content #omm .ommBudgets .showHide .trigger span:hover {
+	color: #649c00;
+	text-decoration: none;
+}
+
+.content #omm .ommFilterTransactions h2.expandTrigger {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content #omm .headingNumber span.num {
+	top: 1.7em;
+}
+
+.content #omm fieldset.ommGoalDescription div.formField p.placeHolderText {
+	font-size: 1.6em !important;
+}
+
+.content #omm .ommOverviewTrans .allocateFunds tbody td.inputAmt input {
+	margin-bottom: 7px;
+	margin-right: 5px;
+}
+
+.content #omm .ommOverviewTrans .allocateFunds tbody td.inputAmt .currency {
+	padding-top: .7em;
+}
+
+.content #omm .ommChartInner .cxtHelp .help p {
+	color: #505050;
+}
+
+.content .secondary .panel .tillReceipt .part ul li {
+	color: #333;
+}
+
+.content .secondary .panel .tillReceipt .trecBenefits ul li {
+	color: #333;
+}
+
+.content .secondary .panel .tillReceipt .trecRates .footnote {
+	color: #333;
+}
+
+.content .secondary .panel .inboxPanel {
+	border-color: #fff;
+}
+
+.content .secondary .panel .ui-accordion-content span.messages {
+	background: 0;
+}
+
+.content .secondary .panel .ui-accordion-content .paneInner h3 {
+	color: #fff;
+}
+
+.content .secondary .panel .ui-accordion-content .paneInner h3 strong {
+	font-size: 1.2em;
+}
+
+.content .secondary .panel .ui-accordion-content .paneInner .highlight {
+	max-width: none;
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+.content .secondary .panel .ui-accordion-content .paneInner .paneInner {
+	padding: 15px;
+}
+
+.content .secondary .panel .paneInner a.linkBullet.linkMore {
+	color: #fff;
+	border-top: 1px solid #00553e;
+}
+
+.content .secondary .subPanel.smartRewards h2 {
+	border-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.16em;
+}
+
+.content .secondary .subPanel.smartRewards h2:after {
+	content: '';
+	display: block;
+	width: 40px;
+	border-bottom: 2px solid #ccc;
+	margin: 15px auto 0;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li {
+	text-align: center;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li a,.content .secondary .subPanel.smartRewards ul.linkList li span {
+	background-image: none;
+	padding-left: 0;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li ul.linkList {
+	margin-left: 0;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList .footLink {
+	background: 0;
+	margin: 0 0 5px;
+	padding-top: 10px;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList .footLink:before {
+	content: '';
+	display: block;
+	width: 40px;
+	border-top: 2px solid #ccc;
+	margin: 0 auto 15px;
+}
+
+.content .eloan .subPanel.loanCalculator ul.actions li {
+	padding: 4px;
+}
+
+.content .eloan .subPanel.loanCalculator li.primaryAction {
+	float: left;
+}
+
+.content .loanRequirements .total p.clearfix span.currency {
+	padding-top: 0;
+}
+
+.content .balanceTransfer div.actions input {
+	background: #1a795f;
+}
+
+.content table.preferences.addressPreference thead th.first {
+	width: 60%;
+}
+
+.content .formField.clearfix.checkbox.error {
+	border: 1px solid #fab7de;
+	background-color: #fde5f3 !important;
+}
+
+#ui-datepicker-div div.ui-datepicker-title {
+	font-size: 1.6em;
+	line-height: 1.25;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-current-day,#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-days-cell-over {
+	background: #649c00 !important;
+	background: -moz-linear-gradient(top,#005f45 0,#1a795f 100%) !important;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#005f45 0),color-stop(100%,#1a795f)) !important;
+	background: -webkit-linear-gradient(top,#005f45 0,#1a795f 100%) !important;
+	background: -o-linear-gradient(top,#005f45 0,#1a795f 100%) !important;
+	background: -ms-linear-gradient(top,#005f45 0,#1a795f 100%) !important;
+	background: linear-gradient(to bottom,#005f45 0,#1a795f 100%) !important;
+}
+
+#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-current-day:hover,#ui-datepicker-div .ui-datepicker-calendar tbody td.ui-datepicker-days-cell-over:hover {
+	background: #649c00 !important;
+}
+
+.no-js .secondary .smartRewards .help {
+	color: #fff;
+}
+
+.content .primary .inner.editSearch fieldset .formField {
+	padding-left: 14px !important;
+}
+
+.content .customerDetails p.lastLogin.smartRewardsTotal {
+	font-weight: 700 !important;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li a {
+	background-image: url(../img/touch/arrow_right.svg);
+	padding: 0 0 0 15px;
+	background-position: 0 5px;
+}
+
+.content .secondary .subPanel.smartRewards ul.linkList li a:hover {
+	background-image: url(../img/touch/arrow_right_hover.svg);
+}
+
+.content .primary table.sortable tbody th,.content .primary table.sortable tbody th strong {
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary table.sortable thead th,.content .primary table.sortable thead th strong {
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.hasJS .content #omm .ommGoalGauge .view {
+	margin-bottom: -17px;
+	margin-right: 10px;
+}
+
+.content .m-touch-secondary-btn-white {
+	background: #fff;
+}
+
+.content .leadOutcomes .overlayContainer p {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .leadOutcomes .overlayContainer p a.linkStandard {
+	background: url(../img/touch/arrow_right.svg) right 4px no-repeat !important;
+	background-size: 8px 12px !important;
+	color: #006a4d;
+	font-weight: 400 !important;
+	padding: 0 15px 0 0 !important;
+}
+
+.content .bigPrompt h2 {
+	font-size: 6em;
+	line-height: 1;
+}
+
+.content .bigPrompt h2 span {
+	font-size: 1em;
+}
+
+.content .bigPrompt .inner h3 {
+	font-size: 2.4em;
+	line-height: 1;
+}
+
+.content .bigPrompt .content p {
+	color: #505050;
+}
+
+.content .bigPrompt .content li {
+	color: #505050;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .subPanel .inner h3,.content .bigPrompt .subPanel .inner h4 {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .subPanel .inner li {
+	color: #505050;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .colLayout .pullOut h3 {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigPrompt .colLayout .pullOut li {
+	color: #505050;
+}
+
+.content .bigPrompt .footnotePanel .footnote p {
+	color: #505050;
+	font-size: 1.2em;
+	line-height: 1.3334;
+}
+
+.content .bigPrompt.bigPromptSuperfont .section h2 {
+	color: #505050;
+	font-size: 2.4em;
+	line-height: 1;
+}
+
+.content .bigPrompt.bigPromptSuperfont .section h2 span {
+	color: #505050;
+}
+
+.content .bigPrompt.bigPromptSuperfont .section h3.superfont {
+	color: #006a4d;
+	font-size: 6em;
+}
+
+.content .bigPrompt.bigPromptSuperfont .leadOutcomes .overlayContainer p {
+	font-size: 1.6em;
+}
+
+.content .primary .IBTopPanel h1 {
+	font-size: 3.6em;
+	line-height: 1;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBTopPanel h2 {
+	font-size: 2.4em;
+	line-height: 1;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBTopPanel h3 {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBTopPanel ul li {
+	color: #505050;
+}
+
+.content .primary .IBMediumPanel h2 {
+	font-size: 1.6em;
+	line-height: 1;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel h2.biggerHead {
+	font-size: 3.6em;
+	line-height: 1;
+}
+
+.content .primary .IBMediumPanel h3.bigHead {
+	color: #006a4d;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel h3.biggerHead {
+	color: #505050;
+	font-size: 2.4em;
+	line-height: 1;
+}
+
+.content .primary .IBMediumPanel p {
+	color: #505050;
+}
+
+.content .primary .IBMediumPanel ul li {
+	color: #505050;
+}
+
+.content .primary .IBMediumPanel .content ul li {
+	color: #505050;
+}
+
+.content .primary .IBMediumPanel .content p {
+	color: #505050;
+}
+
+.content .primary .IBMediumPanel .content p.linkList {
+	line-height: 1.2;
+}
+
+.content .primary .IBMediumPanel .content p.linkList a {
+	background: url(../img/touch/arrow_right.svg) right 4px no-repeat !important;
+	background-size: 8px 12px !important;
+	display: inline;
+	padding: 0 15px 0 0;
+}
+
+.content .primary .IBMediumPanel .pullOut h3 {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .primary .IBMediumPanel .buttonLink a.m-touch-primary-btn {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content .bigBanner h2 {
+	font-size: 3.6em;
+	line-height: 1;
+}
+
+.content .bigBanner h2 span {
+	font-size: 1em;
+	line-height: 1;
+}
+
+.content .bigBanner h3 {
+	color: #505050;
+	font-size: 2.4em;
+	line-height: 1;
+}
+
+.content .bigBanner h3 span {
+	line-height: 1;
+}
+
+.content .bigBanner .content p {
+	color: #505050;
+}
+
+.content .bigBanner .products h3 {
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBanner .products ul li {
+	color: #505050;
+}
+
+.content .bigBanner .footnotePanel {
+	clear: both;
+	margin: 0 14px 14px;
+}
+
+.content .bigBanner .footnotePanel .footnote p {
+	color: #505050;
+	font-size: 1.2em;
+	line-height: 1.3334;
+}
+
+.content .bigBannerSingleMessageRight .illustration {
+	margin-left: -14px;
+}
+
+.content .promo-bigPromptA .inner h1 {
+	color: #006a4d;
+	font-size: 6em;
+	line-height: 1;
+}
+
+.content .promo-bigPromptA .inner p,.content .promo-bigPromptA .inner li {
+	color: #505050;
+	font-size: 1.6em;
+	line-height: 1.25;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.content .bigBannerMultiMessage .colLayout .subPanel.withButton {
+	padding-bottom: 0;
+}
+
+.content .bigBannerMultiMessage .colLayout .subPanel.withButton p.buttonLink {
+	position: static;
+}
+
+#overlayWrapper #overlay .leadOutcomes h2 {
+	color: #006a4d;
+	font-size: 3.6em;
+	line-height: 1;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+#overlayWrapper #overlay .leadOutcomes h3 {
+	color: #006a4d;
+	font-size: 2.4em;
+	line-height: 1;
+	font-family: 'Light L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+#overlayWrapper #overlay .leadOutcomes p {
+	color: #505050;
+	font-family: 'Reg L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+#overlayWrapper #overlay .leadOutcomes form ul li {
+	display: inline;
+}
+
+#overlayWrapper #overlay .leadOutcomes form ul li input {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+#overlayWrapper #overlay .leadOutcomes form ul.formFieldRow {
+	margin-bottom: 20px;
+}
+
+#overlayWrapper #overlay .leadOutcomes form ul.formFieldRow li {
+	display: list-item;
+}
+
+#overlayWrapper #overlay .leadOutcomes form ul.formFieldRow li label {
+	color: #505050;
+	font-size: 1.6em;
+	line-height: 1.25;
+	font-family: 'Med L33bo',arial,sans-serif;
+	font-weight: 400 !important;
+}
+
+.car-reg input[type="text"] {
+	height: 28px;
+	font-weight: 700 !important;
+}
+
+.car-finance .car-finance-price .formField span.currency,.car-finance .car-finance-deposit .formField span.currency,.car-finance .car-finance-term .formField span.currency {
+	font-size: 1.6em;
+	top: -10px;
+}
+
+.car-finance .car-finance-price .formField input,.car-finance .car-finance-deposit .formField input,.car-finance .car-finance-term .formField input {
+	font-size: 1.6em;
+}
+
+.car-finance .car-finance-price .formField .limit-container,.car-finance .car-finance-deposit .formField .limit-container,.car-finance .car-finance-term .formField .limit-container {
+	font-size: 1.6em;
+}
+
+.pat522 .select-model-list select {
+	color: #006a4d;
+}
+
+.carLoan-car-details.content .ngb-yes-no-radio label {
+	font-family: 'Light L33bo',arial,sans-serif !important;
+}
+
+.content .secondary .tillReceipt.carLoan table td.value {
+	font-family: 'Light L33bo',arial,sans-serif;
+}
+
+.subPanel.car-finance .contextual a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Med L33bo',arial,sans-serif;
+}
+
+.subPanel.car-finance .contextual a:hover {
+	color: #fff;
+	text-decoration: underline;
+	font-family: 'Med L33bo',arial,sans-serif;
+}
+
+.carLoan-car-details .primaryWrap .primary .panelWrap input.ngb-inner {
+	padding-left: .95em;
+}
+
+.search-address.dealership .repeatable p.address {
+	width: 70%;
+}
+
+.content .balanceTransfer .total p.setBTTextPosLine1 span {
+	padding-top: 0;
+}
+
+.content .balanceTransfer .total p.setBTTextPosLine2 span {
+	text-align: left;
+	position: relative;
+	left: -5.4em;
+	top: 15px;
+}
+
+.content .balanceTransfer .total p.fee {
+	width: 210px;
+}
+
+.content .creditCardAdvanceOffer .sidepanelayout .sidePane input.m-action-button.primary-btn,.content .creditCardAdvanceOffer .sidepanelayout .sidePane a.m-action-button.primary-btn {
+	float: right;
+	position: relative;
+}
+
+.content .tillReceipt .part table th {
+	font-size: 1.25em;
+}
+
+.content .tillReceipt .part table td {
+	font-size: 1.65em;
+}
